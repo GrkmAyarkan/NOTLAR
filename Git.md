@@ -2,6 +2,10 @@
 
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
+* untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
+* unstaged (hazırlanmamış): Güncellenmiş ancak commit’lenmek için hazırlanmamış dosyaları ifade eder.
+* staged (hazırlanmış): Commit’lenmeye hazır olan dosyaları ifade eder.
+* deleted (silinmiş): Projeden silinmiş ama GIT üzerinden kaldırılmamış dosyaları ifade eder.
 
 ## **git config**
 GIT’in bir çok konfigürasyon ve ayarı vardır, bunlardan ikisi user.name ve user.email olanıdır. Bu ayarları yapılandırmak için aşağıdaki komutları kullanırız. Ayrıca bu ayarlar global yani sistem genelinde geçerli ayarlardır. Proje bazlı bu ayarlar değiştirilebilir.
