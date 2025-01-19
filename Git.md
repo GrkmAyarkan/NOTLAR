@@ -1,4 +1,4 @@
-# **GIT **
+# **GIT**
 
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
