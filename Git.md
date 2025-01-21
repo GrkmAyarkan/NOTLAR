@@ -120,8 +120,33 @@ Henüz remote repository’niz yoksa aşağıdaki komut ile local deponuzu uzak 
 $ git remote add origin http://uzak_deponun_adresi.git
 ````
 
+## **git pull**
+**git pull** aslında iki ayrı Git komutunun birleşimidir:
+````
+1. git fetch
+````
+Uzak depodaki değişiklikleri yerel bilgisayara indirir (ör. yeni commit'ler, dallar veya güncellemeler). Ancak bu değişiklikleri yerel çalışma diziniyle birleştirmez. Eğer doğrudan uzak branch'in son halini almak istiyorsanız (yerel branch'te birleştirme yapmak yerine), birleştirme işlemi yapmadan sadece değişiklikleri indirebilirsiniz.
+````
+2. git merge
+````
+İndirilen değişiklikleri, aktif olan yerel branch (dal) ile birleştirir.
+### Kullanımı:
+````
+git pull [remote] [branch]
+````
+**remote** (isteğe bağlı): Uzak depo adı. Varsayılan olarak genelde **origin** kullanılır.
+**branch** (isteğe bağlı): Çekmek istedğiniz dal (Ör. **main** veya **master**). Eğer bir dal adı verilmezse, mevcut branch'le ilişkili olan uzak branch çekilir.\
+1. Varsayılan Remote ve Branch ile çekme:
+````
+git pull
+````
+2. Belirli bir Remote ve Branch ile çekme:
+````
+git pull origin main
+```` 
+
 ## **git diff**
-Repository üzerinde yapılan değişikliklerden sonra dosyalar arasında oluşan farklılıkları göterir.\
+Repository üzerinde yapılan değişikliklerden sonra dosyalar arasında oluşan farklılıkları gösterir.\
 Çalışma dizini ile repository (HEAD) arasındaki farklılıkları görmek için:
 ````
 $ git diff HEAD
