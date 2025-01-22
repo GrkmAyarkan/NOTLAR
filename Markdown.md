@@ -20,8 +20,12 @@ Yazılış şekilleri:
 
 ## Kalın ve Eğik Yazmak 
 Yazılış Şekli
-```
+````
 *Eğik*
 **Kalın**
-***Hem Eğik Hem Kalın***
-```
+***Eğik Hem Kalın***
+````
+### **Çıktı**
+*Eğik*
+**Kalın**
+***Eğik ve Kalın***
