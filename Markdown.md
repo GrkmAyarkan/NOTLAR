@@ -44,7 +44,7 @@ console.log("Hello, World!");
 ```
 Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra javascript, python, css gibi etiket ekleybilirsiniz.
 ### **Çıktı**
-``` java
+``` javascript
 function (){
 console.log("Hello, World!);
 }
