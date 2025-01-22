@@ -1,4 +1,4 @@
-# Markdown Özellikleri
+# **MARKDOWN ÖZELLİKLERİ**
 ## Başlıklar
 Başlık oluşturmak içim satır başına "#" işareti koyulur.\
 Yazılış şekilleri:
@@ -10,6 +10,7 @@ Yazılış şekilleri:
 ##### Başlık 5
 ###### Başlık 6
 ````
+**Çıktı**
 # Başlık 1
 ## Başlık 2
 ### Başlık 3
