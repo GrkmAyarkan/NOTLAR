@@ -35,12 +35,12 @@ Kodun bir üst ve bir alt satırına üç veya 4 adet backtick (```) karakteri e
 Yazılış şekli:
 ````
 ```
-console.log("Hello, World!");
+System.out.println("Hello, World!");
 ```
 ````
 ### **Çıktı**
 ```
-console.log("Hello, World!");
+System.out.println("Hello, World!");
 ```
 Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra javascript, python, css gibi etiket ekleybilirsiniz.
 ### **Çıktı**
