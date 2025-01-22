@@ -19,7 +19,7 @@ Yazılış şekilleri:
 ###### Başlık 6
 
 ## Kalın ve Eğik Yazmak 
-Yazılış Şekli
+Yazılış Şekli:
 ````
 *Eğik*
 **Kalın**
@@ -29,3 +29,19 @@ Yazılış Şekli
 *Eğik*\
 **Kalın**\
 ***Eğik ve Kalın***
+
+## Kod Satırı
+Kodun bir üst ve bir alt satırına üç veya 4 adet backtick (```) karakteri eklenir.
+Yazılış şekli:
+````
+```
+console.log("Hello, World!");
+```
+````
+
+
+
+
+
+
+
