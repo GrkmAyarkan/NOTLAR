@@ -10,7 +10,7 @@ Yazılış şekilleri:
 ##### Başlık 5
 ###### Başlık 6
 ````
-## **Çıktı**
+### **Çıktı**
 # Başlık 1
 ## Başlık 2
 ### Başlık 3
@@ -18,3 +18,10 @@ Yazılış şekilleri:
 ##### Başlık 5
 ###### Başlık 6
 
+## Kalın ve Eğik Yazmak 
+Yazılış Şekli
+```
+*Eğik*
+**Kalın**
+***Hem Eğik Hem Kalın***
+```
