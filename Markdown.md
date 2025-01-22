@@ -42,7 +42,7 @@ System.out.println("Hello, World!");
 ```
 System.out.println("Hello, World!");
 ```
-Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra javascript, python, css gibi etiket ekleybilirsiniz.
+Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra java, javascript, python, css gibi etiket ekleybilirsiniz.
 ### **Çıktı**
 ``` java
 if (90 > 28) {
@@ -50,6 +50,26 @@ if (90 > 28) {
 }
 ```
 
+## Listeler
+Liste oluşturmak için - ve * karakterleri kullanılır.
+Yazılış Şekli:
+```
+- Satır 1
+- Satır 2
+- Satır 3
+
+* Satır 1
+* Satır 2
+* Satır 3
+```
+### **Çıktı**
+- Satır 1
+- Satır 2
+- Satır 3
+
+* Satır 1
+* Satır 2
+* Satır 3
 
 
 
