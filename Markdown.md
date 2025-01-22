@@ -101,4 +101,4 @@ Yazılış Şekli:
 ![Google](https://banner2.cleanpng.com/20180413/rfe/avfci721i.webp)
 ```
 ### **Çıktı**
-![Google](https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png)
+![Google](https://i.pinimg.com/474x/db/5a/82/db5a82352bae4af8495ac4a0416ee885.jpg)
