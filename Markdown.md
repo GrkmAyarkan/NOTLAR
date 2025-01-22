@@ -108,4 +108,8 @@ Yazılış Şekli:
 ```
 > Alıntı Metni
 ```
+### **Çıktı**
 > Alıntı Metni
+
+## Alt Satıra İnmek
+Yazılan satırdan bir alt satıra geçmek için üst satırın sonuna '\' (Ters Slash) işareti kullanılır.
