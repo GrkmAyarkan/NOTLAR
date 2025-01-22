@@ -112,4 +112,4 @@ Yazılış Şekli:
 > Alıntı Metni
 
 ## Alt Satıra İnmek
-Yazılan satırdan bir alt satıra geçmek için üst satırın sonuna '\' (Ters Slash) işareti kullanılır.
+Yazılan satırdan bir alt satıra geçmek için üst satırın sonuna "\" (Ters Slash) işareti kullanılır.
