@@ -102,3 +102,10 @@ Yazılış Şekli:
 ```
 ### **Çıktı**
 ![Google](https://i.pinimg.com/474x/db/5a/82/db5a82352bae4af8495ac4a0416ee885.jpg)
+
+## Alıntı
+Yazılış Şekli:
+```
+> Alıntı Metni
+```
+> Alıntı Metni
