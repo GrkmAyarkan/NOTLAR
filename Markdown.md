@@ -38,7 +38,10 @@ Yazılış şekli:
 console.log("Hello, World!");
 ```
 ````
-
+### **Çıktı**
+```
+console.log("Hello, World!");
+```
 
 
 
