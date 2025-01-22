@@ -26,6 +26,6 @@ Yazılış Şekli
 ***Eğik Hem Kalın***
 ````
 ### **Çıktı**
-*Eğik*
-**Kalın**
+*Eğik*\
+**Kalın**\
 ***Eğik ve Kalın***
