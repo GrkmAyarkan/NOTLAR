@@ -72,7 +72,8 @@ Yazılış Şekli:
 * Satır 3
 
 ## Tablolar
-Tablo oluşturmak için aşağıdaki yapı kullanılır. Satır çizgisi için kullanılan - karaterine, : işareti eklenerek tabloda sola, sağa veya ortaya hizalama yapılabilir.
+Tablo oluşturmak için aşağıdaki yapı kullanılır. Satır çizgisi için kullanılan - karaterine, : işareti eklenerek tabloda sola, sağa veya ortaya hizalama yapılabilir.\
+Yazılış Şekli:
 ```
 | Numaralar| İsimler| Açıklamalar|
 | :--- | :---: | ---: |
@@ -86,3 +87,11 @@ Tablo oluşturmak için aşağıdaki yapı kullanılır. Satır çizgisi için k
 | 1 | İsim 1 | Açıklama 1 |
 | 2 | İsim 2 | Açıklama 2 |
 | 3 | İsim 3 | Açıklama 3 |
+
+## Bağlantı ve Resim Ekleme
+Yazılış Şekli:
+```
+[Google](https://www.google.com/)
+```
+### **Çıktı**
+[Google](https://www.google.com/)
