@@ -94,4 +94,11 @@ Yazılış Şekli:
 [Google](https://www.google.com/)
 ```
 ### **Çıktı**
-[Google](https://www.google.com/)
+[Google](https://www.google.com/)\
+Bağlantı resimleri de aynı şekilde eklenir. Sadece köşeli parantezden önce bir tane ! ünlem işareti eklenmelidir.
+Yazılış Şekli:
+```
+![Google](https://banner2.cleanpng.com/20180413/rfe/avfci721i.webp)
+```
+### **Çıktı**
+![Google](https://banner2.cleanpng.com/20180413/rfe/avfci721i.webp)
