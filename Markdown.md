@@ -30,7 +30,17 @@ Yazılış Şekli:
 **Kalın**\
 ***Eğik ve Kalın***
 
-## Kod Satırı
+## Tek ve Çok Satırlı Kod Bloğu
+### Tek Satırlı Kod Bloğu
+Kodun başına ve sonun backtick (`) karakteri koyulur.
+Yazılış Şekli:
+````
+Metin 1 `System.out.println("Hello, World!");` Metin 2
+````
+### **Çıktı**
+Metin 1 `System.out.println("Hello, World!");` Metin 2
+
+### Çok Satırlı Kod Bloğu
 Kodun bir üst ve bir alt satırına üç veya 4 adet backtick (```) karakteri eklenir.
 Yazılış şekli:
 ````
@@ -115,4 +125,3 @@ Yazılış Şekli:
 Yazılan satırdan bir alt satıra geçmek için üst satırın sonuna `/` Ters Slash işareti kullanılır.
 Yazılık Şekli:
 ```
-
