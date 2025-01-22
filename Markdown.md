@@ -82,6 +82,7 @@ Tablo oluşturmak için aşağıdaki yapı kullanılır. Satır çizgisi için k
 ```
 ### **Çıktı**
 | Numaralar| İsimler| Açıklamalar|
+| :--- | :---: | ---: |
 | 1 | İsim 1 | Açıklama 1 |
 | 2 | İsim 2 | Açıklama 2 |
 | 3 | İsim 3 | Açıklama 3 |
