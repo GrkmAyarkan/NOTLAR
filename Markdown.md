@@ -71,6 +71,14 @@ Yazılış Şekli:
 * Satır 2
 * Satır 3
 
-
-
-
+## Tablolar
+Tablo oluşturmak için aşağıdaki yapı kullanılır. Satır çizgisi için kullanılan - karaterine, : işareti eklenerek tabloda sola, sağa veya ortaya hizalama yapılabilir.
+```
+| Ürünlerin Numaraları| Ürün Açıklaması| Ürünlerin Fiyatı|
+| :--- | :---: | ---: |
+| 1 | Açıklama | Fiyatı |
+```
+### **Çıktı**
+| Ürünlerin Numaraları| Ürün Açıklaması| Ürünlerin Fiyatı|
+| :--- | :---: | ---: |
+| 1 | Açıklama | Fiyatı |
