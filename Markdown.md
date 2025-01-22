@@ -44,9 +44,9 @@ console.log("Hello, World!");
 ```
 Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra javascript, python, css gibi etiket ekleybilirsiniz.
 ### **Çıktı**
-``` javascript
-function (){
-console.log("Hello, World!);
+``` java
+if (90 > 28) {
+  System.out.println("90 sayısı 28'den büyüktür");
 }
 ```
 
