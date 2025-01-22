@@ -10,7 +10,7 @@ Yazılış şekilleri:
 ##### Başlık 5
 ###### Başlık 6
 ````
-**Çıktı**
+## **Çıktı**
 # Başlık 1
 ## Başlık 2
 ### Başlık 3
