@@ -9,7 +9,6 @@ Yazılış şekilleri:
 #### Başlık 4
 ##### Başlık 5
 ###### Başlık 6
-####### Başlık 7
 ````
 # Başlık 1
 ## Başlık 2
@@ -17,4 +16,4 @@ Yazılış şekilleri:
 #### Başlık 4
 ##### Başlık 5
 ###### Başlık 6
-####### Başlık 7
+
