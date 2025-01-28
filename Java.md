@@ -12,4 +12,4 @@ Main metodu yazılırken, args yerine başka bir isimlendirme yapılabilir. Anca
 
 # Syntax 
 Syntax terimi herhangi bir programlama dilinin yazım kurallarını belirler.
-[Java-Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/java-syntax.jpg)
+![Java-Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/java-syntax.jpg)
