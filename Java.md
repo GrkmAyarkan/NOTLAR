@@ -27,7 +27,7 @@ System.out.println("Hello World!")
 # Escape Karakterleri
 
 | Kaçış Karakterleri| Açıklamalar|
-| :--- | ---: |
+| :--- | :---: |
 | `\t` | "Tab" boşluk ekler |
 | `\b` | "Backspace" ekler |
 | `\n` | Bir satır aşşağı atlar |
