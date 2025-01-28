@@ -13,3 +13,26 @@ Main metodu yazılırken, args yerine başka bir isimlendirme yapılabilir. Anca
 # Syntax 
 Syntax terimi herhangi bir programlama dilinin yazım kurallarını belirler.
 ![Java-Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/java-syntax.jpg)
+
+# Ekrana Veri Yazdırma
+Aynı satırda kalınması isteniyorsa;
+````
+System.out.print("Hello World!")
+````
+Yazınlan komuttan sonra yeni satıra inilmesi isteniyorsa;
+````
+System.out.println("Hello World!")
+````
+
+# Escape Karakterleri
+
+| Kaçış Karakterleri| Açıklamalar|
+| :--- | ---: |
+| `\t` | "Tab" boşluk ekler |
+| `\b` | "Backspace" ekler |
+| `\n` | Bir satır aşşağı atlar |
+| `\r` | Metne bir satır başı ekler |
+| `\f` | Sayfa sonunu belirtmek için kullanılır |
+| `\\` | Ters eğik çizgi eklemek için kullanılır |
+| `\'` | Tek tırnak eklemek için kullanılır |
+| `\"` | Çift tırnak eklemek için kullanılır |
