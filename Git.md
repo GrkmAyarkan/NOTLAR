@@ -13,7 +13,7 @@
 * [git clone](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-clone)
 * [git push](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-push)
 * [git pull](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-pull)
-* [git diff]()
+* [git diff](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-diff)
 * [.gitignore]()
   - [Nasıl çalışır, nasıl kullanılmalı?]()
   - [Neye dikkat etmeliyim?]()
