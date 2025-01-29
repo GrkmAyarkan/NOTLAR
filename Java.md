@@ -1,4 +1,14 @@
-# Main Metodu
+# JAVA
+İçindekiler;
+* [Main Metodu]()
+* [Syntax]()
+* [Ekrana Veri Yazdırma]()
+* [Escape Karakterleri]()
+* [Yorum Satırı]()
+* [Değişken Tanımlama]()
+  - [Java'daki İlkel Veri Tipleri]()
+
+## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
 ``` java
 public class JavaPatika {
@@ -10,11 +20,11 @@ public class JavaPatika {
 Artık programı çalıştırdığımızda, derleyici ilk olarak main metodu okuyup sonrasında gerekli işlemleri yapacaktır.\
 Main metodu yazılırken, args yerine başka bir isimlendirme yapılabilir. Ancak genellikle args sözcüğü kullanılır ve bu sözcük arguments sözcüğünün kısaltmasıdır. Arguments ile ifade edilen kısım, sınıf çalıştırılırken JVM tarafından bu sınıfa verilen parametrelerdir.
 
-# Syntax 
+## Syntax 
 Syntax terimi herhangi bir programlama dilinin yazım kurallarını belirler.
 ![Java-Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/java-syntax.jpg)
 
-# Ekrana Veri Yazdırma
+## Ekrana Veri Yazdırma
 Aynı satırda kalınması isteniyorsa;
 ````
 System.out.print("Hello World!")
@@ -24,7 +34,7 @@ Yazınlan komuttan sonra yeni satıra inilmesi isteniyorsa;
 System.out.println("Hello World!")
 ````
 
-# Escape Karakterleri
+## Escape Karakterleri
 | Kaçış Karakterleri| Açıklamalar|
 | :--- | :---: |
 | `\t` | "Tab" boşluk ekler |
@@ -36,7 +46,7 @@ System.out.println("Hello World!")
 | `\'` | Tek tırnak eklemek için kullanılır |
 | `\"` | Çift tırnak eklemek için kullanılır |
 
-# Yorum Satırı
+## Yorum Satırı
 Yorum Satırları `*//*` ve `/* ... */` ile oluşturulur.
 Yazılış:
 ``` java
@@ -78,7 +88,7 @@ public class AciklamaSatiriOrnegi {
     }
 }
 ```
-# Değişken Tanımlama
+## Değişken Tanımlama
 ### <veri tipi> <değişken ismi> = veri (değer)
 İlk önce değişkenin veri tipini ve değişkenin ismini yazarız ve istenirse aynı matematikteki gibi "=" eşittir ile değerini atarız.
 ``` java
