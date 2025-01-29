@@ -1,4 +1,6 @@
 # **GIT**
+İçindekiler;
+* [git init](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-init)
 
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
