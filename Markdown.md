@@ -52,7 +52,7 @@ System.out.println("Hello, World!");
 ```
 System.out.println("Hello, World!");
 ```
-Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra java, javascript, python, css gibi etiket ekleybilirsiniz.
+Yazılım diline göre kod bloğundaki ifadelerin stillendirilmesini isterseniz, kod bloğunun başındaki 3 adet backtick ifadesinden sonra java, javascript, python, css gibi etiket ekleybilirsiniz. ` ``` java `
 ### **Çıktı**
 ``` java
 if (90 > 28) {
