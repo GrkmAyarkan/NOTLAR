@@ -25,7 +25,6 @@ System.out.println("Hello World!")
 ````
 
 # Escape Karakterleri
-
 | Kaçış Karakterleri| Açıklamalar|
 | :--- | :---: |
 | `\t` | "Tab" boşluk ekler |
@@ -36,3 +35,16 @@ System.out.println("Hello World!")
 | `\\` | Ters eğik çizgi eklemek için kullanılır |
 | `\'` | Tek tırnak eklemek için kullanılır |
 | `\"` | Çift tırnak eklemek için kullanılır |
+
+# Yorum Satırı
+Yorum Satırları `*//*` ve `/* ... */` ile oluşturulur.
+Yazılış:
+``` java
+// Bu bir yorum satırıdır!
+int number = 10; // Bu da bir yorum satırdır!
+/* Birden fazla
+satırda yorum
+satırı yapmak
+istediğimizde böyle
+yapabiliriz. */
+```
