@@ -106,7 +106,7 @@ int a = 1 , b = 2;
 ```
 Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikinci bir değişken oluşturulamaz.
 
-# Java'daki İlkel Veri Tipleri
+### Java'daki İlkel Veri Tipleri
 * Tam Sayılar
 * Byte
 * Short
