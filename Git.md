@@ -6,7 +6,7 @@
 * [git rm](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-rm)
 * [git status](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-status)
 * [git commit](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-commit)
-* [git log]()
+* [git log](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-log)
 * [git branch]()
 * [git checkout]()
 * [git merge]()
