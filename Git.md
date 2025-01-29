@@ -2,7 +2,8 @@
 İçindekiler;
 * [git init](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-init)
 * [git config](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-config)
-* [git add]()
+* [git add](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-add)
+* [git rm]()
 
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
