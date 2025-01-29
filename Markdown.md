@@ -4,7 +4,7 @@
 * [Kalın Ve Eğik Yazma]()
 * [Tek ve Çok Satırlı Kod Bloğu]()
   - [Tek Satırlı Kod Bloğu]()
-  - [Çok Satırlı Kod Bloğu]()
+  - [Çok Satırlı Kod Bloğu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#%C3%A7ok-sat%C4%B1rl%C4%B1-kod-blo%C4%9Fu)
 * [Listeler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#listeler)
 * [Tablolar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#tablolar)
 * [Bağlantı ve Resim Ekleme](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#ba%C4%9Flant%C4%B1-ve-resim-ekleme)
