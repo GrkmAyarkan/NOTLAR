@@ -6,7 +6,7 @@
   - [Tek Satırlı Kod Bloğu]()
   - [Çok Satırlı Kod Bloğu]()
 * [Listeler]()
-* [Tablolar]()
+* [Tablolar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#tablolar)
 * [Bağlantı ve Resim Ekleme](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#ba%C4%9Flant%C4%B1-ve-resim-ekleme)
 * [Alıntı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#al%C4%B1nt%C4%B1)
 * [Alt Satıra Geçmek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#alt-sat%C4%B1ra-i%CC%87nmek)
