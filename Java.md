@@ -2,7 +2,7 @@
 İçindekiler;
 * [Main Metodu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#main-metodu)
 * [Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#syntax)
-* [Ekrana Veri Yazdırma]()
+* [Ekrana Veri Yazdırma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ekrana-veri-yazd%C4%B1rma)
 * [Escape Karakterleri]()
 * [Yorum Satırı]()
 * [Değişken Tanımlama]()
