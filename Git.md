@@ -3,7 +3,20 @@
 * [git init](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-init)
 * [git config](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-config)
 * [git add](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-add)
-* [git rm]()
+* [git rm](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-rm)
+* [git status]()
+* [git commit]()
+* [git log]()
+* [git branch]()
+* [git checkout]()
+* [git merge]()
+* [git clone]()
+* [git push]()
+* [git pull]()
+* [git diff]()
+* [.gitignore]()
+  - [Nasıl çalışır, nasıl kullanılmalı?]()
+  - [Neye dikkat etmeliyim?]()
 
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
@@ -165,11 +178,6 @@ $ git diff <commit_id_1>..<commit_id_2>
 $ git diff --staged
 ````
 
-### Kaynaklar
-* https://medium.com/fedeveloper/git-bash-ile-komut-komut-versiyonlama-a354efd3063f
-* https://www.jrebel.com/blog/git-cheat-sheet
-* http://guides.beanstalkapp.com/version-control/common-git-commands.html
-
 # **.gitignore** 
  .gitignore dosyası projemizin kök dizinine oluşturulan düz bir metin dosyasıdır. Adından anlaşıldığı gibi diyor ki beni göz ardı et. Daha doğrusu göz ardı etmek istediğin, local çalışma alanındaki takip edilmesini istemediğin, takım arkadaşların için gerekmeyen dosyaların varsa veya bu dosyaların boyutu reponuza atmanıza gerek olmayacak kadar büyük ölçekli ise buyur beni kullan diyor.
 
@@ -236,7 +244,10 @@ $ git config --global core.excludesfile
 > C:/Users/user-name/.gitignore_global
 ````
 
-
+### Kaynaklar
+* https://medium.com/fedeveloper/git-bash-ile-komut-komut-versiyonlama-a354efd3063f
+* https://www.jrebel.com/blog/git-cheat-sheet
+* http://guides.beanstalkapp.com/version-control/common-git-commands.html
 
 
 
