@@ -3,7 +3,7 @@
 * [Main Metodu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#main-metodu)
 * [Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#syntax)
 * [Ekrana Veri Yazdırma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ekrana-veri-yazd%C4%B1rma)
-* [Escape Karakterleri]()
+* [Escape Karakterleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#escape-karakterleri)
 * [Yorum Satırı]()
 * [Değişken Tanımlama]()
   - [Java'daki İlkel Veri Tipleri]()
