@@ -15,6 +15,7 @@
 * [git pull](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-pull)
 * [git diff](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-diff)
 * [.gitignore](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#gitignore)
+  - [Nasıl Oluşturulur?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-olu%C5%9Fturulur)
   - [Nasıl çalışır, nasıl kullanılmalı?]()
   - [Neye dikkat etmeliyim?]()
 
