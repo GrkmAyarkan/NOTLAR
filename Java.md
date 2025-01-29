@@ -48,3 +48,16 @@ satırı yapmak
 istediğimizde böyle
 yapabiliriz. */
 ```
+`/** ... */` ile yapılan açıklamalar:
+Bir uygulama geliştirilirken kod içi belgeleme yapmak güzel bir programlama alışkanlığıdır.\
+Bu tarzda yazılan açıklama satırlarına Javadoc adı verilmektedir. Javadoc için kullanılabilecek bazı örnekler ve ne için kullanılabilecekleri aşağıda listelenmiştir:
+| Etiket| Açıklama | Syntax |
+| :--- | :---: | :--- |
+| `@author` | Class'ı yazan kişi | |
+| `{@code}` | Metodun kullanım örneğini vermek için | |
+| `@exception` | Metot istisnası ve açıklaması | |
+| `@param` | Değişkenler, değişken tipleri ve bu \değişkenlerin açıklamaları | |
+| `@return` | Metottan bir değer dönüyorsa açıklaması | |
+| `@see` | Başka bir metod ya da açıklamaya referans \göstermek için kullanılır | |
+| `@since` | Metodun oluşturma tarihi | |
+| `@version` | Sınıfın version numarası | |
