@@ -9,7 +9,7 @@
 * [Tablolar]()
 * [Bağlantı ve Resim Ekleme]()
 * [Alıntı]()
-* [Alt Satıra Geçmek]()
+* [Alt Satıra Geçmek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#alt-sat%C4%B1ra-i%CC%87nmek)
 
 ## Başlıklar
 Başlık oluşturmak içim satır başına "#" işareti koyulur.\
