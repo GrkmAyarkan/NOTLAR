@@ -1,6 +1,6 @@
 # **MARKDOWN ÖZELLİKLERİ**
 İçindekiler 
-* [Başlıklar]()
+* [Başlıklar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#ba%C5%9Fl%C4%B1klar)
 * [Kalın Ve Eğik Yazma]()
 * [Tek ve Çok Satırlı Kod Bloğu]()
   - [Tek Satırlı Kod Bloğu]()
