@@ -1,7 +1,7 @@
 # JAVA
 İçindekiler;
 * [Main Metodu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#main-metodu)
-* [Syntax]()
+* [Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#syntax)
 * [Ekrana Veri Yazdırma]()
 * [Escape Karakterleri]()
 * [Yorum Satırı]()
