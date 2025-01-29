@@ -4,7 +4,7 @@
 * [git config](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-config)
 * [git add](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-add)
 * [git rm](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-rm)
-* [git status]()
+* [git status](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-status)
 * [git commit]()
 * [git log]()
 * [git branch]()
