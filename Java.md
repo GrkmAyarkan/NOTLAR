@@ -81,8 +81,44 @@ public class AciklamaSatiriOrnegi {
 # Değişken Tanımlama
 ### <veri tipi> <değişken ismi> = veri (değer)
 İlk önce değişkenin veri tipini ve değişkenin ismini yazarız ve istenirse aynı matematikteki gibi "=" eşittir ile değerini atarız.
+``` java
+int number;
+// number isminde, int veri tipinde bir değişken tanımlanır.
+```
+Veri tipleri aynı olan değişkenleri aynı satırda tanımlayabiliriz;
+``` java
+int a, b, c;
+// int veri tipinde 3 tane değişken tanımlanır.
+```
+Değişkeni tanımladıktan sonra, atama operatörü (=) kullanarak değişkene atayabiliriz;
+``` java
+double pi; // ilk başta double türünde bir değişken tanımladık
+pi = 3.14; // Daha sonra bu değişkene bir değer atadık
+```
+Eğer bir değişkene hemen değer atayacaksanız, bunu iki satırda yapmak yerine tek bir satırda yapabiliriz;
+``` java
+double pi = 3.14;
+```
+Aynı satırda aynı türden birden fazla değişken tanımlayabiliriz;
+``` java
+int a = 1 , b = 2;
+// Aynı satırda int türünde 2 farklı değişken tanımlanmış ve ikisine de değer verilmiş
+```
+Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikinci bir değişken oluşturulamaz.
 
-
+# Java'daki İlkel Veri Tipleri
+* Tam Sayılar
+* Byte
+* Short
+* Integer
+* Long
+* Ondalıklı Sayılar
+* Float
+* Double
+* Karakterler
+* Char
+* Mantıksal Değerler
+* Boolean
 
 
 
