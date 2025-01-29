@@ -56,8 +56,8 @@ Bu tarzda yazılan açıklama satırlarına Javadoc adı verilmektedir. Javadoc 
 | `@author` | Class'ı yazan kişi | |
 | `{@code}` | Metodun kullanım örneğini vermek için | |
 | `@exception` | Metot istisnası ve açıklaması | |
-| `@param` | Değişkenler, değişken tipleri ve bu \değişkenlerin açıklamaları | |
+| `@param` | Değişkenler, değişken tipleri ve bu \ değişkenlerin açıklamaları | |
 | `@return` | Metottan bir değer dönüyorsa açıklaması | |
-| `@see` | Başka bir metod ya da açıklamaya referans \göstermek için kullanılır | |
+| `@see` | Başka bir metod ya da açıklamaya referans \ göstermek için kullanılır | |
 | `@since` | Metodun oluşturma tarihi | |
 | `@version` | Sınıfın version numarası | |
