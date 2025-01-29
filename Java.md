@@ -61,3 +61,20 @@ Bu tarzda yazılan açıklama satırlarına Javadoc adı verilmektedir. Javadoc 
 | `@see` | Başka bir metod ya da açıklamaya referans göstermek için kullanılır | @see referans |
 | `@since` | Metodun oluşturma tarihi | @since tarih |
 | `@version` | Sınıfın version numarası | @version version numarası |
+```
+/**
+ * @author GrkmAyarkan - 29.01.2025
+ */
+public class AciklamaSatiriOrnegi {
+    /**
+     * Verilen sayının karekökünü bularak döndürür.
+     * Sayının sıfırdan küçük olmadığını varsayar.
+     *
+     * @param sayi Karekökü alınacak sayı
+     * @return Sayının karekökü
+     */public double karekok(double sayi) {
+        double kkok = 0;
+        // burada karekök bulma algoritmasının çalıştığını kabul edelim return kkok;
+    }
+}
+```
