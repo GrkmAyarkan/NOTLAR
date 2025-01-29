@@ -11,7 +11,7 @@
 * [git checkout](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-checkout)
 * [git merge](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-merge)
 * [git clone](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-clone)
-* [git push]()
+* [git push](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-push)
 * [git pull]()
 * [git diff]()
 * [.gitignore]()
