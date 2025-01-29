@@ -1,6 +1,6 @@
 # JAVA
 İçindekiler;
-* [Main Metodu]()
+* [Main Metodu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#main-metodu)
 * [Syntax]()
 * [Ekrana Veri Yazdırma]()
 * [Escape Karakterleri]()
