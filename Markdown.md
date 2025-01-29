@@ -1,7 +1,7 @@
 # **MARKDOWN ÖZELLİKLERİ**
 İçindekiler 
 * [Başlıklar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#ba%C5%9Fl%C4%B1klar)
-* [Kalın Ve Eğik Yazma]()
+* [Kalın Ve Eğik Yazma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#kal%C4%B1n-ve-e%C4%9Fik-yazmak)
 * [Tek ve Çok Satırlı Kod Bloğu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#tek-ve-%C3%A7ok-sat%C4%B1rl%C4%B1-kod-blo%C4%9Fu)
   - [Tek Satırlı Kod Bloğu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#tek-sat%C4%B1rl%C4%B1-kod-blo%C4%9Fu)
   - [Çok Satırlı Kod Bloğu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Markdown.md#%C3%A7ok-sat%C4%B1rl%C4%B1-kod-blo%C4%9Fu)
