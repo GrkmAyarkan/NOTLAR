@@ -141,5 +141,9 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 * 16 bit uzunluğundadır. Max 32,767, Min -32,768 değerleri arasındadır.
 * Anahtar sözcük: *short*
 #### Integer
-
+* 32 bit uzunluğundadır. Max 2,147,483,647 , Min -2,147,483,648 değerleri arasındadır.
+* Anahtar sözcük : *int*
+#### Long 
+* 64 bit uzunluğundadır. Max 9,223,372,036,854,775,807 , Min -9,223,372,036,854,775,808 değerleri arasındadır.
+* Anahtar sözcük : *long*
 
