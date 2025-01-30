@@ -253,19 +253,20 @@ Java'da Mantıksal Operatörler , nesnelerin veya ifadelerin mantıksal değerle
 
 ### Koşul Operatörü
 Java'da Koşul Operatörleri ifadelerin sonucunda oluşacak olayları belirler.
-```
+``` java
 a = 5 ;
 b = (a == 1) ? 1 : 0
 Çıktısı : 0
 ```
 
 ## Kullanıcıdan Veri Alma
-Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için import deyimi kullanılır ;
-
+Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için *import* deyimi kullanılır ;
+```
 import java.util.Scanner;
-
-İmport deyimi projenin en başına yazılır. Kullanıcıdan verileri almak için değişkenlere ihtiyacımız vardır. İlk önce "a" adında veri tipi integer olan bir değişken oluşturalım. Oluşturduğumuz "a" değişkenine veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı "input" olan bir nesne tanımlayalım. Sınıf ve Nesne kavramları ilerleyen derslerde detaylıca anlatılacaktır. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin "integer" türünde ise "input.nextInt()" veya double türünde ise "input.nextDouble()" kod bloğu kullanılmalıdır.
-
+```
+İmport deyimi projenin en başına yazılır.\ 
+Veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı *input* olan bir nesne tanımlayalım. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin *integer* türünde ise `input.nextInt()` veya double türünde ise `input.nextDouble()` kod bloğu kullanılmalıdır.
+```
 import java.util.Scanner;
 
 public class JavaPatika {
@@ -283,6 +284,8 @@ public class JavaPatika {
         System.out.println("B Sayısı : " + b);
     }
 }
+```
+
 Veri Tiplerine Göre Scanner Metotları (BUNUN ALTINDA TABLO OLACAK)
 
 
