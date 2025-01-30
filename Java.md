@@ -147,3 +147,4 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 * 64 bit uzunluğundadır. Max 9,223,372,036,854,775,807 , Min -9,223,372,036,854,775,808 değerleri arasındadır.
 * Anahtar sözcük : *long*
 
+
