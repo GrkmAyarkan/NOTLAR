@@ -163,3 +163,131 @@ float number1 = 3.14F;
 float number2 = 3.14f;
 double number3 = 3.14;
 ```
+
+
+Char ve Boolean Veri Tipleri
+Char
+Java'da karakter değişkenleri saklamak için Char kullanılır. Char veri tipleri birleşerek String Sınıfından bir yapıya dönüşür.
+
+Karakterler Char ile saklanır.
+Diğer dillere göre Char Java’da 16 bittir.
+Java Unicode karakter setini kullanır ve tüm dilleri içerir.
+Java evrensel bir dil olarak tasarlandığı için karakter seti de evrensel set olan Unicode ile tanımlanmıştır.
+Anahtar Sözcük : char
+Boolean
+Java, mantıksal değerleri saklamak için boolean adında bir tipe sahiptir.
+
+Boolean sadece iki değer alabilir : True ve False
+Genellikle koşul ve döngü işlemlerinde, kontrol amaçlı olarak kullanılır.
+Anahtar Sözcük : boolean
+public class JavaPatika {
+    public static void main(String[] args) {
+        char letter = 'u';
+        boolean logic1 = true;
+        boolean logic2 = false;
+    }
+}
+
+
+
+String Sınıfı
+String sınıfı java.lang kütüphanelerinde bulunan ve metinlerle ilgili her türlü işlemin yapıldığı sınıftır. Java'da genellikle kelime tutmak için char yerine String sınıfı kullanılır. Basitçe şöyle düşünebiliriz , Char veri tipi tek bir karakter tutabiliyorken, charların birleşmesiyle oluşan sözcükleri String Sınıfı tutmaktadır.
+
+public class JavaPatika {
+    public static void main(String[] args) {
+        String words = "Hello World";
+    }
+}
+
+
+
+
+Temel Operatörler
+Java dilinde operatörler birçok işlemi yapabilmenize olanak tanır. Örneğin: matematiksel operatörlerle birlikte aritmetik işlemler yapabilmenizi, ilişkisel operatörlerle verileri kıyaslayabilmeyi, atama operatörleri ile değişkenlerin değerlerini değiştirmeye fırsat verir.
+
+Java'da operatörler aşağıdaki gibi listelenebilir:
+
+Atama Operatörleri
+Aritmetiksel Operatörler
+İlişkisel ve Eşitlik Operatörler
+Koşul Operatörler
+Mantıksal Operatörler
+
+Atama Operatörü (BUNUN ALTINDA TABLO OLUŞACAK)
+
+Aritmetik Operatörler
+Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel işlemleri programlama dilinde uygulamamızı sağlarlar.
+
+Toplama : a + b
+Çıkarma : a – b
+Çarpma : a * b
+Bölme : a / b
+Mod alma : a % b
+1 arttırma : a++
+1 eksiltme : b--
+Karşılaştırma Operatörleri
+Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlarını belirler.
+
+Eşitlik : a == b
+Eşit Değil : a != b
+Büyüktür : a > b
+Küçüktür : a < b
+Büyük Eşittir : a >= b
+Küçük Eşittir : a <= b
+Mantıksal Operatörler
+Java'da Mantıksal Operatörler , nesnelerin veya ifadelerin mantıksal değerlerini yansıtır.
+
+Ve : a && b
+Veya : a || b
+Değil : !(a&&b)
+Koşul Operatörü
+Java'da Koşul Operatörleri ifadelerin sonucunda oluşacak olayları belirler.
+
+a = 5 ;
+b = (a == 1) ? 1 : 0
+Çıktısı : 0
+
+
+Kullanıcıdan Veri Alma
+Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için import deyimi kullanılır ;
+
+import java.util.Scanner;
+
+İmport deyimi projenin en başına yazılır. Kullanıcıdan verileri almak için değişkenlere ihtiyacımız vardır. İlk önce "a" adında veri tipi integer olan bir değişken oluşturalım. Oluşturduğumuz "a" değişkenine veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı "input" olan bir nesne tanımlayalım. Sınıf ve Nesne kavramları ilerleyen derslerde detaylıca anlatılacaktır. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin "integer" türünde ise "input.nextInt()" veya double türünde ise "input.nextDouble()" kod bloğu kullanılmalıdır.
+
+import java.util.Scanner;
+
+public class JavaPatika {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a,b;
+
+        System.out.println("A sayısını giriniz : ");
+        a = input.nextInt();
+
+        System.out.println("B sayısını giriniz : ");
+        b = input.nextInt();
+
+        System.out.println("A Sayısı : " + a);
+        System.out.println("B Sayısı : " + b);
+    }
+}
+Veri Tiplerine Göre Scanner Metotları (BUNUN ALTINDA TABLO OLACAK)
+
+
+import java.util.Scanner;
+
+public class JavaPatika {public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        
+        // String ÖrneğiString adSoyad = inp.nextLine();
+        
+        // Sayı Örnekleriint yas = inp.nextInt();
+        double maas = inp.nextDouble();
+        
+        // Çıktılar
+        System.out.println("Ad Soyad: " + adSoyad);
+        System.out.println("Yaş : " + yas);
+        System.out.println("Maaş : " + maas);
+    }
+}
