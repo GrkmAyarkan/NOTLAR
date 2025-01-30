@@ -147,4 +147,18 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 * 64 bit uzunluğundadır. Max 9,223,372,036,854,775,807 , Min -9,223,372,036,854,775,808 değerleri arasındadır.
 * Anahtar sözcük : *long*
 
-
+### Ondalıklı Sayı Veri Tipleri
+#### Float
+* 32 Bit boyutundadır ve 1.4×10^-45 ile 3.4×10^38 aralığında bir değer tanımlanabilir.
+* Float içerisine tam sayı yazdığımız zamanda bile o sayı 1.0 şeklinde ondalıklı olarak algılar.
+* Float ile double ayırmak için , float tanımlamalardan sonra ‘f’ veya ‘F’ konulmalıdır.
+* Anahtar Sözcük : float
+#### Double
+* 64 Bit boyutundadır ve 4.9×10^-324 ile 1.8×10^308 aralığında bir değer tanımlanabilir.
+* Üst düzey matematiksel işlemlerde kullanılır
+* Anahtar Sözcük : double
+``` java
+float number1 = 3.14F;
+float number2 = 3.14f;
+double number3 = 3.14;
+```
