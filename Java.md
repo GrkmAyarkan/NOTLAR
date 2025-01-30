@@ -10,6 +10,15 @@
   - [Java'daki İlkel Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#javadaki-i%CC%87lkel-veri-tipleri)
   - [Tam Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tam-say%C4%B1-veri-tipleri)
   - [Ondalıklı Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ondal%C4%B1kl%C4%B1-say%C4%B1-veri-tipleri)
+  - [Özel Karakter ve Mantıksal Eleman Veri Tipleri]()
+  - [String Veri Tipi]()
+* [Temel Operatörler]()
+  - [Atama Operatörü]()
+  - [Aritmetik Operatörler]()
+  - [Karşılaştırma Operatörleri]()
+  - [Mantıksal Operatörler]()
+  - [Koşul Operatörü]()
+* [Kullanıcıdan Veri Alma]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -153,33 +162,34 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 * 32 Bit boyutundadır ve 1.4×10^-45 ile 3.4×10^38 aralığında bir değer tanımlanabilir.
 * Float içerisine tam sayı yazdığımız zamanda bile o sayı 1.0 şeklinde ondalıklı olarak algılar.
 * Float ile double ayırmak için , float tanımlamalardan sonra ‘f’ veya ‘F’ konulmalıdır.
-* Anahtar Sözcük : float
+* Anahtar Sözcük : *float*
 #### Double
 * 64 Bit boyutundadır ve 4.9×10^-324 ile 1.8×10^308 aralığında bir değer tanımlanabilir.
 * Üst düzey matematiksel işlemlerde kullanılır
-* Anahtar Sözcük : double
+* Anahtar Sözcük : *double*
 ``` java
 float number1 = 3.14F;
 float number2 = 3.14f;
 double number3 = 3.14;
 ```
 
-
-Char ve Boolean Veri Tipleri
-Char
+### Özel Karakter ve Mantıksal Eleman Veri Tipleri
+#### Char
 Java'da karakter değişkenleri saklamak için Char kullanılır. Char veri tipleri birleşerek String Sınıfından bir yapıya dönüşür.
 
-Karakterler Char ile saklanır.
-Diğer dillere göre Char Java’da 16 bittir.
-Java Unicode karakter setini kullanır ve tüm dilleri içerir.
-Java evrensel bir dil olarak tasarlandığı için karakter seti de evrensel set olan Unicode ile tanımlanmıştır.
-Anahtar Sözcük : char
-Boolean
+* Karakterler Char ile saklanır.
+* Diğer dillere göre Char Java’da 16 bittir.
+* Java Unicode karakter setini kullanır ve tüm dilleri içerir.
+* Java evrensel bir dil olarak tasarlandığı için karakter seti de evrensel set olan Unicode ile tanımlanmıştır.
+* Anahtar Sözcük : *char*
+
+#### Boolean
 Java, mantıksal değerleri saklamak için boolean adında bir tipe sahiptir.
 
-Boolean sadece iki değer alabilir : True ve False
-Genellikle koşul ve döngü işlemlerinde, kontrol amaçlı olarak kullanılır.
-Anahtar Sözcük : boolean
+* Boolean sadece iki değer alabilir : True ve False
+* Genellikle koşul ve döngü işlemlerinde, kontrol amaçlı olarak kullanılır.
+* Anahtar Sözcük : *boolean*
+```
 public class JavaPatika {
     public static void main(String[] args) {
         char letter = 'u';
@@ -187,68 +197,69 @@ public class JavaPatika {
         boolean logic2 = false;
     }
 }
+```
 
-
-
-String Sınıfı
+### String
 String sınıfı java.lang kütüphanelerinde bulunan ve metinlerle ilgili her türlü işlemin yapıldığı sınıftır. Java'da genellikle kelime tutmak için char yerine String sınıfı kullanılır. Basitçe şöyle düşünebiliriz , Char veri tipi tek bir karakter tutabiliyorken, charların birleşmesiyle oluşan sözcükleri String Sınıfı tutmaktadır.
-
+```
 public class JavaPatika {
     public static void main(String[] args) {
         String words = "Hello World";
     }
 }
+```
 
-
-
-
-Temel Operatörler
-Java dilinde operatörler birçok işlemi yapabilmenize olanak tanır. Örneğin: matematiksel operatörlerle birlikte aritmetik işlemler yapabilmenizi, ilişkisel operatörlerle verileri kıyaslayabilmeyi, atama operatörleri ile değişkenlerin değerlerini değiştirmeye fırsat verir.
+## Temel Operatörler
+Java dilinde operatörler birçok işlemi yapabilmenize olanak tanır.
 
 Java'da operatörler aşağıdaki gibi listelenebilir:
 
-Atama Operatörleri
-Aritmetiksel Operatörler
-İlişkisel ve Eşitlik Operatörler
-Koşul Operatörler
-Mantıksal Operatörler
+* Atama Operatörleri
+* Aritmetiksel Operatörler
+* İlişkisel ve Eşitlik Operatörler
+* Mantıksal Operatörler
+* Koşul Operatörler
 
-Atama Operatörü (BUNUN ALTINDA TABLO OLUŞACAK)
+### Atama Operatörü 
+(BUNUN ALTINDA TABLO OLUŞACAK)
 
-Aritmetik Operatörler
+### Aritmetik Operatörler
 Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel işlemleri programlama dilinde uygulamamızı sağlarlar.
 
-Toplama : a + b
-Çıkarma : a – b
-Çarpma : a * b
-Bölme : a / b
-Mod alma : a % b
-1 arttırma : a++
-1 eksiltme : b--
-Karşılaştırma Operatörleri
+* Toplama: `a + b`
+* Çıkarma: `a – b`
+* Çarpma: `a * b`
+* Bölme: `a / b`
+* Mod alma: `a % b`
+* 1 arttırma: `a++`
+* 1 eksiltme: `b--`
+
+### Karşılaştırma Operatörleri
 Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlarını belirler.
 
-Eşitlik : a == b
-Eşit Değil : a != b
-Büyüktür : a > b
-Küçüktür : a < b
-Büyük Eşittir : a >= b
-Küçük Eşittir : a <= b
-Mantıksal Operatörler
+* Eşitlik: `a == b`
+* Eşit Değil: `a != b`
+* Büyüktür: `a > b`
+* Küçüktür: `a < b`
+* Büyük Eşittir: `a >= b`
+* Küçük Eşittir: `a <= b`
+
+### Mantıksal Operatörler
 Java'da Mantıksal Operatörler , nesnelerin veya ifadelerin mantıksal değerlerini yansıtır.
 
-Ve : a && b
-Veya : a || b
-Değil : !(a&&b)
-Koşul Operatörü
-Java'da Koşul Operatörleri ifadelerin sonucunda oluşacak olayları belirler.
+* Ve: `a && b`
+* Veya: `a || b`
+* Değil: `!(a&&b)`
 
+### Koşul Operatörü
+Java'da Koşul Operatörleri ifadelerin sonucunda oluşacak olayları belirler.
+```
 a = 5 ;
 b = (a == 1) ? 1 : 0
 Çıktısı : 0
+```
 
-
-Kullanıcıdan Veri Alma
+## Kullanıcıdan Veri Alma
 Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için import deyimi kullanılır ;
 
 import java.util.Scanner;
