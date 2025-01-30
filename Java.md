@@ -8,6 +8,7 @@
 * [Değişken Tanımlama](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#de%C4%9Fi%C5%9Fken-tan%C4%B1mlama)
 * [Java Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#java-veri-tipleri)
   - [Java'daki İlkel Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#javadaki-i%CC%87lkel-veri-tipleri)
+  - [Tam Sayı Veri Tipleri]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -120,17 +121,25 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 ## Java Veri Tipleri 
 ### Java'daki İlkel Veri Tipleri
 * Tam Sayılar
-* Byte
-* Short
-* Integer
-* Long
+  - Byte
+  - Short
+  - Integer
+  - Long
 * Ondalıklı Sayılar
-* Float
-* Double
+  - Float
+  - Double
 * Karakterler
-* Char
+  - Char
 * Mantıksal Değerler
-* Boolean
+  - Boolean
 
+### Tam Sayı Veri Tipleri
+#### Byte
+* 8 bit uzunluğundadır. Max 127, Min -128 değerleri arasındadır.
+* Anahtar sözcük: *byte*
+#### Short
+* 16 bit uzunluğundadır. Max 32,767, Min -32,768 değerleri arasındadır.
+* Anahtar sözcük: *short*
+#### Integer
 
 
