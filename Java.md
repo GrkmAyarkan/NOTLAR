@@ -146,27 +146,27 @@ Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikin
 ### Tam Sayı Veri Tipleri
 #### Byte
 * 8 bit uzunluğundadır. Max 127, Min -128 değerleri arasındadır.
-* Anahtar sözcük: *byte*
+* Anahtar sözcük: **byte**
 #### Short
 * 16 bit uzunluğundadır. Max 32,767, Min -32,768 değerleri arasındadır.
-* Anahtar sözcük: *short*
+* Anahtar sözcük: **short**
 #### Integer
 * 32 bit uzunluğundadır. Max 2,147,483,647 , Min -2,147,483,648 değerleri arasındadır.
-* Anahtar sözcük : *int*
+* Anahtar sözcük : **int**
 #### Long 
 * 64 bit uzunluğundadır. Max 9,223,372,036,854,775,807 , Min -9,223,372,036,854,775,808 değerleri arasındadır.
-* Anahtar sözcük : *long*
+* Anahtar sözcük : **long**
 
 ### Ondalıklı Sayı Veri Tipleri
 #### Float
 * 32 Bit boyutundadır ve 1.4×10^-45 ile 3.4×10^38 aralığında bir değer tanımlanabilir.
 * Float içerisine tam sayı yazdığımız zamanda bile o sayı 1.0 şeklinde ondalıklı olarak algılar.
 * Float ile double ayırmak için , float tanımlamalardan sonra ‘f’ veya ‘F’ konulmalıdır.
-* Anahtar Sözcük : *float*
+* Anahtar Sözcük : **float**
 #### Double
 * 64 Bit boyutundadır ve 4.9×10^-324 ile 1.8×10^308 aralığında bir değer tanımlanabilir.
 * Üst düzey matematiksel işlemlerde kullanılır
-* Anahtar Sözcük : *double*
+* Anahtar Sözcük : **double**
 ``` java
 float number1 = 3.14F;
 float number2 = 3.14f;
@@ -181,14 +181,14 @@ Java'da karakter değişkenleri saklamak için Char kullanılır. Char veri tipl
 * Diğer dillere göre Char Java’da 16 bittir.
 * Java Unicode karakter setini kullanır ve tüm dilleri içerir.
 * Java evrensel bir dil olarak tasarlandığı için karakter seti de evrensel set olan Unicode ile tanımlanmıştır.
-* Anahtar Sözcük : *char*
+* Anahtar Sözcük : **char**
 
 #### Boolean
 Java, mantıksal değerleri saklamak için boolean adında bir tipe sahiptir.
 
 * Boolean sadece iki değer alabilir : True ve False
 * Genellikle koşul ve döngü işlemlerinde, kontrol amaçlı olarak kullanılır.
-* Anahtar Sözcük : *boolean*
+* Anahtar Sözcük : **boolean**
 ```
 public class JavaPatika {
     public static void main(String[] args) {
@@ -260,13 +260,13 @@ b = (a == 1) ? 1 : 0
 ```
 
 ## Kullanıcıdan Veri Alma
-Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için *import* deyimi kullanılır ;
+Java’da kullanıcıdan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce kodumuza Scanner sınıfını dahil etmemiz gerekir. Bunun için **import** deyimi kullanılır ;
 ``` java
 import java.util.Scanner;
 ```
 İmport deyimi projenin en başına yazılır.
  
-Veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı *input* olan bir nesne tanımlayalım. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin *integer* türünde ise `input.nextInt()` veya double türünde ise `input.nextDouble()` kod bloğu kullanılmalıdır.
+Veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı **input** olan bir nesne tanımlayalım. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin *integer* türünde ise `input.nextInt()` veya double türünde ise `input.nextDouble()` kod bloğu kullanılmalıdır.
 ``` java
 import java.util.Scanner;
 
