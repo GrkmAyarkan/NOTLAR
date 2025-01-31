@@ -18,7 +18,7 @@
   - [Karşılaştırma Operatörleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
   - [Mantıksal Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#mant%C4%B1ksal-operat%C3%B6rler)
   - [Koşul Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ko%C5%9Ful-operat%C3%B6r%C3%BC)
-* [Kullanıcıdan Veri Alma]()
+* [Kullanıcıdan Veri Alma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#kullan%C4%B1c%C4%B1dan-veri-alma)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
