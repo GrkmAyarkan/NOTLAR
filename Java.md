@@ -277,7 +277,7 @@ Veriyi kullanıcıdan almak için yapmamız gereken **Scanner** sınıfını kul
 ``` java
 import java.util.Scanner;
 
-public class JavaPatika {
+public class JavaNotlar {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int a,b;
@@ -309,12 +309,14 @@ public class JavaPatika {
 ``` java
 import java.util.Scanner;
 
-public class JavaPatika {public static void main(String[] args) {
+public class JavaNotlar {public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         
-        // String ÖrneğiString adSoyad = inp.nextLine();
+        // String Örneği
+        String adSoyad = inp.nextLine();
         
-        // Sayı Örnekleriint yas = inp.nextInt();
+        // Sayı Örnekleri
+        int yas = inp.nextInt();
         double maas = inp.nextDouble();
         
         // Çıktılar
