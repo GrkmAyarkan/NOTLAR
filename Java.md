@@ -16,7 +16,7 @@
   - [Atama Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#atama-operat%C3%B6r%C3%BC)
   - [Aritmetik Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#aritmetik-operat%C3%B6rler)
   - [Karşılaştırma Operatörleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
-  - [Mantıksal Operatörler]()
+  - [Mantıksal Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#mant%C4%B1ksal-operat%C3%B6rler)
   - [Koşul Operatörü]()
 * [Kullanıcıdan Veri Alma]()
 
