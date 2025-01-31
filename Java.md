@@ -13,7 +13,7 @@
   - [Özel Karakter ve Mantıksal Eleman Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%B6zel-karakter-ve-mant%C4%B1ksal-eleman-veri-tipleri)
   - [String Veri Tipi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string)
 * [Temel Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#temel-operat%C3%B6rler)
-  - [Atama Operatörü]()
+  - [Atama Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#atama-operat%C3%B6r%C3%BC)
   - [Aritmetik Operatörler]()
   - [Karşılaştırma Operatörleri]()
   - [Mantıksal Operatörler]()
