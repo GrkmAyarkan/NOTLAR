@@ -273,7 +273,7 @@ import java.util.Scanner;
 ```
 İmport deyimi projenin en başına yazılır.
  
-Veriyi kullanıcıdan almak için yapmamız gereken Scanner sınıfını kullanmak. Scanner sınıfından türeyen adı **input** olan bir nesne tanımlayalım. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin *integer* türünde ise `input.nextInt()` veya double türünde ise `input.nextDouble()` kod bloğu kullanılmalıdır.
+Veriyi kullanıcıdan almak için yapmamız gereken **Scanner** sınıfını kullanmak. Scanner sınıfından türeyen adı **input** olan bir nesne tanımlayalım. Scanner sınıfından nesne ürettikten sonra değişkenimize veri almak için, değişkenimizin türüne göre bir kod yazmamız gerekecektir. Eğer değişkenimizin **integer** türünde ise `input.nextInt()` veya double türünde ise `input.nextDouble()` kod bloğu kullanılmalıdır.
 ``` java
 import java.util.Scanner;
 
@@ -294,9 +294,19 @@ public class JavaPatika {
 }
 ```
 
-Veri Tiplerine Göre Scanner Metotları (BUNUN ALTINDA TABLO OLACAK)
+### Veri Tiplerine Göre Scanner Metotları
+| Method | Açıklama |
+| :--- | :---: |
+| nextBoolean() | Boolean değişkenlere veri almak için kullanılır. |
+| nextByte() | Byte değişkenlere veri almak için kullanılır. |
+| nextDouble() | Double değişkenlere veri almak için kullanılır. |
+| nextFloat() | Float değişkenlere veri almak için kullanılır. |
+| nextInt() | Integer değişkenlere veri almak için kullanılır. |
+| nextLine() | Line değişkenlere veri almak için kullanılır. |
+| nextLong() | Long değişkenlere veri almak için kullanılır. |
+| nextShort() | Short değişkenlere veri almak için kullanılır. |
 
-
+``` java
 import java.util.Scanner;
 
 public class JavaPatika {public static void main(String[] args) {
@@ -313,3 +323,4 @@ public class JavaPatika {public static void main(String[] args) {
         System.out.println("Maaş : " + maas);
     }
 }
+```
