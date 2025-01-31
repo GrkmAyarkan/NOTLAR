@@ -10,7 +10,7 @@
   - [Java'daki İlkel Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#javadaki-i%CC%87lkel-veri-tipleri)
   - [Tam Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tam-say%C4%B1-veri-tipleri)
   - [Ondalıklı Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ondal%C4%B1kl%C4%B1-say%C4%B1-veri-tipleri)
-  - [Özel Karakter ve Mantıksal Eleman Veri Tipleri]()
+  - [Özel Karakter ve Mantıksal Eleman Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%B6zel-karakter-ve-mant%C4%B1ksal-eleman-veri-tipleri)
   - [String Veri Tipi]()
 * [Temel Operatörler]()
   - [Atama Operatörü]()
