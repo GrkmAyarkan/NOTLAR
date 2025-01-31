@@ -17,7 +17,7 @@
   - [Aritmetik Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#aritmetik-operat%C3%B6rler)
   - [Karşılaştırma Operatörleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
   - [Mantıksal Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#mant%C4%B1ksal-operat%C3%B6rler)
-  - [Koşul Operatörü]()
+  - [Koşul Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ko%C5%9Ful-operat%C3%B6r%C3%BC)
 * [Kullanıcıdan Veri Alma]()
 
 ## Main Metodu
