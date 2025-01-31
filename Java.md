@@ -14,7 +14,7 @@
   - [String Veri Tipi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string)
 * [Temel Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#temel-operat%C3%B6rler)
   - [Atama Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#atama-operat%C3%B6r%C3%BC)
-  - [Aritmetik Operatörler]()
+  - [Aritmetik Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#aritmetik-operat%C3%B6rler)
   - [Karşılaştırma Operatörleri]()
   - [Mantıksal Operatörler]()
   - [Koşul Operatörü]()
@@ -221,7 +221,14 @@ Java'da operatörler aşağıdaki gibi listelenebilir:
 * Koşul Operatörler
 
 ### Atama Operatörü 
-(BUNUN ALTINDA TABLO OLUŞACAK)
+| Operatör| Açıklama| Örnek|
+| :--- | :---: | ---: |
+| = | Basit atama operatörüdür. Operatörün sağındaki değer solundaki değişkene atanır. | `C = A + B;` A + B'nin değerini C'ye atar. |
+| += | Sağdaki değeri, solundaki değişkenin değeri ile toplayıp tekrar soldaki değişkene atar. | `C += A;` ile `C = C + A;` eşittir. |
+| -= | Sağdaki değeri, solundaki değişkenin değerinden çıkartıp tekrar soldaki değişkene atar. | `C -= A;` ile `C = C - A;` eşittir. |
+| *= | Sağdaki değeri, solundaki değişkenin değeri ile çarpıp tekrar soldaki değişkene atar. | `C *= A;` ile `C = C * A;` eşittir. |
+| /= | Soldaki değişkenin değerini, sağdaki değere bölüp tekrar soldaki değişkene atar. | `C /= A;` ile `C = C / A;`  eşittir. |
+| %= | Soldaki değişkenin değerini, sağdaki değere göre modunu alıp tekrar soldaki değişkene atar. | `C %= A;` ile `C = C % A;`  eşittir. |
 
 ### Aritmetik Operatörler
 Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel işlemleri programlama dilinde uygulamamızı sağlarlar.
