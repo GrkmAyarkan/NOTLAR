@@ -302,7 +302,7 @@ public class JavaNotlar {
 | nextDouble() | Double değişkenlere veri almak için kullanılır. |
 | nextFloat() | Float değişkenlere veri almak için kullanılır. |
 | nextInt() | Integer değişkenlere veri almak için kullanılır. |
-| nextLine() | Line değişkenlere veri almak için kullanılır. |
+| nextLine() | String değişkenlere veri almak için kullanılır. |
 | nextLong() | Long değişkenlere veri almak için kullanılır. |
 | nextShort() | Short değişkenlere veri almak için kullanılır. |
 
