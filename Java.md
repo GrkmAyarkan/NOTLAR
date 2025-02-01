@@ -19,6 +19,7 @@
   - [Mantıksal Operatörler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#mant%C4%B1ksal-operat%C3%B6rler)
   - [Koşul Operatörü](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ko%C5%9Ful-operat%C3%B6r%C3%BC)
 * [Kullanıcıdan Veri Alma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#kullan%C4%B1c%C4%B1dan-veri-alma)
+* [if, else, else if](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#if-else-else-if)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
