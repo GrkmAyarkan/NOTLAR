@@ -344,8 +344,17 @@ if (sayi > 0) {
     System.out.println("Sayı negatif veya sıfırdır.");
 }
 ```
-
-
+### **else if**
+`else if`, birden fazla koşulu sıralı şekilde kontrol etmek için kullanılır.
+``` java
+if (sayi > 0) {
+    System.out.println("Sayı pozitiftir.");
+} else if (sayi < 0) {
+    System.out.println("Sayı negatiftir.");
+} else {
+    System.out.println("Sayı sıfırdır.");
+}
+```
 
 
 
