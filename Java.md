@@ -334,6 +334,18 @@ if (sayi > 0) {
     System.out.println("Sayı pozitiftir.");
 }
 ```
+### **else**
+`else`, `if` koşulu sağlanmadığında (**false** olduğunda) çalışacak alternatif kod bloğunu belirler.
+``` java
+if (sayi > 0) {
+    System.out.println("Sayı pozitiftir.");
+} else {
+    System.out.println("Sayı negatif veya sıfırdır.");
+}
+```
+
+
+
 
 
 
