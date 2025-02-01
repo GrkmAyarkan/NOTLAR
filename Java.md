@@ -355,8 +355,25 @@ if (sayi > 0) {
     System.out.println("Sayı sıfırdır.");
 }
 ```
+## Switch-Case
+`switch-case`, bir değişkenin değerine göre farklı kod bloklarını çalıştıran bir kontrol yapısıdır.
+``` java
+int gun = 3;
 
-
+switch (gun) {
+    case 1:
+        System.out.println("Pazartesi");
+        break;
+    case 2:
+        System.out.println("Salı");
+        break;
+    case 3:
+        System.out.println("Çarşamba");
+        break;
+    default:
+        System.out.println("Geçersiz gün!");
+}
+```
 
 
 
