@@ -25,7 +25,7 @@
 * [Döngüler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#d%C3%B6ng%C3%BCler)
   - [While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#while)
   - [Do-While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#do-while)
-  - [For]()
+  - [For](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#for)
   - [Continue Ve Break Komutları]()
 * [Metotlar]()
 
@@ -419,6 +419,35 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 Çıktı; `0,1,2,3,4,5,6,7,8,9,`
+
+## Continue ve Break Komutları
+Java'da `continue"`deyimi , döngü içinde bir koşul oluştuğunda o döngüyü tamamlamadan bir sonraki kademeye geçmeye yarar.
+``` java
+int i = 0;
+while (i < 10) {
+  i++;
+  if (i == 5) {
+    continue;
+  }
+  System.out.print(i + " ");
+}
+```
+Çıktı; `0 1 2 3 4 6 7 8 9 `
+`i` 5'e eşit olduğunda `continue` komutu döngünün içindeki henüz çalışmamış olan kod bloklarını çalıştırmadan atlayarak bir sonraki tura geçmemizi sağlar ve bu nedenle bu örnekteki çıktıda 5 yazdırılmaz.
+
+`break` deyimi ise kendi koşulu gerçekleştiğinde, döngü içinde henüz çalışmamış kod blogları olasa bile onları da çalıştırmadan, döngüyü tamamen bitirip çıkarır.
+``` java
+for (int i = 0; i < 10; i++) {
+  if (i == 5) {
+    break;
+  }
+  System.out.print(i + " ");
+}
+```
+Çıktı; `1 2 3 4 `
+
+
+
 
 
 
