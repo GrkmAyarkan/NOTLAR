@@ -432,7 +432,7 @@ while (i < 10) {
   System.out.print(i + " ");
 }
 ```
-Çıktı; `0 1 2 3 4 6 7 8 9 `
+Çıktı; `0 1 2 3 4 6 7 8 9 `\
 `i` 5'e eşit olduğunda `continue` komutu döngünün içindeki henüz çalışmamış olan kod bloklarını çalıştırmadan atlayarak bir sonraki tura geçmemizi sağlar ve bu nedenle bu örnekteki çıktıda 5 yazdırılmaz.
 
 `break` deyimi ise kendi koşulu gerçekleştiğinde, döngü içinde henüz çalışmamış kod blogları olasa bile onları da çalıştırmadan, döngüyü tamamen bitirip çıkarır.
