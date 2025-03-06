@@ -328,7 +328,8 @@ public class JavaNotlar {public static void main(String[] args) {
     }
 }
 ```
-## IF, ELSE, ELSE IF
+## Koşullu İfadeler
+### IF, ELSE, ELSE IF
 ### **if**
 `if`, Java'da belirli bir koşulu kontrol eden ve koşul **doğru** (**true**) olduğunda kod bloğunu çalıştıran bir kontrol yapısıdır.
 ``` java
