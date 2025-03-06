@@ -22,7 +22,7 @@
 * [Koşullu İfadeler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ko%C5%9Fullu-i%CC%87fadeler)
   - [if, else, else if](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#if-else-else-if)
   - [Switch-Case](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#switch-case)
-* [Döngüler]()
+* [Döngüler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#d%C3%B6ng%C3%BCler)
   - [While]()
   - [Do-While]()
   - [For]()
@@ -385,12 +385,16 @@ switch (gun) {
 ```
 ## Döngüler
 ### While
-**While** döngüsünde parantez içindeki değer doğru(true) olduğu sürece döngü dönmeye devam eder ve kod bloğu çalışır.
+**While** döngüsünde parantez içindeki değer doğru(true) olduğu sürece döngü dönmeye devam eder ve kod bloğu çalışır. Nerede biteceğinden veya çak terkar yapması gerektiğini bilmediğimiz döngüler için tercih edilir.
 ``` java
-while(kosul){
-  //kod bloğu
+int i = 0;
+while(i <= 10){
+  System.out.print(i + ',');
+  i++;
 }
 ```
+Çıktı; `1,2,3,4,5,6,7,8,9,10`
+
 
 
 
