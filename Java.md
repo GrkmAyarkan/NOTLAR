@@ -406,6 +406,20 @@ i++;
 ```
 Çıktı; `Değer: 5`
 
+### For
+``` java
+for (durum 1; durum 2; durum 3){
+  // çalışacak kod bloğu
+}
+```
+For döngüsü şu şekilde işler: İlk olarak döngüde sayaç işlevi görecek bir değişken oluşturulur. Bu değişkenin ilk değeri **durum 1** ile belirtilen kısımda verilir. Bu değişken **durum 3** kısmında isteğe göre artırılır veya azaltılır. Döngünün hangi koşulda çalışacağı ise **durum 2** kısmında boolean bir ifadeyle belirtilir.
+``` java
+for (int i = 0; i < 10; i++) {
+  System.out.print(i + ",");
+}
+```
+Çıktı; `1,2,3,4,5,6,7,8,9,`
+
 
 
 
