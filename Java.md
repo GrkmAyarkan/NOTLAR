@@ -24,7 +24,7 @@
   - [Switch-Case](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#switch-case)
 * [Döngüler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#d%C3%B6ng%C3%BCler)
   - [While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#while)
-  - [Do-While]()
+  - [Do-While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#do-while)
   - [For]()
   - [Continue Ve Break Komutları]()
 * [Metotlar]()
@@ -398,8 +398,13 @@ while(i <= 10){
 ### Do-While
 **Do-While** döngüsünün çalışma mantığı **while** döngüsü ile aynıdır , fakat while döngüsünde parantez içerisindeki koşul başlangıçta `false` ise döngü hiç çalışmaz ama **Do-while** döngüsünde durum `false` olsa bile döngü en az bir kere çalışacaktır. Çünkü program koşula gelmeden önce yazılan kod bloglarını görüp çalıştırır ve sonra koşula gider eğer koşul `true` ise tekrar başa döner. Bu tür durumlar için Do-while kullanılır.
 ``` java
-
-
+int i = 5;
+do {
+System.out.println("Değer: " + i);
+i++;
+} while (i < 0);
+```
+Çıktı; `Değer: 5`
 
 
 
