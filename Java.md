@@ -446,6 +446,34 @@ for (int i = 0; i < 10; i++) {
 ```
 Çıktı; `1 2 3 4 `
 
+## Metotlar (Fonksiyonlar)
+Java'da **Metotlar** sadece çağrıldığında kullanılan kod bloklarıdır. Programlamada metot kullanmamızın sebebi, bir çok yerde kullanacağımız kodu tek seferde yazıp lazım olduğunda çağırmaktır.\
+### Metot Tanımlama
+Java'da metotların sözdizimi şu şekildedir:
+``` java
+veriTipi metotAdi(parametre1, parametre2, ....) {
+  // kod bloğu
+}
+```
+* veriTipi : Metotlar geriye bir değer döndürebilir, bu değerin veri tipini metot tanımlanırken belirtilir. Örneğin metot geriye "integer" veri tipinde bir değer döndürecekse "veriTipi" kısmına "int" anahtar sözcüğü yazılmalıdır. Eğer metotlar geriye bir değer döndürmeyecekse "void" anahtar sözcüğü kullanılır.
+* metotAdi : Metodumuzun benzersiz ismidir ve bu isimlendirme ile metotlar çağrılır.
+* kod bloğu : Bu kısım metot çağrıldığı zaman, program tarafından çalışacak kod bloğudur.
+* parametre1/parametre2 : Bu kısım metot içerisine aktarma istediğimiz verilerdir ve parametre olarak adlandırılır.
+#### **Örnek Kullanım:**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
