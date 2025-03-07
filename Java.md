@@ -28,7 +28,7 @@
   - [For](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#for)
   - [Continue Ve Break Komutları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#continue-ve-break-komutlar%C4%B1)
 * [Metotlar (Fonksiyonlar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlar-fonksiyonlar)
-* [Metotlarda Overloading (Aşırı Yükleme)]()
+* [Metotlarda Overloading (Aşırı Yükleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlarda-overloading-a%C5%9F%C4%B1r%C4%B1-y%C3%BCkleme)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
