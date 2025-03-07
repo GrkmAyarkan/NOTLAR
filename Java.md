@@ -501,7 +501,8 @@ Parametreler : 10 ve 2
 ```
 **Not**: Aşırı yüklenmiş metotlar aynı veya farklı dönüş türlerine sahip olabilir, ancak parametreler açısından farklılık göstermeleri gerekir.
 
-
+## Recursive (Özyineli) Metotlar
+Java'da Recursive Metotlar, bir metodun kendisini çağırma tekniğidir. Recursive metotlar sürekli kendilerini çağırdıkları için dikkat edilmesi gereken durum en son aşama için koşul koyulmasıdır.
 
 
 
