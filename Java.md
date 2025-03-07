@@ -27,7 +27,7 @@
   - [Do-While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#do-while)
   - [For](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#for)
   - [Continue Ve Break Komutları]()
-* [Metotlar]()
+* [Metotlar (Fonksiyonlar)]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
