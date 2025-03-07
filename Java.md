@@ -27,7 +27,7 @@
   - [Do-While](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#do-while)
   - [For](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#for)
   - [Continue Ve Break Komutları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#continue-ve-break-komutlar%C4%B1)
-* [Metotlar (Fonksiyonlar)]()
+* [Metotlar (Fonksiyonlar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlar-fonksiyonlar)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -460,9 +460,20 @@ veriTipi metotAdi(parametre1, parametre2, ....) {
 * kod bloğu : Bu kısım metot çağrıldığı zaman, program tarafından çalışacak kod bloğudur.
 * parametre1/parametre2 : Bu kısım metot içerisine aktarma istediğimiz verilerdir ve parametre olarak adlandırılır.
 #### **Örnek Kullanım:**
-
-
-
+Metot oluşturma;
+``` java
+int topla(int a, int b) {
+int sonuc = a + b;
+return sonuc;
+```
+Metot çağırma;
+``` java
+public static void main(String[] args) {
+  int sonuc = topla(7,6);
+  System.out.print(sonuc);
+}
+```
+Çıktı: `13`
 
 
 
