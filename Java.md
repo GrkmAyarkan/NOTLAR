@@ -28,6 +28,7 @@
   - [For](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#for)
   - [Continue Ve Break Komutları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#continue-ve-break-komutlar%C4%B1)
 * [Metotlar (Fonksiyonlar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlar-fonksiyonlar)
+* [Metotlarda Overloading (Aşırı Yükleme)]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -455,7 +456,7 @@ veriTipi metotAdi(parametre1, parametre2, ....) {
   // kod bloğu
 }
 ```
-* veriTipi : Metotlar geriye bir değer döndürebilir, bu değerin veri tipini metot tanımlanırken belirtilir. Örneğin metot geriye "integer" veri tipinde bir değer döndürecekse "veriTipi" kısmına "int" anahtar sözcüğü yazılmalıdır. Eğer metotlar geriye bir değer döndürmeyecekse "void" anahtar sözcüğü kullanılır.
+* veriTipi : Metotlar geriye bir değer döndürebilir, bu değerin veri tipini metot tanımlanırken belirtilir. Örneğin metot geriye "integer" veri tipinde bir değer döndürecekse "veriTipi" kısmına "int" anahtar sözcüğü yazılmalıdır. Eğer metotlar geriye bir değer döndürmeyecekse "**void**" anahtar sözcüğü kullanılır.
 * metotAdi : Metodumuzun benzersiz ismidir ve bu isimlendirme ile metotlar çağrılır.
 * kod bloğu : Bu kısım metot çağrıldığı zaman, program tarafından çalışacak kod bloğudur.
 * parametre1/parametre2 : Bu kısım metot içerisine aktarma istediğimiz verilerdir ve parametre olarak adlandırılır.
@@ -463,9 +464,11 @@ veriTipi metotAdi(parametre1, parametre2, ....) {
 Metot oluşturma;
 ``` java
 int topla(int a, int b) {
-int sonuc = a + b;
-return sonuc;
+  int sonuc = a + b;
+  return sonuc;
+}
 ```
+Java'da oluşturduğumuz bir metodun bir değer üretmesini istendiğinde, "return" deyimi kullanılır. Geri dönecek değerin veri tipi, metot tanımlarken verdiğimiz veri tipi ile aynı olmalıdır. Aksi halde derleyici tarafından hata alınır.\
 Metot çağırma;
 ``` java
 public static void main(String[] args) {
@@ -475,9 +478,28 @@ public static void main(String[] args) {
 ```
 Çıktı: `13`
 
+## Metotlarda Overloading (Aşırı Yükleme)
+Java'da, iki veya daha fazla metot, parametreler açısından farklılık gösteriyorsa (farklı sayıda parametre, farklı türde parametre veya her ikisi) aynı isime sahip olabilir. Bu duruma metotlarda "**Overloading**" yani aşırı yüklenme işlemi denir.
+``` java
+static void ekranaYaz(int a) {
+  System.out.println("Parametreler : " + a);
+}
 
+static void ekranaYaz(int a, int b) {
+  System.out.println("Parametreler : " + a + " ve " + b);
+}
 
-
+public static void main(String[] args) {
+  ekranaYaz(5);
+  ekranaYaz(10, 2);
+}
+```
+Çıktı:
+``` java
+Parametreler : 5
+Parametreler : 10 ve 2
+```
+**Not**: Aşırı yüklenmiş metotlar aynı veya farklı dönüş türlerine sahip olabilir, ancak parametreler açısından farklılık göstermeleri gerekir.
 
 
 
