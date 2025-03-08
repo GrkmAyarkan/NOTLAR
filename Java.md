@@ -508,6 +508,7 @@ Java'da Recursive Metotlar, bir metodun kendisini çağırma tekniğidir. Recurs
 
 ## Sınıflar (Classes)
 Java Nesne Yönelimli bir programlama dilidir. Java'daki her şey, değişkenleri ve metotları ile birlikte sınıflar ve nesnelerle ilişkilidir. Örneğin: gerçek hayatta araba bir nesnedir. Otomobilin ağırlık ve renk gibi değişkenleri ve sürüş ve fren gibi metotları vardır. Nesne yönelimli programlamanın amacı yazdığımız kodlara soyut bir kavrama dönüştürmektir.\
+
 Sınıflara ait nitelikler ve davranışlar vardır. Programlamada nitelikler için değişkenler (variable), davranışlar için ise metotlar (method) tanımlanır.\
 **Sözdizimi (Syntax)**
 ``` java
@@ -517,6 +518,7 @@ class <class_name> {
 }
 ```
 Java'da "sınıf" tanımlanırken "class" deyimi kullanılır ve sonrasında sınıf ismi yazılır. Java'da "sınıf" tanımlanırken "class" deyimi kullanılır ve sonrasında sınıf ismi yazılır.\
+
 Sınıf kod bloğunu açtıktan sonra bu kod bloğu için değişkenleri ve metotları yazarız. Unutmayınız ki metotlar da kendilerine ait kod blokları, yani kapsamları vardır. Onları da "{}" ile belirtiriz.
 ``` java
 class Car {
