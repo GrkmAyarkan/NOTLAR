@@ -30,6 +30,7 @@
 * [Metotlar (Fonksiyonlar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlar-fonksiyonlar)
 * [Metotlarda Overloading (Aşırı Yükleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlarda-overloading-a%C5%9F%C4%B1r%C4%B1-y%C3%BCkleme)
 * [Recursive (Özyineli) Metotlar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#recursive-%C3%B6zyineli-metotlar)
+* [Sınıflar (Classes)]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -505,9 +506,45 @@ Parametreler : 10 ve 2
 ## Recursive (Özyineli) Metotlar
 Java'da Recursive Metotlar, bir metodun kendisini çağırma tekniğidir. Recursive metotlar sürekli kendilerini çağırdıkları için dikkat edilmesi gereken durum en son aşama için koşul koyulmasıdır.
 
+## Sınıflar (Classes)
+Java Nesne Yönelimli bir programlama dilidir. Java'daki her şey, değişkenleri ve metotları ile birlikte sınıflar ve nesnelerle ilişkilidir. Örneğin: gerçek hayatta araba bir nesnedir. Otomobilin ağırlık ve renk gibi değişkenleri ve sürüş ve fren gibi metotları vardır. Nesne yönelimli programlamanın amacı yazdığımız kodlara soyut bir kavrama dönüştürmektir.\
+Sınıflara ait nitelikler ve davranışlar vardır. Programlamada nitelikler için değişkenler (variable), davranışlar için ise metotlar (method) tanımlanır.\
+**Sözdizimi (Syntax)**
+``` java
+class <class_name> {
+  <variable>;
+  <methods>;
+}
+```
+Java'da "sınıf" tanımlanırken "class" deyimi kullanılır ve sonrasında sınıf ismi yazılır. Java'da "sınıf" tanımlanırken "class" deyimi kullanılır ve sonrasında sınıf ismi yazılır.\
+Sınıf kod bloğunu açtıktan sonra bu kod bloğu için değişkenleri ve metotları yazarız. Unutmayınız ki metotlar da kendilerine ait kod blokları, yani kapsamları vardır. Onları da "{}" ile belirtiriz.
+``` java
+class Car {
+    // nitelikler
+    String type;
+    String model;
+    String color;
+    int speed;
 
+    // davranışlar
+    int increaseSpeed(int increment) {
+        speed += increment;
+        return speed;
+    }
 
-
+    int decreaseSpeed(int decrease) {
+        if (speed > 0) {
+            speed -= decrease;
+        }
+        return speed;
+    }
+    
+    void printSpeed() {
+        System.out.println("Speed : " + speed);
+    }
+    // ...
+}
+```
 
 
 
