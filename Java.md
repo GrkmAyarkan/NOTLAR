@@ -31,6 +31,7 @@
 * [Metotlarda Overloading (Aşırı Yükleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#metotlarda-overloading-a%C5%9F%C4%B1r%C4%B1-y%C3%BCkleme)
 * [Recursive (Özyineli) Metotlar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#recursive-%C3%B6zyineli-metotlar)
 * [Sınıflar (Classes)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#s%C4%B1n%C4%B1flar-classes)
+  - [Nesne Oluşturma Ve Sınıf Metotları]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -547,7 +548,7 @@ class Car {
     // ...
 }
 ```
-
+## Nesne Oluşturma Ve Sınıf Metotları
 
 
 
