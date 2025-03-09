@@ -38,7 +38,7 @@
   - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
   - [ForEach Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#foreach-kullan%C4%B1m%C4%B1)
   - [Arrays Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#arrays-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
-* [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1)
+* [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 * [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 
 ## Main Metodu
