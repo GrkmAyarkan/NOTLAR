@@ -1,6 +1,6 @@
 # JAVA
 İçindekiler;
-- [JAVA 101]()
+- [JAVA 101](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#java-101)
   * [Main Metodu](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#main-metodu)
   * [Syntax](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#syntax)
   * [Ekrana Veri Yazdırma](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#ekrana-veri-yazd%C4%B1rma)
