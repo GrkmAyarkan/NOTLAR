@@ -36,7 +36,7 @@
 * [Diziler (Arrays)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#diziler-arrays)
   - [Tek Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tek-boyutlu-diziler)
   - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
-  - [ForEach Kullanımı]()
+  - [ForEach Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#foreach-kullan%C4%B1m%C4%B1)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
