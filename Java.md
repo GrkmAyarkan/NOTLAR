@@ -41,7 +41,7 @@
     - [Arrays Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#arrays-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
   * [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
   * [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
-- [Object Oriented Programming]()
+- [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
 # JAVA 101
 
 ## Main Metodu
