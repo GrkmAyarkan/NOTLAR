@@ -799,4 +799,30 @@ int[][] uzaklik ={
                 {243, 620, 384}
         };
 ```
+#### İki Boyutlu Dizi Tanımlama Yöntemleri
+ İlk köşeli parantez birinci boyutu (satırları), diğeri ise ikinci boyutu (sütunları) belirtir. Aşağıdaki kodu çalıştırırsak, 3 satırlı ve 4 sütunlu bir matris oluşturur:
+``` java
+int matrix[][] = new int[3][4];
+```
+yada
+``` java
+matrix = new int[3][4];
+```
+Oluşturulan matrix değişkeninin default değeri tablodaki gibidir.
+| X | [0] | [1] | [2] |
+| :---: | :---: | :---: | :---: |
+| [0] | null | null | null |
+| [1] | null | null | null |
+| [2] | null | null | null |
+
+
+
+
+
+
+
+
+
+
+
 
