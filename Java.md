@@ -39,7 +39,7 @@
   - [ForEach Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#foreach-kullan%C4%B1m%C4%B1)
   - [Arrays Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#arrays-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 * [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1)
-* [String Sınıfı ve Metotları]()
+* [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
