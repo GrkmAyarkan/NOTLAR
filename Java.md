@@ -32,7 +32,9 @@
 * [Recursive (Özyineli) Metotlar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#recursive-%C3%B6zyineli-metotlar)
 * [Sınıflar (Classes)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#s%C4%B1n%C4%B1flar-classes)
   - [Nesne Oluşturma Ve Sınıf Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#nesne-olu%C5%9Fturma-ve-s%C4%B1n%C4%B1f-metotlar%C4%B1)
-  - [Constructor (Yapıcı) Metot]()
+  - [Constructor (Yapıcı) Metot](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#constructor-yap%C4%B1c%C4%B1-metotlar)
+* [Diziler (Arrays)]()
+  - [Tek Boyutlu Diziler]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -719,9 +721,62 @@ Type  : Corporate
 Speed  : 20
 ```
 
+## Diziler (Arrays)
+  Java'da **Diziler (Arrays)** , her değer için ayrı değişkenler oluşturmak yerine, birden çok değeri tek bir değişkende depolamak için kullanılır. Tek boyutlu dizi kullanabileceğimiz gibi 2 veya 3 boyutlu diziler de oluşturabiliriz. 2 boyutlu dizilere matris denir.\
+  Dizilerdeki herhangi bir elemana ulaşmak için indis numaraları kullanılır. Dizi indisleri her zaman 0'dan başlar o yüzden dizinin son elemanının değeri, dizi boyutuna eşit değildir.\
+  Diziler "new" anahtar sözcüğüyle oluşturulur.\
+``` java
+double[] myList;   // tercih edilen yol
+// veya 
+double myList[];   // başka türlü tanımlama biçimi
+```
+ Diziler veri tipi ve [] parantezler ile belirtilir. Yukarıda iki farklı tanımı görülmektedir. Hafızadan yer alıp diziye alan ayırabilmek için "new" anahtar kelimesi kullanılır.
+``` java
+double[] mylist = new double[];
+```
+ Yukarıda maksimum 10 eleman alabilen "double" veri tipinde olan bir dizi oluşturulmuştur.
+``` java
+// Java'da diziye ilk değerler süslü parantezler arasında verilir.
+double[] myList = { 1.9, 2.9, 3.4, 3.5 };
 
+// tüm dizi elemanlarını arada boşuk bırakarak sırayla ekrana yazdırır.
+for (int i = 0; i < myList.length; i++)
+{
+	System.out.println(myList[i] + " ");
+}
+```
+### Tek Boyutlu Diziler
+**numbers** isminde bir dizi oluşturalım.
+``` java
+int numbers[] = {10, 20, 30, 40, 50};
+```
+Boş dizi oluşturma:
+``` java
+int[] numbers = new int[5];
+```
+ Diziyi oluştururken elemanlarını biliyorsan "new" kullanmadan kısa yoldan tanımlayabilirsin. Ama elemanları sonradan ekleyeceksen veya dinamik boyut belirleyeceksen "new" kullanmalısın.
+``` java
+numbers[0] = 10;
+numbers[1] = 15;
+numbers[2] = 20;
+numbers[3] = 25;
+numbers[4] = 30;
+```
+ Buradaki gibi oluşturulan diziye sonradan eleman ekleyebilir veya değişiklik yapabiliriz.\
+``` java
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+cars[2] = "Toyota";
 
-
+System.out.println(cars[0]);
+```
+Çıktı: `Opel`
+#### Dizinin Kapasitesini Öğrenme
+Her dizinin length adında bir özelliği bulunur. Bu özelliği kullanarak dizinin kapasitesini öğrenebilirsiniz. 
+``` java
+int[] numbers = new int[100];
+System.out.println(numbers.length); // Konsolda 100 yazar
+```
 
 
 
