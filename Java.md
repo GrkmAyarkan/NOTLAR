@@ -782,5 +782,5 @@ System.out.println(numbers.length); // Konsolda 100 yazar
 ### Çok Boyutlu Diziler
  Java'da Çok Boyutlu Diziler varsayılan bir veri tipi olarak bulunmazlar ve matris olarak adlandırılırlar. Dizilerin 2 boyutlu halleri şeklinde tanımlanırlar. Matrisler satır ve sütun şeklinde tablo verisi formatındaki verileri tutmak için kullanılır.\
  Oluşturulan tabloda bir değere ulaşmak istersek satır ve sütun sayısını girmemiz yeterli olacaktır.
- 
+ ![Matris](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/matris.png)
 
