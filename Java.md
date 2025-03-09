@@ -37,7 +37,7 @@
   - [Tek Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tek-boyutlu-diziler)
   - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
   - [ForEach Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#foreach-kullan%C4%B1m%C4%B1)
-  - [Arrays Sınıfı ve Metotları]()
+  - [Arrays Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#arrays-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -869,10 +869,82 @@ public class Main {public static void main(String[] args) {
 }
 ```
 ### Arrays Sınıfı ve Metotları
+ Java.util paketindeki Arrays sınıfı, Java Collection Framework'ün bir parçasıdır. Bu sınıf, Java dizilerini dinamik olarak oluşturmak ve bunlara erişmek için statik metotlar sağlar. Yalnızca statik metotlar ve Object sınıfının metotlarından oluşur. Bu sınıfın metotları, sınıf adının kendisi tarafından kullanılabilir.\
+ Import deyimi ile java.util.Arrays sınıfını projeye dahil etmemiz gerekmektedir. `import java.util.Arrays;` \
 
+#### **Arrays.toString()**
+Diziye ait elemanları direk ekrana basmak için kullanılan bir metottur.
+``` java
+System.out.println(Arrays.toString(dizi));
+```
+Çıktı: `[3, 5, 79, 12, 25, -3, 66, 82,-49,152]` \
 
+#### **Arrays.fill()**
+Arrays.fill metodu ile dizilerimizin belirli bölümlerine değerler atayabiliriz.
+``` java
+int[] liste = {15, 1, 99, 6, 73, -22, 11, 2, -49, 52};
+Arrays.fill(liste, 2); // Başlangıç ve bitiş indeksi vermediğimiz için tüm dizi elemanlarını 2 yapıyor.
+System.out.println(Arrays.toString(liste));
+// Çıktı
+// [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 
+int[] liste2 = {15, 1, 99, 6, 73, -22, 11, 2, -49, 52};
+Arrays.fill(liste2, 3, 8, 7); // Dizisinin 3. indeksten (dahil) 8. indekse (hariç) kadar olan kısmını 7 değeriyle dolduruyor.
+System.out.println(Arrays.toString(liste2));
+// Çıktı
+// [15, 1, 99, 7, 7, 7, 7, 7, -49, 52]
+```
 
+#### **Arrays.sort()**
+Arrays.sort() metodu ile dizilerdeki elemanları sıralayabiliriz.
+``` java
+int[] liste = {6, 1, 55, 21, 33, -321, -21, 2, -11, 27};
+Arrays.sort(liste);
+System.out.println(Arrays.toString(liste));
+```
+Çıktı: `[-321, -21, -11, 1, 2, 6, 21, 27, 33, 55]`
+
+#### **Arrays.binarySearch()**
+Java'da dizideki bir elemanın indis değerini bulmak için binarySearch kullanılabilir. Ama bu metodu kullanabilmek için, dizinin sıralı olması gerekmektedir.
+``` java
+int[] liste = {6, 1, 55, 21, 33, -321, -21, 2, -11, 27};
+Arrays.sort(liste);
+System.out.println(Arrays.toString(liste));
+
+int index = Arrays.binarySearch(liste, 33);
+System.out.println("33'ün indeksi :" + index);
+```
+Çıktı:
+``` java
+[-321, -21, -11, 1, 2, 6, 21, 27, 33, 55]
+33'ün indeksi :8
+```
+
+#### **Arrays.copyOf()** ve **Arrays.copyOfRange()**
+Mevcut diziden belli bir uzunlukta yeni bir dizi oluşturmak için Arrays.copyOf() metotu kullanılır. \
+Mevcut diziden belli bir aralıkta yeni bir dizi oluşturmak için ise Array.copyOfRange() metodu kullanılır.
+``` java
+int[] liste = {6, 1, 55, 21, 33, -321, -21, 2, -11, 27};
+
+int[] copyArray = Arrays.copyOf(liste, 3); // 3. indise kadar ama 3 dahil değil.
+System.out.println(Arrays.toString(copyArray));
+// Çıktı: [6, 1, 55]
+
+int[] copyOfRangeArray = Arrays.copyOfRange(liste, 3,8); 3. indisten (3 dahil) - 8. indise kadar (8 dahil değil)
+System.out.println(Arrays.toString(copyOfRangeArray));
+// Çıktı: [21, 33, -321, -21, 2]
+```
+
+#### Arrays.equals()
+Java'da iki dizinin eşitliğini kontrol etmek için Arrays.equals() metotu kullanılır.
+``` java
+int[] list1 = {1, 2, 3};
+int[] list2 = {1, 2, 3};
+int[] list3 = {1, 2, 10};
+
+System.out.println(Arrays.equals(list1, list2)); // true
+System.out.println(Arrays.equals(list2, list3)); // false
+```
 
 
 
