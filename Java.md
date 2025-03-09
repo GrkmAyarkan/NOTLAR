@@ -814,8 +814,17 @@ Oluşturulan matrix değişkeninin default değeri tablodaki gibidir.
 | [0] | null | null | null |
 | [1] | null | null | null |
 | [2] | null | null | null |
-
-
+Bu dizinin 2. Satır - 3. Sütununa "7", 1. Satır 2. Sütununa "23" değerini ekleyelim.
+``` java
+matrix [1][2] = 7;
+matrix [0][1] = 23;
+```
+Yeni tablomuz şu şekilde olur:
+| X | [0] | [1] | [2] |
+| :---: | :---: | :---: | :---: |
+| [0] | null | 23 | null |
+| [1] | null | null | 7 |
+| [2] | null | null | null |
 
 
 
