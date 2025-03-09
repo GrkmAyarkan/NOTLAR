@@ -784,3 +784,9 @@ System.out.println(numbers.length); // Konsolda 100 yazar
  Oluşturulan tabloda bir değere ulaşmak istersek satır ve sütun sayısını girmemiz yeterli olacaktır.
  ![Matris](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/matris.png)
 
+Bir tablo oluşturalım:
+| X | A | B | C |
+| :---: | :---: | :---: | :---: |
+| A | 453 | 490 | 839 |
+| B | 863 | 544 | 783 |
+| C | 243 | 620 | 384 |
