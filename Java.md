@@ -32,6 +32,7 @@
 * [Recursive (Özyineli) Metotlar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#recursive-%C3%B6zyineli-metotlar)
 * [Sınıflar (Classes)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#s%C4%B1n%C4%B1flar-classes)
   - [Nesne Oluşturma Ve Sınıf Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#nesne-olu%C5%9Fturma-ve-s%C4%B1n%C4%B1f-metotlar%C4%B1)
+  - [Constructor (Yapıcı) Metot]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -622,15 +623,101 @@ Speed : 30
 Speed : 15
 Speed : 20
 ```
+### Constructor (Yapıcı) Metotlar
+Kurucu metotlar sınıf tasarlanırken yazılırlar. Sınıfınızı yazarken kurucu metotlarınızı da tanımlayabilirsiniz. Eğer sınıf içinde hiç kurucu metot tanımlamazsınız parametresiz boş bir kurucu metot Java tarafından otomatik olarak tanımlanır.\
 
+Kurucu metotlar ilgili sınıftan bir nesne üretmeye çalıştığınızda daha nesne üretme aşamasında çalıştırılan özel metotlardır (fonksiyonlardır). Kurucu metotların isimleri Sınıf ismiyle aynı olmak zorundadır. Dönüş tipi olarak veya void olarak herhangi bir tanımlama yapılmasına gerek yoktur.\
 
+"new" anahtar kelimesi ile nesne üretirken kurucu metot çağrımı yapılır. İki tip kurucu metot vardır:
+* Parametresiz Varsayılan Kurucu Metot
+* Parametreli Kurucu Metot
 
+Araba Sınıfı:
+``` java
+public class Car {
+    // nitelikler
+    String type;
+    String model;
+    String color;
+    int speed;
 
+    // Constructor (Kurucu) Metot
+    Car(String type, String model, String color) {
+        this.type = type;
+        this.model = model;
+        this.color = color;
+        this.speed = 0;
+    }
 
+    // davranışlar
+    int increaseSpeed(int increment) {
+        speed += increment;
+        return speed;
+    }
 
+    int decreaseSpeed(int decrease) {
+        if (speed > 0) {
+            speed -= decrease;
+        }
+        return speed;
+    }
 
+    void printSpeed() {
+        System.out.println("Speed : " + speed);
+    }
 
+    void printInfo() {
+        System.out.println("================");
+        System.out.println("Model : " + this.model);
+        System.out.println("Color : " + this.color);
+        System.out.println("Type : " + this.type);
+        System.out.println("Speed : " + this.speed);
+    }
+    // ...
+}
+```
 
+Nesneler:
+``` java
+public class Main {
+    public static void main(String[] args) {
+        Car audi = new Car("Sports", "Audi", "red");
+        audi.increaseSpeed(20);
+        audi.printInfo();
+
+        Car bmw = new Car("Sports" , "BMW" , "blue");
+        bmw.increaseSpeed(10);
+        bmw.increaseSpeed(25);
+        bmw.increaseSpeed(5);
+        bmw.decreaseSpeed(25);
+        bmw.printInfo();
+
+        Car mercedes = new Car("Corporate" , "Mercedes" , "black");
+        mercedes.speed = 20;
+        mercedes.printInfo();
+
+    }
+}
+```
+
+Çıktı:
+```
+================
+Model  : Audi
+Color  : red
+Type  : Sports
+Speed  : 20
+================
+Model  : BMW
+Color  : blue
+Type  : Sports
+Speed : 15 
+================
+Model  : Mercedes
+Color  : black
+Type  : Corporate
+Speed  : 20
+```
 
 
 
