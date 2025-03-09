@@ -790,3 +790,13 @@ Bir tablo oluşturalım:
 | A | 453 | 490 | 839 |
 | B | 863 | 544 | 783 |
 | C | 243 | 620 | 384 |
+
+Tabloda olduğu şekilde 2 boyutlu bir dizi oluşturup değerleri içine yerleştirelim:
+``` java
+int[][] uzaklik ={
+                {453, 490, 839},
+                {863, 544, 783},
+                {243, 620, 384}
+        };
+```
+
