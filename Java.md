@@ -36,6 +36,7 @@
 * [Diziler (Arrays)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#diziler-arrays)
   - [Tek Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tek-boyutlu-diziler)
   - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
+  - [ForEach Kullanımı]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -826,6 +827,46 @@ Yeni tablomuz şu şekilde olur:
 | [0] | null | 23 | null |
 | [1] | null | null | 7 |
 | [2] | null | null | null |
+
+### ForEach Kullanımı
+Java'da ForEach deyimi adında da anlaşılacağı gibi bir döngüyü ifade eder. Genelde dizilerdeki ve listelerdeki elemanları daha hızlı şekilde ulaşmak için kullanılan kısa bir yöntemdir. Kısacası for döngüsünün modifiye edilmiş halidir.\
+``` java
+for (veritipi degisken: diziAdi) {
+  // kod bloğu
+}
+```
+Örnek:
+``` java
+String[] arabalar = {"BMW", "Mercedes", "Ford", "Ferrari"};
+for (String i : arabalar) {
+  System.out.println(i);
+}
+```
+Çıktı:
+``` java
+BMW
+Mercedes
+Ford
+Ferrari 
+```
+Çok boyutlu dizilerde forEach kullanımı
+``` java
+public class Main {public static void main(String[] args) {
+        int[][] matris = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+                {10, 11, 12}
+        };
+
+        for (int[] u : matris) {
+            for (int x : u) {
+                System.out.println(x);
+            }
+        }
+    }
+}
+```
 
 
 
