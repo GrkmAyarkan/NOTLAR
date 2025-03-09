@@ -38,7 +38,8 @@
   - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
   - [ForEach Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#foreach-kullan%C4%B1m%C4%B1)
   - [Arrays Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#arrays-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
-  - [Math Sınıfı ve Metotları]()
+* [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1)
+* [String Sınıfı ve Metotları]()
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
@@ -947,7 +948,7 @@ System.out.println(Arrays.equals(list1, list2)); // true
 System.out.println(Arrays.equals(list2, list3)); // false
 ```
 
-## Math Sınıfı
+## Math Sınıfı ve Metotları
 Adında da anlaşılacağı gibi Java'da Math sınıfı matematiksel fonksiyonlar sunmaktadır. Java Math sınıfı, sayılar üzerinde matematiksel işlemler gerçekleştirmenize izin veren birçok metoda sahiptir.\
 
 Math sınıfının kullanımı şu şekildedir;
@@ -957,4 +958,23 @@ Math.MethodAdi(Parametreler)
 #### **Math Sınıfı Metotları**
 ![Math 1](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Math%201.jpg)
 ![Math 2](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/math%202.jpg)
+
+## String Sınıfı ve Metotları
+Java'da String sınıfları char türünden verilerden oluşmuş bir kümedir yani karakterlerden oluşur. Java işlerimizi kolaylaştırmak ve String ifadelerle işlem yapmak için String sınıfını sunar.
+
+![String 1](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/String%201.jpg)
+![String 2](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/String%202.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
