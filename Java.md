@@ -35,7 +35,7 @@
   - [Constructor (Yapıcı) Metot](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#constructor-yap%C4%B1c%C4%B1-metotlar)
 * [Diziler (Arrays)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#diziler-arrays)
   - [Tek Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tek-boyutlu-diziler)
-  - [Çok Boyutlu Diziler]()
+  - [Çok Boyutlu Diziler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-boyutlu-diziler)
 
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
