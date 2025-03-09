@@ -33,7 +33,7 @@
 * [Sınıflar (Classes)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#s%C4%B1n%C4%B1flar-classes)
   - [Nesne Oluşturma Ve Sınıf Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#nesne-olu%C5%9Fturma-ve-s%C4%B1n%C4%B1f-metotlar%C4%B1)
   - [Constructor (Yapıcı) Metot](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#constructor-yap%C4%B1c%C4%B1-metotlar)
-* [Diziler (Arrays)]()
+* [Diziler (Arrays)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#diziler-arrays)
   - [Tek Boyutlu Diziler]()
 
 ## Main Metodu
