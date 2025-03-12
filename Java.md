@@ -44,7 +44,7 @@
   * [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 - [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
   * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
-  * [Inheritance (Kalıtım)]()
+  * [Inheritance (Kalıtım)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#inheritance-kal%C4%B1t%C4%B1m)
 # JAVA 101
 
 ## Main Metodu
