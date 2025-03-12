@@ -46,6 +46,7 @@
   * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
   * [Inheritance (Kalıtım)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#inheritance-kal%C4%B1t%C4%B1m)
   * [Çok Biçimlilik (Polymorphism)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-bi%C3%A7imlilik-polymorphism)
+  * [Soyutlama (Abstraction)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#soyutlama-abstraction)
 # JAVA 101
 
 ## Main Metodu
@@ -1204,3 +1205,83 @@ Soyutlama kavramı sınıfın içindeki iç işleyişi dışarıdan izole etmek,
 Soyutlama için Java'da iki yöntem mevcuttur:
 * "interface" tanımlamak
 * "abstract" sınıf tanımlamak
+### Soyut Sınıf (Abstract Class)
+"abstract" anahtar kelimesi ile tanımlanan sınıflardır. Sınıfın içinde soyut ("abstract") metotlar veya normal fonksiyonlar tanımlanabilir. Soyut sınıflardan "new" anahtar kelimesi ile bir nesne oluşturulamaz.
+#### Soyut Sınıf Özellikleri:
+* "abstract" anahtar kelimesi ile tanımlanmış olması gerekiyor.
+* Soyut veya soyut olmayan fonksiyonlar tanımlanabilir.
+* Soyut sınıflardan "new" anahtar kelimesi ile nesne oluşturulamaz.
+* Kurucu metodu ve static fonksiyonlar tanımlanabilir.
+* "final" kelimesi ile tanımlanmış fonksiyonları içerebilir. Bu final fonksiyonlar alt sınıflarda ezilemezler (override).
+Örnek:
+``` java
+// Soyut (Abstract) sınıf
+abstract class Hayvan {
+    String isim;
+
+    Hayvan(String isim) {
+        this.isim = isim;
+    }
+
+    // Soyut metod (Alt sınıflar bunu override etmek zorunda)
+    abstract void sesCikar();
+
+    // Normal metod
+    void tanit() {
+        System.out.println("Benim adım " + isim);
+    }
+}
+
+// Alt sınıf (Soyut metodu override eden)
+class Kedi extends Hayvan {
+    Kedi(String isim) {
+        super(isim);
+    }
+
+    @Override
+    void sesCikar() {
+        System.out.println("Miyav!");
+    }
+}
+
+// Alt sınıf (Soyut metodu override eden)
+class Kopek extends Hayvan {
+    Kopek(String isim) {
+        super(isim);
+    }
+
+    @Override
+    void sesCikar() {
+        System.out.println("Hav hav!");
+    }
+}
+
+// Kullanım
+public class Main {
+    public static void main(String[] args) {
+        Hayvan kedi = new Kedi("Minnoş");
+        Hayvan kopek = new Kopek("Karabaş");
+
+        kedi.tanit();
+        kedi.sesCikar(); 
+
+        kopek.tanit();
+        kopek.sesCikar();
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
