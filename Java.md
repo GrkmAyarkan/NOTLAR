@@ -1036,7 +1036,7 @@ public class A extends B {
 
 #### Tek Yönlü Kalıtım (Single Inheritance)
 Bir sınıfın başka bir sınıfı genişlettiği alt ve ata sınıf ilişkisini ifade eder. \
-![Tek Yönlü Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Tek%20Yonlu%20Kalitim.png) 
+![Tek Yönlü Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Tek%20Yonlu%20Kalitim.png) \
 Bu örnekte B sınıfı A sınıfını miras alır. 
 Örnek:
 ``` java
@@ -1058,7 +1058,7 @@ Not : Java çoklu kalıtımı desteklemez. (Interface kullanılır) \
 
 #### Çok Seviyeli Kalıtım (Multilevel Inheritance)
 Bir sınıfa ait alt sınıfın başka sınıfları genişletmesine denir. \
-![Çok Seviyeli Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Cok%20Seviyeli%20Kalitim.png) 
+![Çok Seviyeli Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Cok%20Seviyeli%20Kalitim.png) \
 Bu örnekte , C sınıfı B sınıfını miras alır, B sınıfı ise A sınıfını miras alır. C sınıfı dolaylı yoldan A sınıfını da miras almış olur. 
 ``` java
 // Üst sınıf (Base Class)
@@ -1079,7 +1079,7 @@ class VanKedisi extends Kedi {
 
 #### Hiyerarşik Kalıtım (Hierarchical Inheritance)
 Birden fazla sınıfın aynı sınıfı genişlettiği bir alt ve üst sınıf ilişkisini ifade eder. \
-![Hiyerarşik Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hiyerarsik%20Kalitim.png) 
+![Hiyerarşik Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hiyerarsik%20Kalitim.png) \
 Bu örnekte : B, C ve D sınıfları aynı A sınıfını genişletir. 
 ``` java
 // Üst sınıf (Base Class)
