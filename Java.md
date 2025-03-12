@@ -44,6 +44,7 @@
   * [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 - [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
   * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
+  * [Inheritance (Kalıtım)]()
 # JAVA 101
 
 ## Main Metodu
@@ -1009,8 +1010,9 @@ public class Kitap {
 		return this.sayfaSayisi;
 	}
 
-
-	public void setSayfaSayisi(int sayfaSayisi) { // Burada da aynı şekilde değişkene dışarıdan doğrudan erişim olmadığı için bu setter metodu ile değeri alıp kontrolünü sağlayarak değişkenin içerisine aktarabiliyoruz. ve çıkacabilecek sorunların önüne geçmiş oluyoruz.
+// Burada da aynı şekilde değişkene dışarıdan doğrudan erişim olmadığı için bu setter metodu ile değeri alıp kontrolünü sağlayarak değişkenin içerisine aktarabiliyoruz.
+// Ve çıkacabilecek sorunların önüne geçmiş oluyoruz.
+	public void setSayfaSayisi(int sayfaSayisi) { 
 		if (sayfaSayisi < 1) {
 			this.sayfaSayisi = 10;
 		} else {
@@ -1020,7 +1022,7 @@ public class Kitap {
 }
 ```
 
-
+## Inheritance (Kalıtım)
 
 
 
