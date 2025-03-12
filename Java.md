@@ -45,6 +45,7 @@
 - [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
   * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
   * [Inheritance (Kalıtım)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#inheritance-kal%C4%B1t%C4%B1m)
+  * [Çok Biçimlilik (Polymorphism)]()
 # JAVA 101
 
 ## Main Metodu
@@ -1156,13 +1157,44 @@ class D extends A implements Eylemler {
 #### Super Kullanımı
 Eğer ata sınıfta varsayılan kurucu yoksa ve programcı alt sınıftaki kurucunun içinde ata sınıfın hangi kurucusunun çağrılacağını belirtmezse derleme hatası alınacaktır. Çünkü derleyici aksi belirtilmedikçe ata sınıfın varsayılan kurucusunu çağıran super() kodunu üretecektir. Ata sınıfın hangi kurucusunun çağrılacağı, super anahtar sözcüğü ile birlikte verilen parametrelere göre belirlenir. Nasıl ki new işleci ile birlikte kullandığımız parametreler hangi kurucunun çağrılacağını belirliyorsa, super anahtar sözcüğü ile birlikte kullanılan parametreler de aynı şekilde ata sınıfın hangi kurucusunun işletileceğini belirler. 
 
+## Çok Biçimlilik (Polymorphism)
+Polymorphism(çok biçimlilik) NYP'de programlama dilinin farklı tip verileri ve sınıfları farklı şekilde işleme yeteneğini belirten özelliğidir. Daha belirgin olmak gerekirse, metotları ve türetilmiş sınıfları yeniden tanımlama yeteneğidir.
 
+Polimorfizm, alt sınıfların ata sınıflardaki metotları geçersiz kılması(method overriding) sayesinde çok biçimli olarak davranmasına denir. Bu sayede alt sınıf ata sınıfından gelen davranışı kendine göre şekillendirebilir.
+``` java
+// Üst sınıf (Base Class)
+class Hayvan {
+    void sesCikar() {
+        System.out.println("Hayvan bir ses çıkarıyor...");
+    }
+}
 
+// Alt sınıflar (Derived Classes)
+class Kedi extends Hayvan {
+    @Override
+    void sesCikar() {
+        System.out.println("Miyav!");
+    }
+}
 
+class Kopek extends Hayvan {
+    @Override
+    void sesCikar() {
+        System.out.println("Hav hav!");
+    }
+}
 
-
-
-
+// Kullanım
+public class Main {
+    public static void main(String[] args) {
+        Hayvan hayvan1 = new Kedi();
+        Hayvan hayvan2 = new Kopek();
+        
+        hayvan1.sesCikar();  // Miyav!
+        hayvan2.sesCikar();  // Hav hav!
+    }
+}
+```
 
 
 
