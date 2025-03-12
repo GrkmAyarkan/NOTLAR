@@ -7,7 +7,7 @@
   * [Escape Karakterleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#escape-karakterleri)
   * [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#yorum-sat%C4%B1r%C4%B1)
   * [Değişken Tanımlama](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#de%C4%9Fi%C5%9Fken-tan%C4%B1mlama)
-  * [Erişim Belirleyiciler]()
+  * [Erişim Belirleyiciler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#eri%C5%9Fim-belirleyiciler)
   * [Java Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#java-veri-tipleri)
     - [Java'daki İlkel Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#javadaki-i%CC%87lkel-veri-tipleri)
     - [Tam Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tam-say%C4%B1-veri-tipleri)
@@ -986,7 +986,7 @@ Nesne yönemlimli programlamanın 4 temel ilkesi vardır: \
 ## Encapsulation (Kapsülleme)
 Kapsülleme ilkesi, bir sınıfa ait değişkenlerin veya niteliklerin ancak o sınıfa ait metotlar tarafından değiştirilebilmesi ve okunabilmesi ilkesidir. Bu ilke sayesinde nesnelerde oluşacak anlamsızlıkların önüne geçilebilir. \
 Ayrıca değişkenlere sınıfların dışından erişim olmaması ve bir sınıf içindeki değişkenlerin nasıl ve ne kadar olacağının da başka kodlardan saklanmış olması anlamına gelir. Böylelikle biz değişkenlerimizi kapsülleyerek istenmeyen durumlardan korunacak bir filtre haline dönüştürebiliriz. \
-Bu ilke için erişim belirleyicileri kullanmalıyız. Bunlar: \
+Bu ilke için [Erişim Belirleyiciler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#eri%C5%9Fim-belirleyiciler) kullanmalıyız. \
 
 
 
