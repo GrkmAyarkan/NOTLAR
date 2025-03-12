@@ -1212,7 +1212,8 @@ Soyutlama için Java'da iki yöntem mevcuttur:
 * Soyut veya soyut olmayan fonksiyonlar tanımlanabilir.
 * Soyut sınıflardan "new" anahtar kelimesi ile nesne oluşturulamaz.
 * Kurucu metodu ve static fonksiyonlar tanımlanabilir.
-* "final" kelimesi ile tanımlanmış fonksiyonları içerebilir. Bu final fonksiyonlar alt sınıflarda ezilemezler (override). \
+* "final" kelimesi ile tanımlanmış fonksiyonları içerebilir. Bu final fonksiyonlar alt sınıflarda ezilemezler (override). 
+
 Örnek:
 ``` java
 // Soyut (Abstract) sınıf
