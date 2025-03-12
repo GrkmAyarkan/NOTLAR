@@ -1037,7 +1037,7 @@ public class A extends B {
 #### Tek Yönlü Kalıtım (Single Inheritance)
 Bir sınıfın başka bir sınıfı genişlettiği alt ve ata sınıf ilişkisini ifade eder. \
 ![Tek Yönlü Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Tek%20Yonlu%20Kalitim.png) \
-Bu örnekte B sınıfı A sınıfını miras alır. 
+Bu örnekte B sınıfı A sınıfını miras alır. \
 Örnek:
 ``` java
 // Üst sınıf (Base Class)
@@ -1059,7 +1059,8 @@ Not : Java çoklu kalıtımı desteklemez. (Interface kullanılır) \
 #### Çok Seviyeli Kalıtım (Multilevel Inheritance)
 Bir sınıfa ait alt sınıfın başka sınıfları genişletmesine denir. \
 ![Çok Seviyeli Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Cok%20Seviyeli%20Kalitim.png) \
-Bu örnekte , C sınıfı B sınıfını miras alır, B sınıfı ise A sınıfını miras alır. C sınıfı dolaylı yoldan A sınıfını da miras almış olur. 
+Bu örnekte , C sınıfı B sınıfını miras alır, B sınıfı ise A sınıfını miras alır. C sınıfı dolaylı yoldan A sınıfını da miras almış olur. \
+Örnek:
 ``` java
 // Üst sınıf (Base Class)
 class Hayvan {
@@ -1080,7 +1081,8 @@ class VanKedisi extends Kedi {
 #### Hiyerarşik Kalıtım (Hierarchical Inheritance)
 Birden fazla sınıfın aynı sınıfı genişlettiği bir alt ve üst sınıf ilişkisini ifade eder. \
 ![Hiyerarşik Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hiyerarsik%20Kalitim.png) \
-Bu örnekte : B, C ve D sınıfları aynı A sınıfını genişletir. 
+Bu örnekte : B, C ve D sınıfları aynı A sınıfını genişletir. \
+Örnek:
 ``` java
 // Üst sınıf (Base Class)
 class Hayvan {
@@ -1111,7 +1113,8 @@ class Kus extends Hayvan {
 
 #### Hibrit Kalıtım (Hybrid Inheritance)
 Programda birden fazla kalıtım türünün kombinasyonuna denir. Örneğin, A ve B sınıfı, C sınıfını genişletir ve başka bir D sınıfı, A sınıfını genişletir, bu bir hibrit kalıtım örneğidir, çünkü bu, tek yönlü ve hiyerarşik kalıtımın bir birleşimidir. \
-![Hibrit Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hibrit%20Kalitim.jpeg) 
+![Hibrit Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hibrit%20Kalitim.jpeg) \
+Örnek:
 ``` java
 // Üst sınıf (Base Class)
 class C {
