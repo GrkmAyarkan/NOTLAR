@@ -7,6 +7,7 @@
   * [Escape Karakterleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#escape-karakterleri)
   * [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#yorum-sat%C4%B1r%C4%B1)
   * [Değişken Tanımlama](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#de%C4%9Fi%C5%9Fken-tan%C4%B1mlama)
+  * [Erişim Belirleyiciler]()
   * [Java Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#java-veri-tipleri)
     - [Java'daki İlkel Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#javadaki-i%CC%87lkel-veri-tipleri)
     - [Tam Sayı Veri Tipleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#tam-say%C4%B1-veri-tipleri)
@@ -42,7 +43,7 @@
   * [Math Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#math-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
   * [String Sınıfı ve Metotları](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#string-s%C4%B1n%C4%B1f%C4%B1-ve-metotlar%C4%B1)
 - [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
-  * [Encapsulation (Kapsülleme)]()
+  * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
 # JAVA 101
 
 ## Main Metodu
@@ -152,6 +153,12 @@ int a = 1 , b = 2;
 // Aynı satırda int türünde 2 farklı değişken tanımlanmış ve ikisine de değer verilmiş
 ```
 Değişkene verilen değer sonrasında değiştirilebilir, ama aynı isimde ikinci bir değişken oluşturulamaz.
+
+## Erişim Belirleyiciler
+Java'da oluşturulan öğenin hangi sınıflardan doğrudan erişim izni olmadı gerektiğini erişim belirleyiciler sayesinde belirleriz. Bunlar: \
+* **Private**: Yazıldığı öğenin sadece ait olduğu sınıftan doğrudan erişilebilir olduğunu ve o sınıf dışındaki kod parçalarından erişim izni olmadığını belirtir.
+* **Public**: Yazıldığı öğenin tüm sınıflar tarafından doğrudan erişilebilir olmasını sağlar.
+* **Protected**: **public** ve **private** arasında kalan bir erişim düzenleyicidir. Protected ile tanımlanan öğeler, kendisi ile aynı pakette (package) bulunan sınıflar tarafından doğrudan erişilebilir.
 
 ## Java Veri Tipleri 
 ### Java'daki İlkel Veri Tipleri
@@ -980,9 +987,7 @@ Nesne yönemlimli programlamanın 4 temel ilkesi vardır: \
 Kapsülleme ilkesi, bir sınıfa ait değişkenlerin veya niteliklerin ancak o sınıfa ait metotlar tarafından değiştirilebilmesi ve okunabilmesi ilkesidir. Bu ilke sayesinde nesnelerde oluşacak anlamsızlıkların önüne geçilebilir. \
 Ayrıca değişkenlere sınıfların dışından erişim olmaması ve bir sınıf içindeki değişkenlerin nasıl ve ne kadar olacağının da başka kodlardan saklanmış olması anlamına gelir. Böylelikle biz değişkenlerimizi kapsülleyerek istenmeyen durumlardan korunacak bir filtre haline dönüştürebiliriz. \
 Bu ilke için erişim belirleyicileri kullanmalıyız. Bunlar: \
-* **Private**: Yazıldığı öğenin sadece ait olduğu sınıftan doğrudan erişilebilir olduğunu ve o sınıf dışındaki kod parçalarından erişim izni olmadığını belirtir.
-* **Public**: Yazıldığı öğenin tüm sınıflar tarafından doğrudan erişilebilir olmasını sağlar.
-* **Protected**: **public** ve **private** arasında kalan bir erişim düzenleyicidir. Protected ile tanımlanan öğeler, kendisi ile aynı pakette (package) bulunan sınıflar tarafından doğrudan erişilebilir.
+
 
 
 
