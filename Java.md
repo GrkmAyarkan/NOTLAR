@@ -1010,8 +1010,8 @@ public class Kitap {
 		return this.sayfaSayisi;
 	}
 
-// Burada da aynı şekilde değişkene dışarıdan doğrudan erişim olmadığı için bu setter metodu ile değeri alıp kontrolünü sağlayarak değişkenin içerisine aktarabiliyoruz.
-// Ve çıkacabilecek sorunların önüne geçmiş oluyoruz.
+// Burada da aynı şekilde değişkene dışarıdan doğrudan erişim olmadığı için bu setter metodu ile değeri alıp
+// kontrolünü sağlayarak değişkenin içerisine aktarabiliyoruz ve çıkacabilecek sorunların önüne geçmiş oluyoruz.
 	public void setSayfaSayisi(int sayfaSayisi) { 
 		if (sayfaSayisi < 1) {
 			this.sayfaSayisi = 10;
