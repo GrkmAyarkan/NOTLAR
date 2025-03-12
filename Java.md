@@ -1023,7 +1023,7 @@ public class Kitap {
 ```
 
 ## Inheritance (Kalıtım)
-Bir sınıfın başka bir sınıftan kalıtım yapması demek, kalıtımı yapan sınıfın diğer sınıftaki nitelik ve davranışlarını kendisine alması demektir. Kalıtımı yapan sınıfa alt sınıf, kendisinden kalıtım yapılan sınıfa ata sınıf dersek, ata sınıfta tanımlı olan her şeyin alt sınıf için de tanımlı olduğunu söyleyebiliriz. \
+Bir sınıfın başka bir sınıftan kalıtım yapması demek, kalıtımı yapan sınıfın diğer sınıftaki nitelik ve davranışlarını kendisine alması demektir. Kalıtımı yapan sınıfa alt sınıf, kendisinden kalıtım yapılan sınıfa ata sınıf dersek, ata sınıfta tanımlı olan her şeyin alt sınıf için de tanımlı olduğunu söyleyebiliriz. 
 
 Eğer bir A sınıfın B sınıfından kalıtım yapması isteniyorsa, aşağıda ki şekilde tanımlanır.
 ``` java
@@ -1035,9 +1035,9 @@ public class A extends B {
 ### Kalıtım Türleri
 
 #### Tek Yönlü Kalıtım (Single Inheritance)
-Bir sınıfın başka bir sınıfı genişlettiği alt ve ata sınıf ilişkisini ifade eder. \
-![Tek Yönlü Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Tek%20Yonlu%20Kalitim.png) \
-Bu örnekte B sınıfı A sınıfını miras alır. \
+Bir sınıfın başka bir sınıfı genişlettiği alt ve ata sınıf ilişkisini ifade eder. 
+![Tek Yönlü Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Tek%20Yonlu%20Kalitim.png) 
+Bu örnekte B sınıfı A sınıfını miras alır. 
 Örnek:
 ``` java
 // Üst sınıf (Base Class)
@@ -1052,14 +1052,14 @@ class Kedi extends Hayvan {
 ```
 
 #### Çoklu Kalıtım (Multiple Inheritance)
-Bir sınıfın birden fazla sınıfı miras almasını ifade eder; bu, bir alt sınıfın iki ata sınıfa sahip olduğu anlamına gelir. \
-Not : Java çoklu kalıtımı desteklemez. (Interface kullanılır) \
-![Çoklu Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Coklu%20Kalitim.png) \
+Bir sınıfın birden fazla sınıfı miras almasını ifade eder; bu, bir alt sınıfın iki ata sınıfa sahip olduğu anlamına gelir. 
+Not : Java çoklu kalıtımı desteklemez. (Interface kullanılır) 
+![Çoklu Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Coklu%20Kalitim.png) 
 
 #### Çok Seviyeli Kalıtım (Multilevel Inheritance)
-Bir sınıfa ait alt sınıfın başka sınıfları genişletmesine denir. \
-![Çok Seviyeli Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Cok%20Seviyeli%20Kalitim.png) \
-Bu örnekte , C sınıfı B sınıfını miras alır, B sınıfı ise A sınıfını miras alır. C sınıfı dolaylı yoldan A sınıfını da miras almış olur. \
+Bir sınıfa ait alt sınıfın başka sınıfları genişletmesine denir. 
+![Çok Seviyeli Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Cok%20Seviyeli%20Kalitim.png) 
+Bu örnekte , C sınıfı B sınıfını miras alır, B sınıfı ise A sınıfını miras alır. C sınıfı dolaylı yoldan A sınıfını da miras almış olur. 
 ``` java
 // Üst sınıf (Base Class)
 class Hayvan {
@@ -1078,9 +1078,9 @@ class VanKedisi extends Kedi {
 ```
 
 #### Hiyerarşik Kalıtım (Hierarchical Inheritance)
-Birden fazla sınıfın aynı sınıfı genişlettiği bir alt ve üst sınıf ilişkisini ifade eder. \
-![Hiyerarşik Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hiyerarsik%20Kalitim.png) \
-Bu örnekte : B, C ve D sınıfları aynı A sınıfını genişletir. \
+Birden fazla sınıfın aynı sınıfı genişlettiği bir alt ve üst sınıf ilişkisini ifade eder. 
+![Hiyerarşik Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hiyerarsik%20Kalitim.png) 
+Bu örnekte : B, C ve D sınıfları aynı A sınıfını genişletir. 
 ``` java
 // Üst sınıf (Base Class)
 class Hayvan {
@@ -1110,8 +1110,8 @@ class Kus extends Hayvan {
 ```
 
 #### Hibrit Kalıtım (Hybrid Inheritance)
-Programda birden fazla kalıtım türünün kombinasyonuna denir. Örneğin, A ve B sınıfı, C sınıfını genişletir ve başka bir D sınıfı, A sınıfını genişletir, bu bir hibrit kalıtım örneğidir, çünkü bu, tek yönlü ve hiyerarşik kalıtımın bir birleşimidir. \
-![Hibrit Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hibrit%20Kalitim.jpeg) \
+Programda birden fazla kalıtım türünün kombinasyonuna denir. Örneğin, A ve B sınıfı, C sınıfını genişletir ve başka bir D sınıfı, A sınıfını genişletir, bu bir hibrit kalıtım örneğidir, çünkü bu, tek yönlü ve hiyerarşik kalıtımın bir birleşimidir. 
+![Hibrit Kalıtım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Hibrit%20Kalitim.jpeg) 
 ``` java
 // Üst sınıf (Base Class)
 class C {
@@ -1151,7 +1151,7 @@ class D extends A implements Eylemler {
 }
 ```
 #### Super Kullanımı
-Eğer ata sınıfta varsayılan kurucu yoksa ve programcı alt sınıftaki kurucunun içinde ata sınıfın hangi kurucusunun çağrılacağını belirtmezse derleme hatası alınacaktır. Çünkü derleyici aksi belirtilmedikçe ata sınıfın varsayılan kurucusunu çağıran super() kodunu üretecektir. Ata sınıfın hangi kurucusunun çağrılacağı, super anahtar sözcüğü ile birlikte verilen parametrelere göre belirlenir. Nasıl ki new işleci ile birlikte kullandığımız parametreler hangi kurucunun çağrılacağını belirliyorsa, super anahtar sözcüğü ile birlikte kullanılan parametreler de aynı şekilde ata sınıfın hangi kurucusunun işletileceğini belirler. \
+Eğer ata sınıfta varsayılan kurucu yoksa ve programcı alt sınıftaki kurucunun içinde ata sınıfın hangi kurucusunun çağrılacağını belirtmezse derleme hatası alınacaktır. Çünkü derleyici aksi belirtilmedikçe ata sınıfın varsayılan kurucusunu çağıran super() kodunu üretecektir. Ata sınıfın hangi kurucusunun çağrılacağı, super anahtar sözcüğü ile birlikte verilen parametrelere göre belirlenir. Nasıl ki new işleci ile birlikte kullandığımız parametreler hangi kurucunun çağrılacağını belirliyorsa, super anahtar sözcüğü ile birlikte kullanılan parametreler de aynı şekilde ata sınıfın hangi kurucusunun işletileceğini belirler. 
 
 
 
