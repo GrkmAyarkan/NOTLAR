@@ -1196,7 +1196,11 @@ public class Main {
 }
 ```
 
+## Soyutlama (Abstraction)
+Nesne yönelimli programlamada Soyutlama (Abstraction) ilkesi, eğer bir sınıf için nesne üretmek mantıksız geliyorsa o sınıf soyutlanabilir. Alt sınıfların ortak özelliklerini ve işlevlerini taşıyan ancak henüz bir nesnesi olmayan bir üst sınıf oluşturmak istenirse bir soyut (abstract) üst sınıf oluşturulur.
 
-
-
-
+### "abstract" Anahtar Kelimesi ve Soyut Sınıf Kavramı (Abstract Class)
+Soyutlama kavramı sınıfın içindeki iç işleyişi dışarıdan izole etmek, yani gizlemektir. Java'da sınıflarımızı tasarlarken bazı fonksiyonların ve işlevlerin sadece sınıf içinde kalması, dış dünyada bu sınıftan nesneleri kullanan kişilerin bu iç fonksiyonları bilemelerine gerek yoktur. Soyutlama yapabilmek için "**abstract**" anahtar kelimesi, "**interface**" gibi yapılar bizlere yardımcı olmaktadır. \
+Soyutlama için Java'da iki yöntem mevcuttur:
+* "interface" tanımlamak
+* "abstract" sınıf tanımlamak
