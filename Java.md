@@ -45,7 +45,7 @@
 - [Object Oriented Programming](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#object-oriented-programming)
   * [Encapsulation (Kapsülleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#encapsulation-kaps%C3%BClleme)
   * [Inheritance (Kalıtım)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#inheritance-kal%C4%B1t%C4%B1m)
-  * [Çok Biçimlilik (Polymorphism)]()
+  * [Çok Biçimlilik (Polymorphism)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#%C3%A7ok-bi%C3%A7imlilik-polymorphism)
 # JAVA 101
 
 ## Main Metodu
