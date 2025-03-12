@@ -976,18 +976,49 @@ Java'da String sınıfları char türünden verilerden oluşmuş bir kümedir ya
 ![String 1](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/String%201.jpg)
 ![String 2](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/String%202.jpg)
 
-
 # Object Oriented Programming
 Nesne yönemlimli programlamanın 4 temel ilkesi vardır: \
 * Encapsulation (Kapsülleme)
 * Inheritance (Kalıtım)
 * Polymorphism (Çok Biçimlilik)
 * Abstraction (Soyutlama)
+
 ## Encapsulation (Kapsülleme)
 Kapsülleme ilkesi, bir sınıfa ait değişkenlerin veya niteliklerin ancak o sınıfa ait metotlar tarafından değiştirilebilmesi ve okunabilmesi ilkesidir. Bu ilke sayesinde nesnelerde oluşacak anlamsızlıkların önüne geçilebilir. \
 Ayrıca değişkenlere sınıfların dışından erişim olmaması ve bir sınıf içindeki değişkenlerin nasıl ve ne kadar olacağının da başka kodlardan saklanmış olması anlamına gelir. Böylelikle biz değişkenlerimizi kapsülleyerek istenmeyen durumlardan korunacak bir filtre haline dönüştürebiliriz. \
 Bu ilke için [Erişim Belirleyiciler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Java.md#eri%C5%9Fim-belirleyiciler) kullanmalıyız. \
+Örnek:
+``` java
+public class Kitap {
+	private int sayfaSayisi; // Burada değişkenlerin erişim belirleyicilerini private yaparak dışarıdan erişime kapattık.
+	private String kitapAdi, yazar;
 
+
+	Kitap(String kitapAdi, int sayfaSayisi, String yazar) {
+		this.kitapAdi = kitapAdi;
+		this.yazar = yazar;
+		if (sayfaSayisi < 1) { // Değişkene gönderilen hatalı bir değeri kontrol ederek engellemiş oluruz.
+			this.sayfaSayisi = 10;
+		} else {
+			this.sayfaSayisi = sayfaSayisi;
+		}
+	}
+
+	//gerektiğinde bir değeri alıp gönderebilmek için "Getter ve Setter" metotları oluşturuyoruz.
+	public int getSayfaSayisi() { 
+		return this.sayfaSayisi;
+	}
+
+
+	public void setSayfaSayisi(int sayfaSayisi) { // Burada da aynı şekilde değişkene dışarıdan doğrudan erişim olmadığı için bu setter metodu ile değeri alıp kontrolünü sağlayarak değişkenin içerisine aktarabiliyoruz. ve çıkacabilecek sorunların önüne geçmiş oluyoruz.
+		if (sayfaSayisi < 1) {
+			this.sayfaSayisi = 10;
+		} else {
+			this.sayfaSayisi = sayfaSayisi;
+		}
+	}
+}
+```
 
 
 
