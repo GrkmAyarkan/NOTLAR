@@ -18,7 +18,7 @@
   - [Nasıl Oluşturulur?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-olu%C5%9Fturulur)
   - [Nasıl çalışır, nasıl kullanılmalı?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-nas%C4%B1l-kullan%C4%B1lmal%C4%B1)
   - [Neye dikkat etmeliyim?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#neye-dikkat-etmeliyim)
-* [Ekstralar]()
+* [Ekstralar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#ekstralar)
   - [Yapılan commit üzerinde değişiklik yapmak]()
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
