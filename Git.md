@@ -21,7 +21,7 @@
 * [Ekstralar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#ekstralar)
   - [Yapılan commit üzerinde değişiklik yapmak](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#yap%C4%B1lan-commit-%C3%BCzerinde-de%C4%9Fi%C5%9Fiklik-yapmak)
   - [Branch İşlemleri ve Stash Kavramı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#branch-i%CC%87%C5%9Flemleri-ve-stash-kavram%C4%B1)
-  - [Merge, Rebase, Confict]()
+  - [Merge, Rebase, Confict](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#merge-rebase-confict)
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
 * untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
