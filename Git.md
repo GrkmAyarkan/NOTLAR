@@ -19,7 +19,7 @@
   - [Nasıl çalışır, nasıl kullanılmalı?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-nas%C4%B1l-kullan%C4%B1lmal%C4%B1)
   - [Neye dikkat etmeliyim?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#neye-dikkat-etmeliyim)
 * [Ekstralar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#ekstralar)
-  - [Yapılan commit üzerinde değişiklik yapmak]()
+  - [Yapılan commit üzerinde değişiklik yapmak](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#yap%C4%B1lan-commit-%C3%BCzerinde-de%C4%9Fi%C5%9Fiklik-yapmak)
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
 * untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
