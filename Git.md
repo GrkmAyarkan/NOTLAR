@@ -271,11 +271,41 @@ git diff CommitID1..CommitID2 dosyaAdı
 Eğer tek bir dosya değil de tüm dosyalar için bakmak isterseniz dosya adını kaldırarak komutu `git diff CommitID1..CommitID2` şeklinde kullanabiliriz.
 
 ## Branch İşlemleri ve Stash Kavramı
+[Branch](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-branch)'leri listelemek içim:
+````
+git branch
+````
+Komutunu kullanırız. Bu bize oluşturulmuş tüm **Branch**'leri listeler ve hangisinin aktif olduğunu belirtir.
+````
+git branch branchAdı
+````
+Komutu ile istediğimiz isimde **branch** oluşturuz fakat hala **eski** branch aktif halde olur.
+````
+git checkout branchAdı
+````
+Komutu ile istediğimiz branch'e geçiş yapabiliriz. \
+Bunu daha kısa yoldan yapmak için;
+````
+git checkout -b branchAdı
+````
+Komutunu kullanarak **yeni** bir branch oluşturur ve ona geçiş yapmış oluruz. \
+Oluşturulan branch'i silmek için:
+````
+git branch -D branchAdı
+````
 
-
-
-
-
+Bir dosyada yapılan değişikleri projede kaydetmek istemiyor ama aynı zamanda da bu değişiklikleri saklamak istiyorsak **stash** komutunu kullanırız.
+````
+git stash
+````
+Değişiklik projede kaydedilmez ama son commit'te geçici olarak saklanır. 
+````
+git stash list
+````
+Komutu ile tüm kaydedilenlerin bir listesini görürüz. \
+Listeyi temizlemek için `git stash clear` kullanılır.
+Yapılan kayda geri döndemk için 1. yol `git stash pop` kullanabiliriz. Bu bize en son yapılan **stash**'i getirir ve o stash'i siler. \
+2. Yol ise `git stash apply stash@{stashNumarası}` şeklinde istediğimiz stash'i belirterek yapılabilir ve o stash listede kalır, 1. yolda olduğu gibi silinmez. StashID'si diyebileceğimiz numarakay `stash list` ile ulaşabiliriz.
 
 
 
