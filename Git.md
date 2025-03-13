@@ -21,6 +21,7 @@
 * [Ekstralar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#ekstralar)
   - [Yapılan commit üzerinde değişiklik yapmak](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#yap%C4%B1lan-commit-%C3%BCzerinde-de%C4%9Fi%C5%9Fiklik-yapmak)
   - [Branch İşlemleri ve Stash Kavramı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#branch-i%CC%87%C5%9Flemleri-ve-stash-kavram%C4%B1)
+  - [Merge, Rebase, Confict]()
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
 * untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
@@ -307,7 +308,7 @@ Listeyi temizlemek için `git stash clear` kullanılır.
 Yapılan kayda geri döndemk için 1. yol `git stash pop` kullanabiliriz. Bu bize en son yapılan **stash**'i getirir ve o stash'i siler. \
 2. Yol ise `git stash apply stash@{stashNumarası}` şeklinde istediğimiz stash'i belirterek yapılabilir ve o stash listede kalır, 1. yolda olduğu gibi silinmez. StashID'si diyebileceğimiz numarakay `stash list` ile ulaşabiliriz.
 
-
+## Merge, Rebase, Confict
 
 
 
