@@ -18,7 +18,8 @@
   - [Nasıl Oluşturulur?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-olu%C5%9Fturulur)
   - [Nasıl çalışır, nasıl kullanılmalı?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-nas%C4%B1l-kullan%C4%B1lmal%C4%B1)
   - [Neye dikkat etmeliyim?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#neye-dikkat-etmeliyim)
-
+* [Ekstralar]()
+  - [Yapılan commit üzerinde değişiklik yapmak]()
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
 * untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
@@ -250,9 +251,18 @@ $ git config --global core.excludesfile
 * https://www.jrebel.com/blog/git-cheat-sheet
 * http://guides.beanstalkapp.com/version-control/common-git-commands.html
 
-
-
-
+# Ekstralar
+## Yapılan commit üzerinde değişiklik yapmak.
+Son yapılan commit için aşşağıdaki komut ile düzenleme yapılabilir.
+````
+git commit --amend
+````
+Eğer bir commit'i tamemen geri almak isterseniz.
+````
+git revert commitID
+````
+Komutu ile commit geri alınır ve yerine bu commitin geri alındığına dair bilgi veren yeni bir commit oluşturur. \
+Commit ID yi bulmak için [git log](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-log) kullanılır.
 
 
 
