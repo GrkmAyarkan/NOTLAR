@@ -330,6 +330,15 @@ git merge --squash B
 ````
 Komutunu kullanarak git'e bu iki branch'in birleştiğine dair otomatik bir commit gider yapılan değişiklikler birleştirilmiş olur ancak B branch'inin commitleri A'ya geçmez.
 
+İkinci kullanabileceğimiz yöntem ise **Rebase**'tir.
+````
+git rebase B
+````
+Merge'in squash olmadan kullanımı ile aynı şekilde sonuç verir.
 
-
-
+### Confict
+İki farklı branch'te aynı yerde yapılan iki farklı değişiklik olduğunda branchlerin birleştirilmesi esnasında git bize bu değişikliklerin çakıştığına dair bir uyarı verecektir. Bu durumda doğu olan kod bloğuna bizim karar verip diğer kod bloğunu silip tekrardan add ve commit işlemi yaparak bu sorunu hallederiz. \
+Bu hatayı alıp tekrar birleşme öncesine dönmek istersek şu komutu kullanabiliriz;
+````
+git merge --abort
+````
