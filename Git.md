@@ -20,6 +20,7 @@
   - [Neye dikkat etmeliyim?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#neye-dikkat-etmeliyim)
 * [Ekstralar](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#ekstralar)
   - [Yapılan commit üzerinde değişiklik yapmak](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#yap%C4%B1lan-commit-%C3%BCzerinde-de%C4%9Fi%C5%9Fiklik-yapmak)
+  - [Branch İşlemleri ve Stash Kavramı]()
 ## **git init**
 Henüz versiyon kontrolü altında olmayan bir projenin dizininde, boş bir git deposu oluşturmak için kullanılır.
 * untracked (izlenmeyen): GIT tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
@@ -262,9 +263,14 @@ Eğer bir commit'i tamemen geri almak isterseniz.
 git revert commitID
 ````
 Komutu ile commit geri alınır ve yerine bu commitin geri alındığına dair bilgi veren yeni bir commit oluşturur. \
-Commit ID yi bulmak için [git log](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-log) kullanılır.
+Commit ID yi bulmak için [git log](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-log) kullanılır. \
+Commit'ler arasındaki farkları görebilmek için:
+````
+git diff CommitID1..CommitID2 dosyaAdı
+````
+Eğer tek bir dosya değil de tüm dosyalar için bakmak isterseniz dosya adını kaldırarak komutu `git diff CommitID1..CommitID2` şeklinde kullanabiliriz.
 
-
+## Branch İşlemleri ve Stash Kavramı
 
 
 
