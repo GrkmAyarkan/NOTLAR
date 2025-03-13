@@ -269,7 +269,11 @@ Commit'ler arasındaki farkları görebilmek için:
 ````
 git diff CommitID1..CommitID2 dosyaAdı
 ````
-Eğer tek bir dosya değil de tüm dosyalar için bakmak isterseniz dosya adını kaldırarak komutu `git diff CommitID1..CommitID2` şeklinde kullanabiliriz.
+Eğer tek bir dosya değil de tüm dosyalar için bakmak isterseniz dosya adını kaldırarak komutu `git diff CommitID1..CommitID2` şeklinde kullanabiliriz. \
+Eski commitlerden birine dönmek isterseniz: 
+````
+git reset --hard commitID
+````
 
 ## Branch İşlemleri ve Stash Kavramı
 [Branch](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-branch)'leri listelemek içim:
@@ -309,6 +313,22 @@ Yapılan kayda geri döndemk için 1. yol `git stash pop` kullanabiliriz. Bu biz
 2. Yol ise `git stash apply stash@{stashNumarası}` şeklinde istediğimiz stash'i belirterek yapılabilir ve o stash listede kalır, 1. yolda olduğu gibi silinmez. StashID'si diyebileceğimiz numarakay `stash list` ile ulaşabiliriz.
 
 ## Merge, Rebase, Confict
+2 farklı branch üzerinde çalışırken bu branch’lerin birleştirilmesi için yapabileceğimiz 2 farklı yöntem bulunmaktadır. Bunlardan birisi merge diğeri ise rebase. \
+
+Örnek bir senaryoda başta A branch'imiz olsun ve `dosyaA.md` adında bir dosya oluşturmuş olalım. \
+Daha sonra biz A branch'indeyken `git checkout -b B` ile B branch'i oluşturup ona geçiş yapalım. Daha sonra bu branch'te `dosyaB.md` adında bir dosya oluşturalım ve üzerinde işlemler yapıp commitler göndermiş olalım. \
+Bu durumda B branch'i A dan türetildiği için B tüm dosyaları görebilecek ancak A branch'i `dosyaB.md` yi göremeyecek. \
+Bu durumda kullanabileceğimiz ilk yöntem **Merge**'tir. A branch'indeyken;
+````
+git merge B
+````
+Komutunu kullanırsak, A branch'i le B yi merge et (birleştir) demiş oluruz ve `dosyaB.md` ve tüm commitler A branch'ine geçmiş olur. \
+Bu durumda herhangi bir commit gönderilmemiş olur ve dışarıdan biri commit'leri incelediğinde bu birleştirme işleminin yapıldığını anlayamayabilir. \
+Bu durumda;
+````
+git merge --squash B
+````
+Komutunu kullanarak git'e bu iki branch'in birleştiğine dair otomatik bir commit gider yapılan değişiklikler birleştirilmiş olur ancak B branch'inin commitleri A'ya geçmez.
 
 
 
