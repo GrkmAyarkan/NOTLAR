@@ -1,6 +1,6 @@
 # SQL
 ### İçindekiler
-* [SQL Nedir?]()
+* [SQL Nedir?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#sql-structured-query-language-nedir)
 * [Veri ve Veritabanı]()
 
 ## SQL (Structured Query Language) Nedir?
