@@ -1,6 +1,6 @@
 # **GIT**
 İçindekiler;
-* [git init](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-init)
+* [git init (git deposu oluşturma)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-init)
 * [git config](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-config)
 * [git add](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-add)
 * [git rm](https://github.com/GrkmAyarkan/NOTLAR/blob/main/Git.md#git-rm)
