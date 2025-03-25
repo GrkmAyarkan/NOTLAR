@@ -4,7 +4,7 @@
 * [Veri ve Veritabanı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-ve-veritaban%C4%B1)
 * [Veritabanı Yönetim Sistemi (DBMS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veritaban%C4%B1-y%C3%B6netim-sistemi-dbms)
 * [SELECT (Seçim Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#select)
-* [WHERE ve Karşılaştırma Operatörleri (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
+* [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -70,9 +70,28 @@ Bu sorgumuzda veritabanında bulunan **film** tablosundaki **title** ve **rating
 ### Karşılaştırma Operatörleri
 Aşağıda SQL ile birlikte kullanılan karşılaştırma operatörlerini görebilirsiniz. \
 ![SQL Karşılaştırma Operatörleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/SQL%20Karsilastirma%20Operatorleri.png)
-
-
-
+### Mantıksal Operatörler
+#### Örnek Kullanımlar
+``` sql
+SELECT *
+FROM actor
+WHERE firs_name = 'Tom' AND age < 25 ;
+WHERE age < 25 OR age > 35 ;
+```
+**AND** operatörünün true sonucu dönmesi için bu iki koşulumuzun da sağlanması gerekiyor. \
+**OR** operatörünün true sonucu dönmesi için bu iki koşulumuzunda herhangi birinin sağlanması yeterlidir.
+``` sql
+SELECT *
+FROM film 
+WHERE NOT rating <= 4.99 ;
+```
+**NOT** operatörü bize hangi koşulun olmaması gerektiğini belirtir. Bu örnekte **film** tablosundaki **rating**i 4.99 ve altı olanlar haricindeki veriler listelenir. \
+Mantıksal operatörler birlikte kullanılabilir.
+``` sql
+SELECT *
+FROM film 
+WHERE NOT (rating = 4.99 OR rating = 2.99) ;
+```
 
 
 
