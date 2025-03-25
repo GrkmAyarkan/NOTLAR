@@ -10,6 +10,7 @@ SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. B
 SQL bir programlama dili midir? Evet, SQL ilişkisel veritabanı yönetim sistemleri ile ilişki kurmamızı sağlayan bir declarative bildirimsel bir programlama dilidir.
 ### Bildirimsel Yaklaşım
 ``` sql
+-- Yorum Satırı
 SELECT title FROM book
 WHERE page_number > 200;
 ```
