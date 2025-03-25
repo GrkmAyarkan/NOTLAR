@@ -4,6 +4,7 @@
 * [Veri ve Veritabanı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-ve-veritaban%C4%B1)
 * [Veritabanı Yönetim Sistemi (DBMS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veritaban%C4%B1-y%C3%B6netim-sistemi-dbms)
 * [SELECT (Seçim Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#select)
+* [WHERE ve Karşılaştırma Operatörleri (Koşul Ekleme)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -51,7 +52,61 @@ SELECT *
 FROM <tablo_adı>;
 ```
 
+## WHERE ve Karşılaştırma Operatörleri
+**SELECT** komutu ile yaptığımız çalışmalarda, çoğu durumda verilerin tamamını değil belirli koşulları sağlayan verileri görmek isteriz. Bunun için **WHERE** anahtar kelimesini kullanırız.
+#### WHERE Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>
+WHERE <koşul>;
+```
+#### Örnek Kullanım
+``` sql
+SELECT title, rating
+FROM film
+WHERE rating > 6.5;
+```
+Bu sorgumuzda veritabanında bulunan **film** tablosundaki **title** ve **rating** sütunlarında bulunan verileri çekiyoruz ancak bu kez tüm verileri değil **rating > 6.5** koşulunu sağlayan verileri alıyoruz.
+### Karşılaştırma Operatörleri
+Aşağıda SQL ile birlikte kullanılan karşılaştırma operatörlerini görebilirsiniz. \
+![SQL Karşılaştırma Operatörleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/SQL%20Karsilastirma%20Operatorleri.png)
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
