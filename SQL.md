@@ -3,6 +3,7 @@
 * [SQL Nedir?](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#sql-structured-query-language-nedir)
 * [Veri ve Veritabanı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-ve-veritaban%C4%B1)
 * [Veritabanı Yönetim Sistemi (DBMS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veritaban%C4%B1-y%C3%B6netim-sistemi-dbms)
+* [SELECT]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -36,10 +37,18 @@ Temel veritabanı yönetim sistemleri:
 Aşağıda popüler veritabanı yönetim sistemi yazılımlarını görebilirsiniz. \
 ![RDBMS](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/RDBMS.png)
 
-
-
-
-
+## SELECT
+**SELECT** veritabanından belirtilen sütunlardaki verileri çekmemizi sağlar. Ayrıca SELECT komutunu çoğunlukla diğer SQL komutlarıyla birlikte kullanırız. SQL komutlarının büyük harf - küçük harf duyarlılıkları yoktur. (Case Insensitive)
+#### SELECT Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>;
+```
+Eğer tablodaki tüm sütunlardaki verileri çekmek istersek " * " karakterinden faydalanırız.
+``` sql
+SELECT *
+FROM <tablo_adı>;
+```
 
 
 
