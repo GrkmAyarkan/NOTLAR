@@ -123,11 +123,33 @@ WHERE <sütun_adı> IN (değer1, değer2, ...);
 SELECT * FROM film
 WHERE length IN (30,60,90,120);
 ```
-
-
-
-
-
+## LIKE ve ILIKE
+Bizler bazı durumlarda tam eşleşme değil belirli şablonlara uyan koşulların sağlanmasını isteriz. Örneğin sorgumuzda **first_name** sütununun belli bir isme eşit olmasını değil, ilk harfin 'P' olması koşulunu sağlayan sorguya ihtiyacımız var. Bunun için **LIKE** operatörünü kullanırız.
+``` sql
+SELECT *
+FROM actor
+WHERE first_name LIKE 'P%';
+```
+Burada kullanılan **%** karakteri sıfır, bir veya daha fazla karakteri temsil eder ve **Wildcard** olarak isimlendirilir. Bir diğer **wildcard** karakteri **_** karakteridir ve bir karakteri temsil eder.
+#### LIKE Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>
+WHERE <sütun_adı> LIKE <şablon>;
+```
+**ILIKE** operatörü **LIKE** operatörünün **case - insensitive** (**BÜYÜK - küçük** harf duyarsız.)  versiyonudur. \
+**LIKE** operatörünün kıllanımını ihtiyacımıza göre şekillendirebiliriz.
+#### Örnek
+``` sql
+SELECT *
+FROM actor
+WHERE first_name LIKE 'P%'; -- Bize P ile başlayan isimleri listeler.
+WHERE first_name LIKE '%y'; -- y ile biten isimleri listeler.
+WHERE first_name LIKE 'A%n'; -- A ile başlayıp n ile biten isimleri listeler.
+WHERE first_name LIKE '%g%; -- İçerisinde g harfi bulunan isimleri listeler. Ancak baş harfi büyük G harfi olanları da listelemesini istersel ILIKE kullanmalıyız.
+WHERE first_name LIKE 'J_; -- Sadece 2 harfli ve ilk harfi J olan isimleri listeler.
+```
+Şeklinde örneklendirebiliriz.
 
 
 
