@@ -7,6 +7,7 @@
 * [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
 * [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
+* [DISTINCT ve COUNT]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -151,9 +152,25 @@ WHERE first_name LIKE '%g%'; -- İçerisinde g harfi bulunan isimleri listeler. 
 WHERE first_name LIKE 'J_'; -- Sadece 2 harfli ve ilk harfi J olan isimleri listeler.
 ```
 Şeklinde örneklendirebiliriz.
-
-
-
+## DISTINCT ve COUNT
+### DISTINCT
+Şimdiye kadar yaptığımız SQL sorgularında genellikle verileri belirli koşullar altında sıraladık. Bazı sütunlar birbirini tekrar eden verilerden oluşmaktadır. Bazı durumlarda bir sütun içerisinde bulunan farklı değerleri görmek isteriz. Bu durumda **DISTINCT** kullanırız.
+#### DISTINCT Söz Dizimi
+``` sql
+SELECT DISTINCT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>;
+```
+Örnek olarak bir **car** tablomuz olduğunu ve bunun içinde **engine** sütununda bulunan birbirinden farklı kaç motor seçeneği olduğunu ve bunların ne olduğunu görmek isteyelim.
+``` sql
+SELECT DISTINCT engine
+FROM car
+```
+Örnek Çıktı: 
+| | engine |
+| :--- | :---: |
+| 1 | 1.0 |
+| 2 | 1.3 |
+| 3 | 1.4 |
 
 
 
