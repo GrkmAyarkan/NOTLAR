@@ -6,6 +6,7 @@
 * [SELECT (Seçim Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#select)
 * [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
 * [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
+* [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -147,7 +148,7 @@ WHERE first_name LIKE 'P%'; -- Bize P ile başlayan isimleri listeler.
 WHERE first_name LIKE '%y'; -- y ile biten isimleri listeler.
 WHERE first_name LIKE 'A%n'; -- A ile başlayıp n ile biten isimleri listeler.
 WHERE first_name LIKE '%g%'; -- İçerisinde g harfi bulunan isimleri listeler. Ancak baş harfi büyük G harfi olanları da listelemesini istersel ILIKE kullanmalıyız.
-WHERE first_name LIKE 'J_; -- Sadece 2 harfli ve ilk harfi J olan isimleri listeler.
+WHERE first_name LIKE 'J_'; -- Sadece 2 harfli ve ilk harfi J olan isimleri listeler.
 ```
 Şeklinde örneklendirebiliriz.
 
