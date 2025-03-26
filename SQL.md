@@ -7,7 +7,7 @@
 * [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
 * [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
-* [DISTINCT ve COUNT]()
+* [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -167,16 +167,28 @@ FROM car
 ```
 Örnek Çıktı: 
 | | engine |
-| :--- | :---: |
+| :---: | :---: |
 | 1 | 1.0 |
 | 2 | 1.3 |
 | 3 | 1.4 |
+## COUNT
+**COUNT** **aggregate** (Toplama, Bütünleme) fonksiyonu ilgili sorgu sonucunda oluşan veri sayısını bildirir.
+``` sql
+SELECT COUNT(*)
+FROM actor
+WHERE first_name = 'Penelope';
+```
+COUNT(*) veya COUNT(sütun_adı) aynı sonucu verir. \
+Bu sorguda adı Penelope olana kişileri listelemiyoruz, onun yerine adı Penelope olan kişilerin sayısını istiyoruz. Örneğin sonuç 4 olsun o halde çıktımız şu şekilde olacak:
+| | count |
+| :---: | :---: |
+| 1 | 4 |
 
-
-
-
-
-
+DISTINCT ve COUNT ifadelerini birlikte de kullanabiliriz.
+``` sql
+SELECT COUNT(DISTINCT first_name) FROM actor;
+```
+Bu bize **actor** tablosunda **first_name**i birbirimnden farklı kaç aktör olduğunun sayısını verecektir.
 
 
 
