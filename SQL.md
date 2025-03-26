@@ -189,7 +189,7 @@ DISTINCT ve COUNT ifadelerini birlikte de kullanabiliriz.
 ``` sql
 SELECT COUNT(DISTINCT first_name) FROM actor;
 ```
-Bu bize **actor** tablosunda **first_name**i birbirimnden farklı kaç aktör olduğunun sayısını verecektir.
+Bu bize **actor** tablosunda **first_name**'i birbirimnden farklı kaç aktör olduğunun sayısını verecektir.
 ``` sql
 SELECT first_name, COUNT(*) AS ActorCount FROM actor GROUP BY first_name
 ```
