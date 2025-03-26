@@ -189,8 +189,19 @@ DISTINCT ve COUNT ifadelerini birlikte de kullanabiliriz.
 SELECT COUNT(DISTINCT first_name) FROM actor;
 ```
 Bu bize **actor** tablosunda **first_name**i birbirimnden farklı kaç aktör olduğunun sayısını verecektir.
-
-
+``` sql
+SELECT first_name, COUNT(*) AS ActorCount FROM actor GROUP BY first_name
+```
+Bu sorguda [GROUP BY]() ile **first_name** sütunundaki birbiri ile aynı olana değerleri gruplarız. Bu grupları **SELECT first_name** sorgusu ile yazdırırız ve **SELECT COUNT(*) AS ActorCount** sorgusu ile yanlarına bu isimde kaç aktör olduğu bilgisini **ActorCount** sütunu altında yazdırırız. Sütunun adını belirleyen kısım ise [AS (ALIAS)](). \
+Örnek çıktımız şu şekilde olur: 
+| | first_name | ActorCount |
+| :---: | :---: | :---: |
+| 1 | Christian | 3 |
+| 2 | Kenneth | 4 |
+| 3 | Cameron | 3 |
+| 4 | Mary | 2 |
+| 5 | Jada | 1 |
+| 6 | Christopher | 3 |
 
 
 
