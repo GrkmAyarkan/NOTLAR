@@ -8,6 +8,7 @@
 * [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
+* [PSQL (Cmd Arayüz)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -213,6 +214,39 @@ psql -U <kullanıcı_adı> -- otomatik gelen kullanıcı adı "postgres" olabili
 ```
 postgres=#
 ```
+* Bulunan veritabanlarını listelemek için:
+```
+\l veya \list
+```
+* Bizim örneğimizde dvdrental veritabanına bağlanacağız.
+```
+\c dvdrental veya \connect dvdrental
+```
+* Bağlanılan dvdrental veritabanında bulunan tabloları listelemek için:
+```
+\dt
+```
+* Herhangi bir tablonun sütunlarını ve tablo detaylarını görmek için:
+```
+\d <tablo_adı>
+```
+PSQL terminal ekranından çıkmak için:
+```
+\q
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
