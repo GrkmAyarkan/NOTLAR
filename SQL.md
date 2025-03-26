@@ -203,11 +203,16 @@ Bu sorguda [GROUP BY]() ile **first_name** sütunundaki birbiri ile aynı olana 
 | 5 | Jada | 1 |
 | 6 | Christopher | 3 |
 
-
-
-
-
-
+## PSQL 1
+PSQL, PostgreSQL ile birlikte gelen terminal tabanlı bir kullanıcı arayüzüdür. PSQL sayesinde komut satırında sorgular yazıp, sonuçlarını görebiliriz. Aşağıda temel PSQL komutlarının ilk bölümünü bulabilirsiniz.
+* PSQL ile PostgreSQL'e bağlanmak.
+```
+psql -U <kullanıcı_adı> -- otomatik gelen kullanıcı adı "postgres" olabilir. 
+```
+* Kullanıcıya ait şifreyi girdikten sonra varsayılan veritabanı postgres'e bağlanıyor.
+```
+postgres=#
+```
 
 
 
