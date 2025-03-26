@@ -5,7 +5,7 @@
 * [Veritabanı Yönetim Sistemi (DBMS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veritaban%C4%B1-y%C3%B6netim-sistemi-dbms)
 * [SELECT (Seçim Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#select)
 * [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
-* [BETWEEN ve IN]()
+* [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -95,11 +95,34 @@ WHERE NOT (rating = 4.99 OR rating = 2.99) ;
 ```
 
 ## BETWEEN ve IN
-
-
-
-
-
+### BETWEEN 
+``` sql
+SELECT * FROM film
+WHERE length >= 100 AND length <= 140;
+```
+Bu örnekte yapılan sorguda belli bir aralıktaki verileri istiyoruz. Bunu kısa yoldan **BETWEEN ... AND** yapısını kullanarak yapabiliriz.
+``` sql
+SELECT * FROM film
+WHERE length BETWEEN 100 AND 140; -- WHERE length >= 100 AND length <= 140 ifadesi ile aynı sonucu verir.
+```
+Burada dikkat edilmesi gereken nokta 100 ve 140 sınır değerleri aralığa dahildir.
+### IN
+Şöyle bir senaryo düşünelim, yine film tablosundan uzunluğu 30, 60, 90 veya 120 dakikaya eşit olan verileri sıralayalım.
+``` sql
+SELECT * FROM film
+WHERE length = 30 OR length = 60 OR length = 90 OR length = 120;
+```
+Bu örnekte olduğu gibi az sasyıda eşitlik yerine çok sayıda sorgu olduğunda, sürekli **OR** mantıksal operatörünü kullanmak yerine istenilen değerleri liste haline geitip **IN** anahtar kelimesiyle kullanabiliriz.
+#### IN Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ... FROM <tablo_adı>
+WHERE <sütun_adı> IN (değer1, değer2, ...);
+```
+#### Örnek
+``` sql
+SELECT * FROM film
+WHERE length IN (30,60,90,120);
+```
 
 
 
