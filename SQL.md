@@ -8,7 +8,7 @@
 * [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
-* [PSQL (Cmd Arayüz)]()
+* [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
