@@ -11,6 +11,7 @@
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
 * [ORDER BY (Sıralama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
+* [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -296,7 +297,9 @@ ORDER BY length DESC
 OFFSET 6
 LIMIT 4;
 ```
-
+## Aggregate Fonksiyonlar - MIN, MAX, SUM, AVG
+Aggregate fonksiyonları yardımıyla bizler veri kümelerimizden sonuçlar çıkarabiliriz. Belirli veri kümelerinden tek bir sonuç çıkarmak için aggregate fonksiyonları kullanırız.
+#### Örnekler
 
 
 
