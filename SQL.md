@@ -9,7 +9,7 @@
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
-* [ORDER BY]()
+* [ORDER BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
 * [LIMIT ve OFFSET]()
 
 ## SQL (Structured Query Language) Nedir?
