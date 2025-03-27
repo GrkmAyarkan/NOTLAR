@@ -10,7 +10,7 @@
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
 * [ORDER BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
-* [LIMIT ve OFFSET]()
+* [LIMIT ve OFFSET](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
