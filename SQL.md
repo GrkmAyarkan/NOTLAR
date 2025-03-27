@@ -300,11 +300,30 @@ LIMIT 4;
 ## Aggregate Fonksiyonlar - MIN, MAX, SUM, AVG
 Aggregate fonksiyonları yardımıyla bizler veri kümelerimizden sonuçlar çıkarabiliriz. Belirli veri kümelerinden tek bir sonuç çıkarmak için aggregate fonksiyonları kullanırız.
 #### Örnekler
-
-
-
-
-
+#### AVG
+**AVG** sütundaki sayısal değerlerin **ORTALAMA**SINI almamızı sağlar.
+``` sql
+SELECT AVG(length) 
+FROM film;
+```
+#### SUM
+**SUM** sütundaki sayısal değerlerin **TOPLAM**ını almamızı sağlar.
+``` sql
+SELECT SUM(length) 
+FROM film;
+```
+#### MAX
+**MAX** sütundaki değerler arasındaki **EN YÜKSEK DEĞER**İ almamızı sağlar.
+``` sql
+SELECT MAX(length) 
+FROM film;
+```
+##### MIN
+**MIN** sütundaki değerler arasındaki **EN DÜŞÜK DEĞER**İ almamızı sağlar.
+``` sql
+SELECT MIN(length) 
+FROM film;
+```
 
 
 
