@@ -13,7 +13,7 @@
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
 * [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
-* [HAVING (Gruplandırılmış Verilere Koşul Ekleme)]()
+* [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -362,8 +362,14 @@ Bu şekilde her bir değeri ve karşılığında gelen en yüksek uzunluk değer
 
 ## HAVING
 HAVING anahtar kelimesi sayesinde gruplandırılmış verilere koşullar ekleyebiliriz.
-
-
+#### Örnek Kullanım:
+Her bir rental_rate oranına karşılık gelen film sayısını bulalım ve toplam film sayısı 325 ten fazla olan rental_rate oranlarını görelim. \
+Bu durumda GROUP BY ile elde ettiğimiz toplam film sayılarına koşul eklememiz gerekir.
+``` sql
+SELECT rental_rate, COUNT(*)
+FROM film
+GROUP BY rental_rate HAVING COUNT(*) > 325;
+```
 
 
 
