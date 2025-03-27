@@ -5,12 +5,12 @@
 * [Veritabanı Yönetim Sistemi (DBMS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veritaban%C4%B1-y%C3%B6netim-sistemi-dbms)
 * [SELECT (Seçim Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#select)
 * [WHERE (Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#where-ve-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
-* [BETWEEN ve IN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
-* [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
-* [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
+* [BETWEEN ve IN (Aralık Belirtme ve Seçim Yapma)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
+* [LIKE ve ILIKE (Karakter Bulundurma Koşulu)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
+* [DISTINCT ve COUNT (Sütundaki Farklı Değerler ve Sonucun Veri Sayısı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
-* [ORDER BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
-* [LIMIT ve OFFSET](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
+* [ORDER BY (Sıralama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
+* [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -268,10 +268,34 @@ ORDER BY title ASC, length DESC;
 ```
 Sıralama işlemi, koşuldan sonra yazılır.
 ## LIMIT ve OFFSET
-
-
-
-
+### LIMIT
+Belirli koşulları sağlayan tüm verileri değil de belirli sayıda veriyi istediğimizde LIMIT anahtar kelimesini kullanırız.
+#### Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>
+ORDER BY <sütun_adı>, <sütun_adı>, ... ASC|DESC
+LIMIT <sayı>;
+```
+#### Örnek Senaryo
+Uzunluğu yüksekten düşüğe doğru sıralanmış ve baş harfi 'B' ile başlayan ilk 10 filmin film_id, title, rental_rate, length bilgilerini listeleyelim.
+``` sql
+SELECT film_id, title, rental_rate, length
+FROM film
+WHERE title LIKE 'B%'
+ORDER BY length DESC
+LIMIT 10;
+```
+### OFFSET
+Bazı durumlarda sonuç olarak gördüğümüz veri grubu içerisinden bazılarını "pass" geçmek isteriz. Yukarıdaki senaryomuzu tekrar düşünelim, Uzunluğu yüksekten düşüğe doğru sıralanmış ve baş harfi 'B' ile başlayan filmlerin film_id, title, rental_rate, length bilgilerini listeleyelim ancak en uzun 6 filmi "pass" geçelim ve sonrasındaki 4 filmi sıralayalım..
+``` sql
+SELECT film_id, title, rental_rate, length
+FROM film
+WHERE title LIKE 'B%'
+ORDER BY length DESC
+OFFSET 6
+LIMIT 4;
+```
 
 
 
