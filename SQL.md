@@ -12,6 +12,7 @@
 * [ORDER BY (Sıralama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
+* [GROUP BY (Verileri Gruplama)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -318,12 +319,45 @@ FROM film;
 SELECT MAX(length) 
 FROM film;
 ```
-##### MIN
+#### MIN
 **MIN** sütundaki değerler arasındaki **EN DÜŞÜK DEĞER**İ almamızı sağlar.
 ``` sql
 SELECT MIN(length) 
 FROM film;
 ```
+## GROUP BY
+Verileri gruplama için **GROUP BY** anahtar kelimesi kullanılır.
+#### GROUP BY Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ... (veya aggregate func) FROM <tablo_adı>
+GROUP BY <sütun_adı>, <sütun_adı>, ...
+```
+Burada şuna dikkat etmemiz gerekir, SELECT anahtar kelimesinde bulunan sütunların GROUP BY anahtar kelimesi içerisinde bulunması gerekir. \
+#### Örnek
+**Film** tablosunda **rental_rate** sütununda bizim 3 farklı değerimiz var **(0.99, 2.99, 4.99)**. Biz bu 3 farklı değer için **en uzun** filmi bulmaya çalışalım. \
+Öncelikle GROUP BY olmadan nasıl yapabileceğimize bakalım.
+``` sql
+SELECT MAX(length)
+FROM film
+WHERE rental_rate = 0.99;
+```
+Bu şekilde her biri için teker teker sorgu yapmalıyız. \
+Şimdi GROUP BY ile nasıl yapabileceğimize bakalım. 
+``` sql
+SELECT rental_rate, MAX(length)
+FROM film
+GROUP BY rental_rate;
+```
+Bu şekilde her bir değeri ve karşılığında gelen en yüksek uzunluk değerini tablo şeklinde görebiliriz. \
+Örnek çıktımız:
+| rental_rate | max |
+| :---: | :---: |
+|2.99|185|
+|4.99|185|
+|0.99|184|
+
+
+
 
 
 
