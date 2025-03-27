@@ -13,6 +13,7 @@
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
 * [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
+* [HAVING (Gruplandırılmış Verilere Koşul Ekleme)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -269,6 +270,7 @@ WHERE title LIKE 'A%'
 ORDER BY title ASC, length DESC;
 ```
 Sıralama işlemi, koşuldan sonra yazılır.
+
 ## LIMIT ve OFFSET
 ### LIMIT
 Belirli koşulları sağlayan tüm verileri değil de belirli sayıda veriyi istediğimizde LIMIT anahtar kelimesini kullanırız.
@@ -298,6 +300,7 @@ ORDER BY length DESC
 OFFSET 6
 LIMIT 4;
 ```
+
 ## Aggregate Fonksiyonlar - MIN, MAX, SUM, AVG
 Aggregate fonksiyonları yardımıyla bizler veri kümelerimizden sonuçlar çıkarabiliriz. Belirli veri kümelerinden tek bir sonuç çıkarmak için aggregate fonksiyonları kullanırız.
 #### Örnekler
@@ -325,6 +328,7 @@ FROM film;
 SELECT MIN(length) 
 FROM film;
 ```
+
 ## GROUP BY
 Verileri gruplama için **GROUP BY** anahtar kelimesi kullanılır.
 #### GROUP BY Söz Dizimi
@@ -356,6 +360,8 @@ Bu şekilde her bir değeri ve karşılığında gelen en yüksek uzunluk değer
 |4.99|185|
 |0.99|184|
 
+## HAVING
+HAVING anahtar kelimesi sayesinde gruplandırılmış verilere koşullar ekleyebiliriz.
 
 
 
