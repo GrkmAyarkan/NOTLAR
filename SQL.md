@@ -9,6 +9,7 @@
 * [LIKE ve ILIKE](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
+* [ORDER BY]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -234,14 +235,37 @@ PSQL terminal ekranından çıkmak için:
 ```
 \q
 ```
-
-
-
-
-
-
-
-
+## ORDER BY
+**ORDER BY** anahtar kelimesi sayesinde bizler verilerimizi herhangi bir sütunda bulunan değerlere göre azalan veya artan bir şekilde sıralayabiliriz.
+#### ORDER BY Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>
+ORDER BY <sütun_adı>, <sütun_adı>, ... ASC|DESC;
+```
+#### ORDER BY Örnek Kullanım
+``` sql
+SELECT *
+FROM film
+ORDER BY title ASC;
+```
+Bu sorgumuzda dvdrental veritabanında bulunan film tablosundaki tüm sütunları title sütununda bulunan verilere göre artan (ASC) şeklinde sıralıyoruz. \
+ASC sıralama varsayılan olduğu için ayrı bir şekilde yazılması zorunluluğu yoktur ancak sorguyu belirginleştirmesi açısından genelde yazılır.
+``` sql
+SELECT *
+FROM film
+ORDER BY length DESC;
+```
+Bu sorgumuzda filmleri **length** değerinin azalacağı şekilde sıralar. \
+**ASC -> ARTAN** \
+**DESC -> AZALAN**
+``` sql
+SELECT *
+FROM film
+WHERE title LIKE 'A%'
+ORDER BY title ASC length DESC;
+```
+Sıralama işlemi, koşuldan sonra yazılır.
 
 
 
