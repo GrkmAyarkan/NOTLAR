@@ -12,7 +12,7 @@
 * [ORDER BY (Sıralama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
-* [GROUP BY (Verileri Gruplama)]()
+* [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -197,7 +197,7 @@ Bu bize **actor** tablosunda **first_name**'i birbirimnden farklı kaç aktör o
 ``` sql
 SELECT first_name, COUNT(*) AS ActorCount FROM actor GROUP BY first_name
 ```
-Bu sorguda [GROUP BY]() ile **first_name** sütunundaki birbiri ile aynı olana değerleri gruplarız. Bu grupları **SELECT first_name** sorgusu ile yazdırırız ve **SELECT COUNT(*) AS ActorCount** sorgusu ile yanlarına bu isimde kaç aktör olduğu bilgisini **ActorCount** sütunu altında yazdırırız. Sütunun adını belirleyen kısım ise [AS (ALIAS)](). \
+Bu sorguda [GROUP BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by) ile **first_name** sütunundaki birbiri ile aynı olana değerleri gruplarız. Bu grupları **SELECT first_name** sorgusu ile yazdırırız ve **SELECT COUNT(*) AS ActorCount** sorgusu ile yanlarına bu isimde kaç aktör olduğu bilgisini **ActorCount** sütunu altında yazdırırız. Sütunun adını belirleyen kısım ise [AS (ALIAS)](). \
 Örnek çıktımız şu şekilde olur: 
 | | first_name | ActorCount |
 | :---: | :---: | :---: |
