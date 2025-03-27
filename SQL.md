@@ -10,6 +10,7 @@
 * [DISTINCT ve COUNT](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
 * [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
 * [ORDER BY]()
+* [LIMIT ve OFFSET]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -254,18 +255,24 @@ ASC sıralama varsayılan olduğu için ayrı bir şekilde yazılması zorunlulu
 ``` sql
 SELECT *
 FROM film
-ORDER BY length DESC;
+ORDER BY title ASC, length DESC;
 ```
-Bu sorgumuzda filmleri **length** değerinin azalacağı şekilde sıralar. \
+Sıralama birden fazla sütuna göre de yapılabilir. Yukarıdaki örneğimizde sıralama title sütununa göre artan length sütununa göre azalan şeklinde yapılıyor. \
 **ASC -> ARTAN** \
 **DESC -> AZALAN**
 ``` sql
 SELECT *
 FROM film
 WHERE title LIKE 'A%'
-ORDER BY title ASC length DESC;
+ORDER BY title ASC, length DESC;
 ```
 Sıralama işlemi, koşuldan sonra yazılır.
+## LIMIT ve OFFSET
+
+
+
+
+
 
 
 
