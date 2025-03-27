@@ -14,6 +14,7 @@
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
 * [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
 * [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
+* [ALIAS (AS) (Tablo İsimlendirme)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -370,6 +371,33 @@ SELECT rental_rate, COUNT(*)
 FROM film
 GROUP BY rental_rate HAVING COUNT(*) > 325;
 ```
+
+## ALIAS (AS)
+AS anahtar kelimesi sayesinde sorgular sonucu oluşturduğumuz sanal tablo ve sütunlara geçici isimler verebiliriz.
+#### ALIAS Sütun Kullanımı
+``` sql
+SELECT <sütun_adı> AS <geçici_ad>
+FROM <tablo_adı>;
+```
+#### ALIAS Tablo Kullanımı
+``` sql
+SELECT <sütun_adı>, <sütun_adı>...
+FROM <tablo_adı> AS <geçici_ad>;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
