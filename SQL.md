@@ -14,7 +14,7 @@
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
 * [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
 * [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
-* [ALIAS (AS) (Tablo İsimlendirme)]()
+* [ALIAS (AS) (Tablo İsimlendirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -132,6 +132,7 @@ WHERE <sütun_adı> IN (değer1, değer2, ...);
 SELECT * FROM film
 WHERE length IN (30,60,90,120);
 ```
+
 ## LIKE ve ILIKE
 Bizler bazı durumlarda tam eşleşme değil belirli şablonlara uyan koşulların sağlanmasını isteriz. Örneğin sorgumuzda **first_name** sütununun belli bir isme eşit olmasını değil, ilk harfin 'P' olması koşulunu sağlayan sorguya ihtiyacımız var. Bunun için **LIKE** operatörünü kullanırız.
 ``` sql
@@ -159,6 +160,7 @@ WHERE first_name LIKE '%g%'; -- İçerisinde g harfi bulunan isimleri listeler. 
 WHERE first_name LIKE 'J_'; -- Sadece 2 harfli ve ilk harfi J olan isimleri listeler.
 ```
 Şeklinde örneklendirebiliriz.
+
 ## DISTINCT ve COUNT
 ### DISTINCT
 Şimdiye kadar yaptığımız SQL sorgularında genellikle verileri belirli koşullar altında sıraladık. Bazı sütunlar birbirini tekrar eden verilerden oluşmaktadır. Bazı durumlarda bir sütun içerisinde bulunan farklı değerleri görmek isteriz. Bu durumda **DISTINCT** kullanırız.
@@ -178,7 +180,7 @@ FROM car
 | 1 | 1.0 |
 | 2 | 1.3 |
 | 3 | 1.4 |
-## COUNT
+### COUNT
 **COUNT** **aggregate** (Toplama, Bütünleme) fonksiyonu ilgili sorgu sonucunda oluşan veri sayısını bildirir.
 ``` sql
 SELECT COUNT(*)
@@ -199,7 +201,7 @@ Bu bize **actor** tablosunda **first_name**'i birbirimnden farklı kaç aktör o
 ``` sql
 SELECT first_name, COUNT(*) AS ActorCount FROM actor GROUP BY first_name
 ```
-Bu sorguda [GROUP BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by) ile **first_name** sütunundaki birbiri ile aynı olana değerleri gruplarız. Bu grupları **SELECT first_name** sorgusu ile yazdırırız ve **SELECT COUNT(*) AS ActorCount** sorgusu ile yanlarına bu isimde kaç aktör olduğu bilgisini **ActorCount** sütunu altında yazdırırız. Sütunun adını belirleyen kısım ise [AS (ALIAS)](). \
+Bu sorguda [GROUP BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by) ile **first_name** sütunundaki birbiri ile aynı olana değerleri gruplarız. Bu grupları **SELECT first_name** sorgusu ile yazdırırız ve **SELECT COUNT(*) AS ActorCount** sorgusu ile yanlarına bu isimde kaç aktör olduğu bilgisini **ActorCount** sütunu altında yazdırırız. Sütunun adını belirleyen kısım ise [AS (ALIAS)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as). \
 Örnek çıktımız şu şekilde olur: 
 | | first_name | ActorCount |
 | :---: | :---: | :---: |
@@ -240,6 +242,7 @@ PSQL terminal ekranından çıkmak için:
 ```
 \q
 ```
+
 ## ORDER BY
 **ORDER BY** anahtar kelimesi sayesinde bizler verilerimizi herhangi bir sütunda bulunan değerlere göre azalan veya artan bir şekilde sıralayabiliriz.
 #### ORDER BY Söz Dizimi
