@@ -440,13 +440,13 @@ INSERT INTO games (id, name, price) values (4, 'Cyberpunk 2077', '$44.99');
 INSERT INTO games (id, name, price) values (5, 'The Last of Us Part I', '$59.99');
 ```
 #### Tablo
-| id | name | price |
-| :---: | :---: | :---: |
-| 1 | Baldur's Gate 3 | $34.99 |
-| 2 | Mount & Blade II: Bannerlord | $19.99 |
-| 3 | EA Sports FC 24 | $69.99 |
-| 4 | Cyberpunk 2077 | $44.99 |
-| 5 | The Last of Us Part I | $59.99 |
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | Baldur's Gate 3 | $34.99 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | 3 | EA Sports FC 24 | $69.99 |
+| 4 | 4 | Cyberpunk 2077 | $44.99 |
+| 5 | 5 | The Last of Us Part I | $59.99 |
 ### UPDATE - Veri Güncelleme
 UPDATE anahtar kelimesi sayesinde tablomuzda bulunan verileri güncelleyebiliriz.
 #### UPDATE Söz Dizimi:
@@ -466,13 +466,14 @@ SET name = 'Cities: Skylines II',
 WHERE id = 3;
 ```
 #### Yeni Tablo
-| id | name | price |
-| :---: | :---: | :---: |
-| 1 | Baldur's Gate 3 | $34.99 |
-| 2 | Mount & Blade II: Bannerlord | $19.99 |
-| 3 | Cities: Skylines II | $49.99 |
-| 4 | Cyberpunk 2077 | $44.99 |
-| 5 | The Last of Us Part I | $59.99 |
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | Baldur's Gate 3 | $34.99 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | 4 | Cyberpunk 2077 | $44.99 |
+| 4 | 5 | The Last of Us Part I | $59.99 |
+| 5 | 3 | Cities: Skylines II | $49.99 |
+En son üzerinde işlem yapılan veriyi tablonun en sonunda gönderir.
 ### DELETE - Veri Silme
 DELETE anahtar kelimesi sayesinde tablomuzda bulunan verileri silebiliriz.
 #### DELETE Söz Dizimi:
@@ -487,12 +488,12 @@ DELETE FROM games
 WHERE name = 'Cyberpunk 2077';
 ```
 #### Yeni Tablo
-| id | name | price |
-| :---: | :---: | :---: |
-| 1 | Baldur's Gate 3 | $34.99 |
-| 2 | Mount & Blade II: Bannerlord | $19.99 |
-| 3 | Cities: Skylines II | $49.99 |
-| 5 | The Last of Us Part I | $59.99 |
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | Baldur's Gate 3 | $34.99 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | 5 | The Last of Us Part I | $59.99 |
+| 4 | 3 | Cities: Skylines II | $49.99 |
 
 
 
