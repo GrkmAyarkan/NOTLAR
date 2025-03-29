@@ -473,10 +473,26 @@ WHERE id = 3;
 | 3 | Cities: Skylines II | $49.99 |
 | 4 | Cyberpunk 2077 | $44.99 |
 | 5 | The Last of Us Part I | $59.99 |
-
-
-
-
+### DELETE - Veri Silme
+DELETE anahtar kelimesi sayesinde tablomuzda bulunan verileri silebiliriz.
+#### DELETE Söz Dizimi:
+``` sql
+DELETE FROM <tablo_adı>
+WHERE <koşul_adı>;
+```
+#### DELETE Örnek Kullanım
+games tablosunda bulunan **name** sütunundaki verisi 'Cyberpunk 2077' olan satırı silelim.
+``` sql
+DELETE FROM games
+WHERE name = 'Cyberpunk 2077';
+```
+#### Yeni Tablo
+| id | name | price |
+| :---: | :---: | :---: |
+| 1 | Baldur's Gate 3 | $34.99 |
+| 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | Cities: Skylines II | $49.99 |
+| 5 | The Last of Us Part I | $59.99 |
 
 
 
