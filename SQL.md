@@ -463,13 +463,15 @@ games tablosunda bulunan ve **id** 3' ye eşit olan verimizin **name** sütunund
 UPDATE games
 SET name = 'Cities: Skylines II',
     price = '$49.99'
-WHERE id = 3;
+WHERE id = 3
 RETURNING *;
 ```
 #### Çıktı
 | | id | name | price |
 | :---: | :---: | :---: | :---: |
 | 1 | 3 | Cities: Skylines II | $49.99 |
+
+Burada **RETURNING** anahtar kelimesi ile * kullanarak değişiklik yapılan veri satırının tamamını yazdırırız. RETURNING kullanılmazsa program bize sadece değişiklik yapıldığını bildirir ancak bir çıktı vermez.
 #### Yeni Tablo
 | | id | name | price |
 | :---: | :---: | :---: | :---: |
@@ -491,8 +493,14 @@ WHERE <koşul_adı>;
 games tablosunda bulunan **name** sütunundaki verisi 'Cyberpunk 2077' olan satırı silelim.
 ``` sql
 DELETE FROM games
-WHERE name = 'Cyberpunk 2077';
+WHERE name = 'Cyberpunk 2077'
+RETURNING *;
 ```
+Silme işleminde de **RETURNING** kullanabiliriz. Burada silinen veri satırlarını yazdırır.
+#### Çıktı
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 4 | Cyberpunk 2077 | $44.99 |
 #### Yeni Tablo
 | | id | name | price |
 | :---: | :---: | :---: | :---: |
@@ -501,6 +509,7 @@ WHERE name = 'Cyberpunk 2077';
 | 3 | 5 | The Last of Us Part I | $59.99 |
 | 4 | 3 | Cities: Skylines II | $49.99 |
 
+Bir veri silindiğinde onun **id**'si silinir ama geri kalan verilerin id'lerinde bir değişiklik olmaz.
 
 
 
