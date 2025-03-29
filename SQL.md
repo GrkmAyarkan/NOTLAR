@@ -15,6 +15,8 @@
 * [GROUP BY (Verileri Gruplama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#group-by)
 * [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
 * [ALIAS (AS) (Tablo İsimlendirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as)
+* [CREATE - DROP (Tablo Oluşturma ve Silme)]()
+* [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -388,10 +390,89 @@ SELECT <sütun_adı>, <sütun_adı>...
 FROM <tablo_adı> AS <geçici_ad>;
 ```
 
+## CREATE - DROP (Tablo Oluşturma ve Silme)
+### CREATE - Tablo Oluşturma
+SQL ile yeni bir tablo oluşturmak için CREATE anahtar kelimesi kullanılır. 
+#### Tablo Oluşturmak - CREATE Söz Dizimi:
+``` sql
+CREATE TABLE <tablo_adı> (
+    <sütun_adı> <veri_tip> (kısıtlama_adı>,
+    <sütun_adı> <veri_tip> (kısıtlama_adı>,
+   ....
+);
+```
+#### Tablo Oluşturmak - CREATE Örnek Kullanım
+**author** isminde bir tablo oluşturalım, **id**, **first_name**, **last_name**, **email**, **birthday** sütunları olsun.
+``` sql
+CREATE TABLE author (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(100)
+  birthday DATE
+);
+```
+### DROP - Tablo Silmek
+Oluşturduğumuz tabloları silmek için DROP anahtar kelimesi kullanılır.
+#### Tablo Silmek - DROP Söz Dizimi:
+``` sql
+DROP TABLE (IF EXISTS) <tablo_adı>;
+```
+Burada **IF EXISTS** yapısını kullanarak yanlış tablo ismi yazımı durumunda hata mesajı almayı önleriz.
+#### Tablo Silmek - DROP Örnek Kullanım
+"test" isimli tablomuzu silmek istersek;
+``` sql
+DROP TABLE IF EXISTS test;
+```
 
-
-
-
+## UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)
+Örnek bir tablo oluşturalım.
+``` sql
+CREATE TABLE games (
+	id INT,
+	name VARCHAR(50),
+	price VARCHAR(50)
+);
+INSERT INTO games (id, name, price) values (1, 'Baldur's Gate 3', '$34.99');
+INSERT INTO games (id, name, price) values (2, 'Mount & Blade II: Bannerlord', '$19.99');
+INSERT INTO games (id, name, price) values (3, 'EA Sports FC 24', '$69.99');
+INSERT INTO games (id, name, price) values (4, 'Cyberpunk 2077', '$44.99');
+INSERT INTO games (id, name, price) values (5, 'The Last of Us Part I', '$59.99');
+```
+#### Tablo
+| id | name | price |
+| :---: | :---: | :---: |
+| 1 | Baldur's Gate 3 | $34.99 |
+| 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | EA Sports FC 24 | $69.99 |
+| 4 | Cyberpunk 2077 | $44.99 |
+| 5 | The Last of Us Part I | $59.99 |
+### UPDATE - Veri Güncelleme
+UPDATE anahtar kelimesi sayesinde tablomuzda bulunan verileri güncelleyebiliriz.
+#### UPDATE Söz Dizimi:
+``` sql
+UPDATE <tablo_adı>
+SET <sütun_adı> = değer, 
+    <sütun_adı> = değer,
+    ----
+WHERE <koşul_adı>;
+```
+UPDATE Örnek Kullanım
+games tablosunda bulunan ve **id** 3' ye eşit olan verimizin **name** sütunundaki degerini 'Cities: Skylines II' **price** sütunundaki değerini '$49.99' ile değiştirelim.
+``` sql
+UPDATE games
+SET name = 'Cities: Skylines II',
+    price = '$49.99'
+WHERE id = 3;
+```
+#### Yeni Tablo
+| id | name | price |
+| :---: | :---: | :---: |
+| 1 | Baldur's Gate 3 | $34.99 |
+| 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | Cities: Skylines II | $49.99 |
+| 4 | Cyberpunk 2077 | $44.99 |
+| 5 | The Last of Us Part I | $59.99 |
 
 
 
