@@ -428,6 +428,35 @@ DROP TABLE IF EXISTS test;
 ```
 
 ## INSERT INTO (Veri Ekleme)
+Bir tabloya veri eklemek için INSERT INTO komutunu kullanırız.
+#### INSERT INTO Söz Dizimi
+``` sql
+INSERT INTO <tablo adı> (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+#### Örnek Tablo
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | Baldur's Gate 3 | $34.99 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | 3 | EA Sports FC 24 | $69.99 |
+| 4 | 4 | Cyberpunk 2077 | $44.99 |
+| 5 | 5 | The Last of Us Part I | $59.99 |
+
+#### Örnek Ekleme İşlemi
+``` sql
+INSERT INTO games (id, name, price)
+VALUES (6, 'The Witcher 3', $29.99);
+```
+#### Sonuç Tablosu
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | Baldur's Gate 3 | $34.99 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
+| 3 | 3 | EA Sports FC 24 | $69.99 |
+| 4 | 4 | Cyberpunk 2077 | $44.99 |
+| 5 | 5 | The Last of Us Part I | $59.99 |
+| 6 | 6 | The Witcher 3 | $29.99 |
 
 ## UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)
 Örnek bir tablo oluşturalım.
@@ -437,11 +466,11 @@ CREATE TABLE games (
 	name VARCHAR(50),
 	price VARCHAR(50)
 );
-INSERT INTO games (id, name, price) values (1, 'Baldur's Gate 3', '$34.99');
-INSERT INTO games (id, name, price) values (2, 'Mount & Blade II: Bannerlord', '$19.99');
-INSERT INTO games (id, name, price) values (3, 'EA Sports FC 24', '$69.99');
-INSERT INTO games (id, name, price) values (4, 'Cyberpunk 2077', '$44.99');
-INSERT INTO games (id, name, price) values (5, 'The Last of Us Part I', '$59.99');
+INSERT INTO games (id, name, price) VALUES (1, 'Baldur's Gate 3', '$34.99');
+INSERT INTO games (id, name, price) VALUES (2, 'Mount & Blade II: Bannerlord', '$19.99');
+INSERT INTO games (id, name, price) VALUES (3, 'EA Sports FC 24', '$69.99');
+INSERT INTO games (id, name, price) VALUES (4, 'Cyberpunk 2077', '$44.99');
+INSERT INTO games (id, name, price) VALUES (5, 'The Last of Us Part I', '$59.99');
 ```
 #### Tablo
 | | id | name | price |
