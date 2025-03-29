@@ -472,7 +472,7 @@ WHERE id = 3;
 | 2 | 2 | Mount & Blade II: Bannerlord | $19.99 |
 | 3 | 4 | Cyberpunk 2077 | $44.99 |
 | 4 | 5 | The Last of Us Part I | $59.99 |
-| 5 | 3 | Cities: Skylines II | $49.99 |
+| 5 | 3 | Cities: Skylines II | $49.99 | \
 En son üzerinde işlem yapılan veriyi tablonun en sonunda gönderir.
 ### DELETE - Veri Silme
 DELETE anahtar kelimesi sayesinde tablomuzda bulunan verileri silebiliriz.
