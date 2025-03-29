@@ -16,6 +16,7 @@
 * [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
 * [ALIAS (AS) (Tablo İsimlendirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as)
 * [CREATE - DROP (Tablo Oluşturma ve Silme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#create---drop-tablo-olu%C5%9Fturma-ve-silme)
+* [INSERT INTO (Veri Ekleme)]()
 * [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
 * [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
 
@@ -425,6 +426,8 @@ Burada **IF EXISTS** yapısını kullanarak yanlış tablo ismi yazımı durumun
 ``` sql
 DROP TABLE IF EXISTS test;
 ```
+
+## INSERT INTO (Veri Ekleme)
 
 ## UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)
 Örnek bir tablo oluşturalım.
