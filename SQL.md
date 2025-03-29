@@ -536,7 +536,7 @@ PRIMARY KEY bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sa�
 #### Şartları:
 * Benzersiz (Unique) Olmalıdır.
 * NULL değerde olamaz.
-* Bir tabloda en fazla 1 tane bulunabilir.
+* Bir tabloda en fazla 1 tane bulunabilir. \
 Yukarıdaki **games** tablosundaki **game_id** ve **publishers** tablosundaki **pub_id**, **PRIMARY KEY**'dir. Her bir veriyi diğerlerinden ayırmamızı sağlar.
 ### FOREIGN KEY
 FOREIGN KEY bir tabloda bulunan herhangi bir sütundaki verilerin genelde başka bir tablo sütununa referans vermesi durumudur, tablolar arası ilişki kurulmasını sağlar.
