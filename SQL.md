@@ -17,7 +17,7 @@
 * [ALIAS (AS) (Tablo İsimlendirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as)
 * [CREATE - DROP (Tablo Oluşturma ve Silme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#create---drop-tablo-olu%C5%9Fturma-ve-silme)
 * [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
-* [PRIMARY KEY - FOREIGN KEY]()
+* [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -513,21 +513,15 @@ Silme işleminde de **RETURNING** kullanabiliriz. Burada silinen veri satırlar�
 Bir veri silindiğinde onun **id**'si silinir ama geri kalan verilerin id'lerinde bir değişiklik olmaz.
 
 ## PRIMARY KEY - FOREIGN KEY
-### PRIMARY KEY
-PRIMARY KEY bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sağlayan bir kısıtlama (constraint) yapısıdır. O tabloda bulunan veri sıralarına ait bir "benzersiz tanımlayıcıdır".
-#### Şartları:
-* Benzersiz (Unique) Olmalıdır.
-* NULL değerde olamaz.
-* Bir tabloda en fazla 1 tane bulunabilir.
 #### **games** Tablosu
 | | game_id | name | price | publisher |
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | 1 | Baldur's Gate 3 | $34.99 | pub003 |
-| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 | pub005 |
-| 3 | 3 | EA Sports FC 24 | $69.99 | pub002 |
-| 4 | 4 | Cyberpunk 2077 | $44.99 | CD Projekt | pub001 |
-| 5 | 5 | The Last of Us Part I | $59.99 | pub004 |
-| 6 | 6 | God of War (2018) | $49.99 | pub004 |
+| 1 | game001 | Baldur's Gate 3 | $34.99 | pub003 |
+| 2 | game002 | Mount & Blade II: Bannerlord | $19.99 | pub005 |
+| 3 | game003 | EA Sports FC 24 | $69.99 | pub002 |
+| 4 | game004 | Cyberpunk 2077 | $44.99 | pub001 |
+| 5 | game005 | The Last of Us Part I | $59.99 | pub004 |
+| 6 | game006 | God of War (2018) | $49.99 | pub004 |
 #### **publishers** Tablosu
 | | pub_id | name | founding_year |
 | :---: | :---: | :---: | :---: |
@@ -537,8 +531,13 @@ PRIMARY KEY bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sa�
 | 4 | pub004 | Sony Interactive Entertainment | 1993 |
 | 5 | pub005 | TaleWorlds Entertainment | 2005 |
 | 6 | pub006 | Paradox Interactive | 1999 |
-
-**games** tablosundaki **game_id** ve **publishers** tablosundaki **pub_id**, **PRIMARY KEY**'dir. Her bir veriyi diğerlerinden ayırmamızı sağlar.
+### PRIMARY KEY
+PRIMARY KEY bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sağlayan bir kısıtlama (constraint) yapısıdır. O tabloda bulunan veri sıralarına ait bir "benzersiz tanımlayıcıdır".
+#### Şartları:
+* Benzersiz (Unique) Olmalıdır.
+* NULL değerde olamaz.
+* Bir tabloda en fazla 1 tane bulunabilir.
+Yukarıdaki **games** tablosundaki **game_id** ve **publishers** tablosundaki **pub_id**, **PRIMARY KEY**'dir. Her bir veriyi diğerlerinden ayırmamızı sağlar.
 ### FOREIGN KEY
 FOREIGN KEY bir tabloda bulunan herhangi bir sütundaki verilerin genelde başka bir tablo sütununa referans vermesi durumudur, tablolar arası ilişki kurulmasını sağlar.
 * Bir tabloda birden fazla sütun FK olarak tanımlanabilir.
