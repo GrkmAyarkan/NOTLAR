@@ -548,21 +548,21 @@ Bir veri silindiğinde onun **id**'si silinir ama geri kalan verilerin id'lerind
 #### **games** Tablosu
 | | game_id | name | price | pub_id |
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | game001 | Baldur's Gate 3 | $34.99 | pub003 |
-| 2 | game002 | Mount & Blade II: Bannerlord | $19.99 | pub005 |
-| 3 | game003 | EA Sports FC 24 | $69.99 | pub002 |
-| 4 | game004 | Cyberpunk 2077 | $44.99 | pub001 |
-| 5 | game005 | The Last of Us Part I | $59.99 | pub004 |
-| 6 | game006 | God of War (2018) | $49.99 | pub004 |
+| 1 | 1 | Baldur's Gate 3 | $34.99 | 3 |
+| 2 | 2 | Mount & Blade II: Bannerlord | $19.99 | 5 |
+| 3 | 3 | EA Sports FC 24 | $69.99 | 2 |
+| 4 | 4 | Cyberpunk 2077 | $44.99 | 1 |
+| 5 | 5 | The Last of Us Part I | $59.99 | 4 |
+| 6 | 6 | God of War (2018) | $49.99 | 4 |
 #### **publishers** Tablosu
 | | pub_id | name | founding_year |
 | :---: | :---: | :---: | :---: |
-| 1 | pub001 | CD Projekt | 1994 |
-| 2 | pub002 | Electronic Arts (EA) | 1982 |
-| 3 | pub003 | Larian Studios | 1996 |
-| 4 | pub004 | Sony Interactive Entertainment | 1993 |
-| 5 | pub005 | TaleWorlds Entertainment | 2005 |
-| 6 | pub006 | Paradox Interactive | 1999 |
+| 1 | 1 | CD Projekt | 1994 |
+| 2 | 2 | Electronic Arts (EA) | 1982 |
+| 3 | 3 | Larian Studios | 1996 |
+| 4 | 4 | Sony Interactive Entertainment | 1993 |
+| 5 | 5 | TaleWorlds Entertainment | 2005 |
+| 6 | 6 | Paradox Interactive | 1999 |
 ### PRIMARY KEY
 PRIMARY KEY bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sağlayan bir kısıtlama (constraint) yapısıdır. O tabloda bulunan veri sıralarına ait bir "benzersiz tanımlayıcıdır".
 #### Şartları:
@@ -577,6 +577,35 @@ FOREIGN KEY bir tabloda bulunan herhangi bir sütundaki verilerin genelde başka
 * Aynı sütunun içerisinde aynı değerler bulunabilir.
 
 Yukarıda bulunan tablolarda da gördüğünüz gibi **games** tablosunda bulunan **pub_id** sütunu FOREIGN KEY yapısındadır ve başka bir tablo olan **publishers** tablosundaki **pub_id** sütununa referans verir.
+
+### Tablo Oluştururken PRIMARY KEY ve FOREIGN KEY Belirtme:
+``` sql
+CREATE TABLE games (
+	game_id SERIAL PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	price VARCHAR(50) NOT NULL,
+	pub_id INTEGER REFERENCES publishers(pub_id)
+);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .
