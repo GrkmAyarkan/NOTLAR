@@ -464,7 +464,12 @@ UPDATE games
 SET name = 'Cities: Skylines II',
     price = '$49.99'
 WHERE id = 3;
+RETURNING *;
 ```
+#### Çıktı
+| | id | name | price |
+| :---: | :---: | :---: | :---: |
+| 1 | 3 | Cities: Skylines II | $49.99 |
 #### Yeni Tablo
 | | id | name | price |
 | :---: | :---: | :---: | :---: |
