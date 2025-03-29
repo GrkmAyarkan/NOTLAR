@@ -16,7 +16,7 @@
 * [HAVING (Gruplandırılmış Verilere Koşul Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#having)
 * [ALIAS (AS) (Tablo İsimlendirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alias-as)
 * [CREATE - DROP (Tablo Oluşturma ve Silme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#create---drop-tablo-olu%C5%9Fturma-ve-silme)
-* [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)]()
+* [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
