@@ -514,7 +514,7 @@ Bir veri silindiğinde onun **id**'si silinir ama geri kalan verilerin id'lerind
 
 ## PRIMARY KEY - FOREIGN KEY
 #### **games** Tablosu
-| | game_id | name | price | publisher |
+| | game_id | name | price | pub_id |
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | game001 | Baldur's Gate 3 | $34.99 | pub003 |
 | 2 | game002 | Mount & Blade II: Bannerlord | $19.99 | pub005 |
@@ -544,7 +544,7 @@ FOREIGN KEY bir tabloda bulunan herhangi bir sütundaki verilerin genelde başka
 * Bir tabloda birden fazla sütun FK olarak tanımlanabilir.
 * Aynı sütunun içerisinde aynı değerler bulunabilir.
 
-
+Yukarıda bulunan tablolarda da gördüğünüz gibi **games** tablosunda bulunan **pub_id** sütunu FOREIGN KEY yapısındadır ve başka bir tablo olan **publishers** tablosundaki **pub_id** sütununa referans verir.
 
 
 .
