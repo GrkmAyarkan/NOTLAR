@@ -588,7 +588,19 @@ CREATE TABLE games (
 );
 ```
 
+## Veri Tipleri
+### Temel Veri Tipleri
+* Sayısal Veri Tipleri
+* Karakter Veri Tipleri
+* Boolean Veri Tipleri
+* Date/Time Veri Tipleri
 
+### Sayısal Veri Tipleri
+| İsim | Boyut |
+| :---: | :--- |
+| smallint | -32768 to +32767 |
+| integer | -2147483648 to +2147483647 |
+| bigint | -9223372036854775808 to +9223372036854775807 |
 
 
 
