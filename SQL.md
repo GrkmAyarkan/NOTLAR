@@ -21,7 +21,7 @@
 * [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
 * [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
 * [NOT NULL (Boş Veri Girişini Engelleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#not-null)
-* [ALTER (Tabloda Değişiklik Yapmak)]()
+* [ALTER (Tabloda Değişiklik Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alter)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -650,12 +650,27 @@ CREATE TABLE Kullanıcılar (
 ## ALTER
 SQL’de **ALTER** anahtar kelimesi, var olan bir tabloyu değiştirmek için kullanılır. Yeni bir tablo oluşturmaz, mevcut tabloyu günceller.
 #### Neler Yapılabilir;
-* Yeni sütun eklenebilir `ALTER TABLE ogrenciler ADD dogum_tarihi DATE;`sql
-* Sütun silinebilir
-* Sütun adı veya tipi değiştirilebilir
-* Constraint (kısıtlama) eklenebilir/kaldırılabilir
-* Tablo adı değiştirilebilir
-
+* Yeni sütun eklenebilir `ADD`
+``` sql
+ALTER TABLE ogrenciler ADD dogum_tarihi DATE;
+```
+* Sütun silinebilir `DROP`
+``` sql
+ALTER TABLE ogrenciler DROP COLUMN adres;
+```
+* Sütun adı veya tipi değiştirilebilir `RENAME COLUMN` `ALTER COLUMN ... TYPE`
+``` sql
+ALTER TABLE ogrenciler RENAME COLUMN soyad TO soyadi; --İSİM DEĞİŞTİRME
+ALTER TABLE ogrenciler ALTER COLUMN notu TYPE DECIMAL(5,2); --VERİ TİPİNİ DEĞİŞTİRME
+```
+* Constraint (kısıtlama) eklenebilir/kaldırılabilir `ALTER COLUMN ... SET`
+``` sql
+ALTER TABLE ogrenciler ALTER COLUMN isim SET NOT NULL;
+```
+* Tablo adı değiştirilebilir `RENAME TO`
+``` sql
+ALTER TABLE ogrenciler RENAME TO ogrenci_listesi;
+```
 
 
 
