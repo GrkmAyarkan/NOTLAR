@@ -22,7 +22,7 @@
 * [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
 * [NOT NULL (Boş Veri Girişini Engelleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#not-null)
 * [ALTER (Tabloda Değişiklik Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alter)
-* [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)]()
+* [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#unique)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
