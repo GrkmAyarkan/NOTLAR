@@ -23,6 +23,7 @@
 * [NOT NULL (Boş Veri Girişini Engelleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#not-null)
 * [ALTER (Tabloda Değişiklik Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alter)
 * [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#unique)
+* [CHECK (Sütuna koşul ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#check)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -703,8 +704,7 @@ CREATE TABLE Kullanıcılar (
 	age INTEGER CHECK (age >= 18)
 );
 ```
-veya \
-ALTER ile;
+veya ALTER ile;
 ``` sql
 ALTER TABLE Kullanıcılar ADD CHECK (age >= 18)
 ```
