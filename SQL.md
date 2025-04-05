@@ -20,7 +20,7 @@
 * [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
 * [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
 * [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
-* [NOT NULL (Boş Veri Girişini Engelleme)]()
+* [NOT NULL (Boş Veri Girişini Engelleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#not-null)
 * [ALTER (Tabloda Değişiklik Yapmak)]()
 
 ## SQL (Structured Query Language) Nedir?
@@ -650,7 +650,7 @@ CREATE TABLE Kullanıcılar (
 ## ALTER
 SQL’de **ALTER** anahtar kelimesi, var olan bir tabloyu değiştirmek için kullanılır. Yeni bir tablo oluşturmaz, mevcut tabloyu günceller.
 #### Neler Yapılabilir;
-* Yeni sütun eklenebilir `ALTER TABLE ogrenciler ADD dogum_tarihi DATE;`
+* Yeni sütun eklenebilir `ALTER TABLE ogrenciler ADD dogum_tarihi DATE;`sql
 * Sütun silinebilir
 * Sütun adı veya tipi değiştirilebilir
 * Constraint (kısıtlama) eklenebilir/kaldırılabilir
