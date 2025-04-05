@@ -221,11 +221,15 @@ Bu sorguda [GROUP BY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#gro
 | 5 | Jada | 1 |
 | 6 | Christopher | 3 |
 
-## PSQL 1
+## PSQL
 PSQL, PostgreSQL ile birlikte gelen terminal tabanlı bir kullanıcı arayüzüdür. PSQL sayesinde komut satırında sorgular yazıp, sonuçlarını görebiliriz. Aşağıda temel PSQL komutlarının ilk bölümünü bulabilirsiniz.
 * PSQL ile PostgreSQL'e bağlanmak.
 ```
 psql -U <kullanıcı_adı> -- otomatik gelen kullanıcı adı "postgres" olabilir. 
+```
+* PSQL ile PostgreSQL'e host, port, kullanıcı adı ve veritabanı ismi ile bağlanmak.
+``` sql
+psql -h <host_name> -p <port_name> -U <kullanıcı_adı> <veritabanı_adı>
 ```
 * Kullanıcıya ait şifreyi girdikten sonra varsayılan veritabanı postgres'e bağlanıyor.
 ```
@@ -234,6 +238,10 @@ postgres=#
 * Bulunan veritabanlarını listelemek için:
 ```
 \l veya \list
+```
+* Yeni veritabanı oluşturmak.
+``` sql
+CREATE DATABASE <veritabanı_adı>
 ```
 * Bizim örneğimizde dvdrental veritabanına bağlanacağız.
 ```
