@@ -20,6 +20,8 @@
 * [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
 * [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
 * [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
+* [NOT NULL (Boş Veri Girişini Engelleme)]()
+* [ALTER (Tabloda Değişiklik Yapmak)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -619,9 +621,40 @@ CREATE TABLE games (
 
 Sınırlı sayıda karekter kullanımı için **VARCHAR** veya **CHAR** veri tipleri kullanılır. **VARCHAR** veri tipi **doldurulmayan** karakterleri **yok sayar**, **CHAR** veri tipi ise **doldurulmayan** karakterler için **boşluk bırakır**. **Sınırsız karekter** kullanımı için ise **TEXT** veri tipi kullanılır.
 
+### Boolean Veri Tipleri
+TRUE, FALSE veya NULL değerlerini alabilirler.
 
+### Zaman / Tarih Veri Tipleri
+| İsim | Tanım |
+| :---: | :--- |
+| timestamp [ (p) ] [without time zone] | Tarih ve Zaman (Zaman Dilimi İçermez) |
+| timestamp [ (p) ] with time zone | Tarih ve Zaman (Zaman Dilimi İle) |
+| date | Tarih (Saat Yok) |
+| time[(p)] [without time zone] | Günün Saati (Tarih yok) |
+| time[(p)] with time zone | Günün Saati (Tarih yok), Saat Dilimi ile|
+| interval [fields][ (p) ] | Time interval |
 
+## NOT NULL
+### NOT NULL
+**NULL** bilinmeyen veri anlamındadır. Boş string veya 0 verilerinden farklıdır. Ve bir sütuna yazılacak olan verinin **Null** (Bilinmeyen, Eksik veri) olmamasını istiyorsak **NOT NULL** CONSTRAINT kısıtlamasını kullanırız.
+#### Kullanım:
+"**Kullanıcılar**" adında bir tablo oluşturalım, **first_name** ve **last_name** sütunlarına bilinmeyen değer girilmesini engelleyelim.
+``` sql
+CREATE TABLE Kullanıcılar (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL
+);
+```
 
+## ALTER
+SQL’de **ALTER** anahtar kelimesi, var olan bir tabloyu değiştirmek için kullanılır. Yeni bir tablo oluşturmaz, mevcut tabloyu günceller.
+#### Neler Yapılabilir;
+* Yeni sütun eklenebilir `ALTER TABLE ogrenciler ADD dogum_tarihi DATE;`
+* Sütun silinebilir
+* Sütun adı veya tipi değiştirilebilir
+* Constraint (kısıtlama) eklenebilir/kaldırılabilir
+* Tablo adı değiştirilebilir
 
 
 
