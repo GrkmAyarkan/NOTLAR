@@ -661,7 +661,7 @@ ALTER TABLE ogrenciler DROP COLUMN adres;
 * Sütun adı veya tipi değiştirilebilir `RENAME COLUMN` `ALTER COLUMN ... TYPE`
 ``` sql
 ALTER TABLE ogrenciler RENAME COLUMN soyad TO soyadi; --İSİM DEĞİŞTİRME
-ALTER TABLE ogrenciler ALTER COLUMN notu TYPE DECIMAL(5,2); --VERİ TİPİNİ DEĞİŞTİRME
+ALTER TABLE ogrenciler ALTER COLUMN notu TYPE DECIMAL(5,2); --VERİ TİPİNİ DEĞİŞTİRME (DECIMAL(5,2) ifadesi = Toplam 5 basamak, bunun 2 basamağı virgülden sonra. en fazla 999.99)
 ```
 * Constraint (kısıtlama) eklenebilir/kaldırılabilir `ALTER COLUMN ... SET`
 ``` sql
