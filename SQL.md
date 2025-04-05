@@ -22,6 +22,7 @@
 * [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
 * [NOT NULL (Boş Veri Girişini Engelleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#not-null)
 * [ALTER (Tabloda Değişiklik Yapmak)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alter)
+* [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -672,7 +673,20 @@ ALTER TABLE ogrenciler ALTER COLUMN isim SET NOT NULL;
 ALTER TABLE ogrenciler RENAME TO ogrenci_listesi;
 ```
 
+## UNIQUE
+**UNIQUE** kısıtlaması ile sütundaki verilerin birbirlerinden farklı benzersiz olmalarını isteriz. **PRIMARY KEY** kısıtlaması kendiliğinden **UNIQUE** kısıtlamasına sahiptir. \
+NOT NULL kısıtlamasında olduğu gibi tablo oluştururken veya ALTER komutu ile beraber tablo oluştuktan sonra da kullanabiliriz.
 
+#### Kullanım:
+"**Kullanıcılar**" adında bir tablo oluşturalım, **first_name** ve **last_name** sütunlarına bilinmeyen değer girilmesini engelleyelim. Ayrıca bu sefer **email** sütunu ekleyip, sütundaki tüm **mail**lerin birbirinden farklı olması gerektiği şartını ekleyelim.
+``` sql
+CREATE TABLE Kullanıcılar (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR(50) UNIQUE
+);
+```
 
 
 
