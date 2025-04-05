@@ -19,7 +19,7 @@
 * [INSERT INTO (Veri Ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#insert-into-veri-ekleme)
 * [UPDATE - DELETE (Tablo Verilerini Güncellemek - Silmek)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#update---delete-tablo-verilerini-g%C3%BCncellemek---silmek)
 * [PRIMARY KEY - FOREIGN KEY](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#primary-key---foreign-key)
-* [VERİ TİPLERİ]()
+* [VERİ TİPLERİ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#veri-tipleri)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -602,10 +602,22 @@ CREATE TABLE games (
 | smallint | -32768 to +32767 |
 | integer | -2147483648 to +2147483647 |
 | bigint | -9223372036854775808 to +9223372036854775807 |
+| decimal | Noktadan önce en fazla 131072 basamak; Noktadan sonra en fazla 16383 basamak |
+| numeric | Noktadan önce en fazla 131072 basamak; Noktadan sonra en fazla 16383 basamak |
+| real | ±1.18 × 10⁻³⁸ ile ±3.4 × 10³⁸ arası |
+| double precision | ±1.8 × 10³⁰⁸ |
+| smallserial | 1 to 32767 |
+| serial | 1 to 2147483647 |
+| bigserial | 1 to 9223372036854775807 |
 
+### Karakter Veri Tipleri
+| İsim | Tanım |
+| :---: | :---: |
+| character varying(n), varchar(n) | variable-length with limit (değişken limit) |
+| character(n), char(n) | fixed-length, blank padded (sabit uzunlukta, boş dolgulu) | 
+| text | variable unlimited length (değişken sınırsız uzunluk) |
 
-
-
+Sınırlı sayıda karekter kullanımı için **VARCHAR** veya **CHAR** veri tipleri kullanılır. **VARCHAR** veri tipi **doldurulmayan** karakterleri **yok sayar**, **CHAR** veri tipi ise **doldurulmayan** karakterler için **boşluk bırakır**. **Sınırsız karekter** kullanımı için ise **TEXT** veri tipi kullanılır.
 
 
 
