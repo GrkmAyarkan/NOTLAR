@@ -688,9 +688,26 @@ CREATE TABLE Kullanıcılar (
 );
 ```
 
+## CHECK
+CHECK kısıtlaması ile sütundaki verilere belirli koşullar verebiliriz. Örn. **age** (yaş) olarak belirlenen bir sütuna negatif değer girilememesi veya 18 yaş sınırı gibi. \
+CHECK kısıtlamasını da tablo oluştururken veya ALTER komutu ile beraber tablo oluştuktan sonra kullanabiliriz.
 
-
-
+#### Kullanım:
+Bir önceki tablomuza bir de **age** sütunu ekleyelim ve ona "+18" koşulu ekleyelim.
+``` sql
+CREATE TABLE Kullanıcılar (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR(50) UNIQUE,
+	age INTEGER CHECK (age >= 18)
+);
+```
+veya \
+ALTER ile;
+``` sql
+ALTER TABLE Kullanıcılar ADD CHECK (age >= 18)
+```
 
 
 
