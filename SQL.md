@@ -8,7 +8,7 @@
 * [BETWEEN ve IN (Aralık Belirtme ve Seçim Yapma)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#between-ve-in)
 * [LIKE ve ILIKE (Karakter Bulundurma Koşulu)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#like-ve-ilike)
 * [DISTINCT ve COUNT (Sütundaki Farklı Değerler ve Sonucun Veri Sayısı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#distinct-ve-count)
-* [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql-1)
+* [PSQL (Cmd Arayüz)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#psql)
 * [ORDER BY (Sıralama)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#order-by)
 * [LIMIT ve OFFSET (Limit ve Pass Geçme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#limit-ve-offset)
 * [Aggregate (Topluluk) Fonksiyonlar - MIN, MAX, SUM, AVG ](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#aggregate-fonksiyonlar---min-max-sum-avg)
