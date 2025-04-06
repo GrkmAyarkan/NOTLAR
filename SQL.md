@@ -736,6 +736,7 @@ INNER JOIN yapısı sayesinde birbiriyle ilişkili olan tabloların birbiriyle e
 | 1 | Matematik | 90 |
 | 2 | Fizik | 75 |
 | 4 | Kimya | 80 |
+
 **ogrenciler** tablosu ve **notlar** tablosunu birleştirelim.
 ``` sql
 SELECT ogrenciler.ad, notlar.ders, notlar.not
@@ -749,6 +750,14 @@ ON ogrenciler.id = notlar.ogrenci_id;
 | Ayşe | Matematik | 90 |
 | Mehmet | Fizik | 75 |
 
+**ogrenciler** tablosunda **id**'si 4 olan bir öğreci bulunmadığı ve **Zeynep**'in **id**'si notlar tablosunda olmadığı için sonuç tablasunda bulunmuyorlar. Sadece eşleşen verileri getirir, eşleşmeyen veriler yok sayılır.
+### INNER JOIN Söz Dizimi
+``` sql
+SELECT <tablo_adı>.<sütun_adı>, <tablo_adı>.<sütun_adı> ...
+FROM <tablo1_adı>
+INNER JOIN <tablo2_adı>
+ON <tablo1_adı>.<sütun_adı> = <tablo2_adı>.<sütun_adı>;
+```
 
 
 
