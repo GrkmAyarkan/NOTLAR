@@ -722,14 +722,20 @@ ALTER TABLE Kullanıcılar ADD CHECK (age >= 18)
 ### JOIN Kavramı (Birleştirme)
 Veraitabanları çoğunlukla birbiri ile ilşkili olan tablolardan oluşur. Bu birbiri ile ilişkili olan tablardaki verileri farklı JOIN yapıları kullanarak sanal olarak birleştirip daha anlamlı veriler haline getirebiliriz.
 
-
-
-
-
-
-
-
-
+### INNER JOIN
+INNER JOIN yapısı sayesinde birbiriyle ilişkili olan tabloların birbiriyle eşleşen (kesişen) verilerini sıralayabiliriz.
+#### ogrenciler
+| id | ad |
+| :---: | :--- |
+| 1 | Ayşe |
+| 2 | Mehmet |
+| 3 | Zeynep |
+#### notlar
+| ogrenci_id | ders | not |
+| :---: | :--- | :---: |
+| 1 | Matematik | 90 |
+| 2 | Fizik | 75 |
+| 4 | Kimya | 80 |
 
 
 
