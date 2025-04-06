@@ -724,19 +724,30 @@ Veraitabanları çoğunlukla birbiri ile ilşkili olan tablolardan oluşur. Bu b
 
 ### INNER JOIN
 INNER JOIN yapısı sayesinde birbiriyle ilişkili olan tabloların birbiriyle eşleşen (kesişen) verilerini sıralayabiliriz.
-#### ogrenciler
+#### "**ogrenciler**" Tablosu
 | id | ad |
 | :---: | :--- |
 | 1 | Ayşe |
 | 2 | Mehmet |
 | 3 | Zeynep |
-#### notlar
+#### "**notlar**" Tablosu
 | ogrenci_id | ders | not |
 | :---: | :--- | :---: |
 | 1 | Matematik | 90 |
 | 2 | Fizik | 75 |
 | 4 | Kimya | 80 |
-
+**ogrenciler** tablosu ve **notlar** tablosunu birleştirelim.
+``` sql
+SELECT ogrenciler.ad, notlar.ders, notlar.not
+FROM ogrenciler
+INNER JOIN notlar
+ON ogrenciler.id = notlar.ogrenci_id;
+```
+#### Sonuç Tablosu
+| ad | ders | not |
+| :--- | :---: | :---: |
+| Ayşe | Matematik | 90 |
+| Mehmet | Fizik | 75 |
 
 
 
