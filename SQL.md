@@ -25,6 +25,7 @@
 * [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#unique)
 * [CHECK (Sütuna koşul ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#check)
 * [INNER JOIN (Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#inner-join)
+ - [LEFT JOIN - RIGHT JOIN]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -758,6 +759,41 @@ FROM <tablo1_adı>
 INNER JOIN <tablo2_adı>
 ON <tablo1_adı>.<sütun_adı> = <tablo2_adı>.<sütun_adı>;
 ```
+Buradaki tablo1 "left table", tablo2 "right table" olarak da adlandırılır.
+### LEFT JOIN - RIGHT JOIN
+**ogrenciler** tablosunu **left** tablo, **notlar** tablosunu da **right** tablo olarak kabul edelim.
+#### LEFT JOIN 
+``` sql
+SELECT o.ad, n.ders, n.not
+FROM ogrenciler o
+LEFT JOIN notlar n ON o.id = n.ogrenci_id;
+```
+**Sol** tablo (**ogrenciler**) tam olarak gelir. Notu olmayan öğrenci (Zeynep) de görünür. Ama eşleşme yoksa sağ taraf **NULL** olur.
+#### Sonuç Tablosu:
+| Ad | Ders | Not |
+| :--- | :--- | :---: |
+| Ayşe | Matematik | 90 |
+| Mehmet | Fizik | 75 |
+| Zeynep | NULL | NULL |
+#### RIGHT JOIN
+``` sql
+SELECT o.ad, n.ders, n.not
+FROM ogrenciler o
+RIGHT JOIN notlar n ON o.id = n.ogrenci_id;
+```
+**Sağ** tablo (**notlar**) tam olarak gelir. Ama bu kez ogrenciler tablosunda olmayan bir ogrenci_id (yani 4) olduğu için
+adı NULL olur → çünkü eşleşen öğrenci yok!
+#### Sonuç Tablosu:
+| Ad | Ders | Not |
+| :--- | :--- | :---: |
+| Ayşe | Matematik | 90 |
+| Mehmet | Fizik | 75 |
+| NULL | Kimya | 80 |
+
+
+
+
+
 
 
 
