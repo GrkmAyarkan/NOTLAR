@@ -25,7 +25,7 @@
 * [UNIQUE (Sütundaki Tüm Verilerin Farklı Olması Şartı)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#unique)
 * [CHECK (Sütuna koşul ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#check)
 * [INNER JOIN (Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#inner-join)
- - [LEFT JOIN - RIGHT JOIN]()
+- [LEFT JOIN - RIGHT JOIN]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
