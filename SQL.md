@@ -26,6 +26,7 @@
 * [CHECK (Sütuna koşul ekleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#check)
 * [INNER JOIN (Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#inner-join)
   - [LEFT JOIN - RIGHT JOIN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#left-join---right-join)
+  - [FULL JOIN (FULL OUTER JOIN)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -790,9 +791,20 @@ adı NULL olur → çünkü eşleşen öğrenci yok!
 | Mehmet | Fizik | 75 |
 | NULL | Kimya | 80 |
 
-
-
-
+### FULL JOIN (FULL OUTER JOIN)
+FULL JOIN (ya da tam adıyla FULL OUTER JOIN), hem LEFT JOIN hem RIGHT JOIN gibi davranır. Yani iki tablonun da tüm kayıtlarını getirir.
+``` sql
+SELECT o.ad, n.ders, n.not
+FROM ogrenciler o
+FULL JOIN notlar n ON o.id = n.ogrenci_id;
+```
+#### Sonuç Tablosu:
+| Ad | Ders | Not |
+| :--- | :--- | :---: |
+| Ayşe | Matematik | 90 |
+| Mehmet | Fizik | 75 |
+| Zeynep | NULL | NULL |
+| NULL | Kimya | 80 |
 
 
 
