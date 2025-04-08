@@ -27,7 +27,7 @@
 * [INNER JOIN (Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#inner-join)
   - [LEFT JOIN - RIGHT JOIN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#left-join---right-join)
   - [FULL JOIN (FULL OUTER JOIN)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#full-join-full-outer-join)
-* [UNION](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
+* [UNION (Tablo Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -808,6 +808,19 @@ FULL JOIN notlar n ON o.id = n.ogrenci_id;
 | NULL | Kimya | 80 |
 
 ## UNION 
+`UNION`, iki veya daha fazla `SELECT` sorgusunun sonuçlarını birleştirir. Ama bu bir `JOIN` gibi yatay değil, **dikey birleştirme** yapar.
+* Satırları alt alta ekler.
+* Tablolar veya seçimler aynı sütun sayısına ve uyumlu veri türüne sahip olmalı.
+`UNION`, tekrar eden satırları otomatik olarak kaldırır. Eğer tekrarların da gelmesini istersen, `UNION ALL` kullanırsın.
+
+
+
+
+
+
+
+
+
 
 
 .
