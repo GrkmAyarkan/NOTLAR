@@ -27,7 +27,7 @@
 * [INNER JOIN (Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#inner-join)
   - [LEFT JOIN - RIGHT JOIN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#left-join---right-join)
   - [FULL JOIN (FULL OUTER JOIN)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#full-join-full-outer-join)
-* [UNION]()
+* [UNION](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
