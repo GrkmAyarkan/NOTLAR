@@ -28,6 +28,7 @@
   - [LEFT JOIN - RIGHT JOIN](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#left-join---right-join)
   - [FULL JOIN (FULL OUTER JOIN)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#full-join-full-outer-join)
 * [UNION (Tablo Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
+* [INTERSECT - EXCEPT (Sorguların Kesişimi)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -851,6 +852,44 @@ SELECT <sütun_adı>, <sütun_adı>... FROM <table1>
 UNION
 SELECT <sütun_adı>, <sütun_adı>... FROM <table2>
 ```
+
+## INTERSECT - EXCEPT
+### INTERSECT
+`INTERSECT` operatörü sayesinde farklı `SELECT` sorgularıyla oluşan sonuçların kesişen verilerini tek bir sonuç kümesi haline getiririz.
+``` sql
+SELECT * FROM ogrenciler_2023
+INTERSECT
+SELECT * FROM ogrenciler_2024;
+```
+#### Sonuç
+| id | ad | ortalama |
+| :---: | :--- | :---: |
+| 5 | Zeynep | 74 |
+
+ Eğer iki tablodaki satırları ayrı ayrı yazdırmak istersek `INTERSECT ALL` kullanılır.
+
+ ### EXCEPT
+`EXCEPT`, SQL'de bir komut olup, iki sorgu arasındaki farkı almanızı sağlar. Yani, ilk sorgudan elde edilen sonuçları alır ve ikinci sorguda yer alan sonuçları çıkarır.
+``` sql
+SELECT * FROM ogrenciler_2023
+EXCEPT
+SELECT * FROM ogrenciler_2024;
+```
+#### Sonuç
+| id | ad | ortalama |
+| :---: | :--- | :---: |
+| 1 | Ayse | 85 |
+| 2 | Mehmet | 91 |
+| 3 | Zeynep | 74 |
+
+Şu şekilde düşünebiliriz, ilk sorguda 2023 tablosundan tüm satırlar alınır. Daha sonra 2024 tablosundaki satırlarda bulunan ve ilk sorguda gelen satırlarla aynı olan satırlar (bu durumda **| 5 | Zeynep | 74 |** satırı) çıkarılır ve sonuç yazdırılır.
+
+Eğer sorguda bir sonuç tekrar ediyorsa ve bu tekrarı koruyup hepsini yazdırmak isterse `EXCEPT ALL` kullanırız.
+
+
+
+
+
 
 
 
