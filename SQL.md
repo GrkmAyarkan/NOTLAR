@@ -245,7 +245,7 @@ postgres=#
 ```
 * Yeni veritabanı oluşturmak.
 ``` sql
-CREATE DATABASE <veritabanı_adı>
+CREATE DATABASE <veritabanı_adı>;
 ```
 * Bizim örneğimizde dvdrental veritabanına bağlanacağız.
 ```
