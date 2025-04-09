@@ -812,9 +812,15 @@ FULL JOIN notlar n ON o.id = n.ogrenci_id;
 * Satırları alt alta ekler.
 * Tablolar veya seçimler aynı sütun sayısına ve uyumlu veri türüne sahip olmalı.
 `UNION`, tekrar eden satırları otomatik olarak kaldırır. Eğer tekrarların da gelmesini istersen, `UNION ALL` kullanırsın.
+### Örnek Tablolar
+#### ogrenciler_2023 Tablosu
+| id | ad | ortalama |
+| :---: | :--- | :---: |
+| 1 | Ayşe | 85.5 |
+| 2 | Mehmet | 78.0 |
 
-
-
+#### ogrenciler_2024 Tablosu
+| | | |
 
 
 
