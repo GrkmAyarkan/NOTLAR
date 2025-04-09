@@ -816,12 +816,41 @@ FULL JOIN notlar n ON o.id = n.ogrenci_id;
 #### ogrenciler_2023 Tablosu
 | id | ad | ortalama |
 | :---: | :--- | :---: |
-| 1 | Ayşe | 85.5 |
-| 2 | Mehmet | 78.0 |
+| 1 | Ayse | 85 |
+| 2 | Mehmet | 91 |
+| 3 | Fatih | 74 |
+| 5 | Zeynep | 74 |
 
 #### ogrenciler_2024 Tablosu
-| | | |
+| id | ad | ortalama |
+| :---: | :--- | :---: |
+| 1 | Görkem | 85 |
+| 2 | Ege | 99 |
+| 5 | Zeynep | 74 |
 
+### UNION örnek kullanımı:
+``` sql
+SELECT * FROM ogrenciler_2023
+UNION
+SELECT * FROM ogrenciler_2024;
+```
+| id | ad | ortalama |
+| :---: | :--- | :---: |
+| 2 | Mehmet | 91 |
+| 5 | Zeynep | 74 |
+| 4 | Ege | 99 |
+| 1 | Ayse | 85 |
+| 3 | Fatih | 74 |
+| 1 | Görkem | 85 |
+
+`UNION` tüm değerleri aynı olan satırları (bu durumda **id**'si **5** olan **Zeynep** | **74** satır) yalnızca bir kez yazar.
+
+### UNION Söz Dizimi
+``` sql
+SELECT <sütun_adı>, <sütun_adı>... FROM <table1>
+UNION
+SELECT <sütun_adı>, <sütun_adı>... FROM <table2>
+```
 
 
 
