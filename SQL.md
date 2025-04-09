@@ -843,7 +843,7 @@ SELECT * FROM ogrenciler_2024;
 | 3 | Fatih | 74 |
 | 1 | Görkem | 85 |
 
-`UNION` tüm değerleri aynı olan satırları (bu durumda **id**'si **5** olan **Zeynep** | **74** satır) yalnızca bir kez yazar.
+`UNION` tüm değerleri aynı olan satırları (bu durumda **id**'si **5** olan **Zeynep** | **74** satırı) yalnızca bir kez yazar.
 
 ### UNION Söz Dizimi
 ``` sql
