@@ -765,6 +765,8 @@ FROM <tablo1_adı>
 INNER JOIN <tablo2_adı>
 ON <tablo1_adı>.<sütun_adı> = <tablo2_adı>.<sütun_adı>;
 ```
+`INNER JOIN` ve `JOIN` arasında fark yoktur; `JOIN` kelimesi genellikle `INNER JOIN` anlamında kullanılır. Yani, `INNER JOIN` ve `JOIN` aynı işlemi yapar ve sadece yazım farkı vardır.
+
 Buradaki tablo1 "left table", tablo2 "right table" olarak da adlandırılır.
 ### LEFT JOIN - RIGHT JOIN
 **ogrenciler** tablosunu **left** tablo, **notlar** tablosunu da **right** tablo olarak kabul edelim.
