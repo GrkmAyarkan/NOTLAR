@@ -29,7 +29,8 @@
   - [FULL JOIN (FULL OUTER JOIN)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#full-join-full-outer-join)
 * [UNION (Tablo Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
 * [INTERSECT - EXCEPT (Sorguların Kesişimi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#intersect---except)
-* [ALT SORGULAR]()
+* [ALT SORGULAR](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alt-sorgular)
+  - [ANY ve ALL (Değer Karşılaştırma)]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -898,6 +899,29 @@ FROM books
 WHERE page_number > (SELECT page_number FROM book WHERE title = 'Rüzgarın Adı);
 ```
 Bu sorgu ile gelen kitapları, tablodan 'Rüzgarın Adı' kitabını bularak onun sayfa bilgisiyle karşılaştırıp yapabiliriz.
+
+## ANY ve ALL Operatörleri
+`ANY` ve `ALL`, bir değeri bir alt sorgudan dönen sonuçlarla karşılaştırmak için kullanılan SQL operatörleridir.
+* `ANY`: Koşul, alt sorgudaki **en az bir değer** için doğruysa sonuç döner.
+* `ALL`: Koşul, alt sorgudaki **tüm değerler** için doğruysa sonuç döner.
+
+### ANY (veya SOME - Herhangi Bir):
+Bir karşılaştırma ifadesinde, alt sorgudan dönen değerlerden herhangi biriyle eşleşme olup olmadığını kontrol eder. \
+Koşul, **en az bir satır** için sağlanıyorsa `TRUE` döner.
+``` sql
+SELECT * FROM ogrenciler
+WHERE not > ANY (SELECT not FROM yedek_ogrenciler);
+```
+En az bir yedek öğrenciden yüksek nota sahip öğrencileri getirir.
+
+### ALL (Tümü)
+Bir karşılaştırma ifadesinde, alt sorgudan dönen tüm değerlerle kıyas yapar.
+Koşul, **tüm satırlar** için sağlanıyorsa `TRUE` döner.
+``` sql
+SELECT * FROM ogrenciler
+WHERE not > ALL (SELECT not FROM yedek_ogrenciler);
+```
+Tüm yedek öğrencilerden daha yüksek nota sahip olanları getirir.
 
 
 
