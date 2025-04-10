@@ -29,6 +29,7 @@
   - [FULL JOIN (FULL OUTER JOIN)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#full-join-full-outer-join)
 * [UNION (Tablo Birleştirme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#union)
 * [INTERSECT - EXCEPT (Sorguların Kesişimi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#intersect---except)
+* [ALT SORGULAR]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -886,7 +887,17 @@ SELECT * FROM ogrenciler_2024;
 
 Eğer sorguda bir sonuç tekrar ediyorsa ve bu tekrarı koruyup hepsini yazdırmak isterse `EXCEPT ALL` kullanırız.
 
-
+# ALT SORGULAR
+## ALT SORGU nedir?
+Bir sorgu içerisinde, o sorgunun ihtiyaç duyduğu veri veya verileri getiren sorgulardır.
+### Alt Sorgu Nasıl Kullanılır?
+Örnek bir senaryoda 'Rüzgarın Adı' kitabından daha fazla sayfa sayısında olan kitapları listelemek isteyebiliriz. Bu kitabın sayfa sayısı '736' ve bu sorguyu `WHERE page_number > 736` şeklinde yapabiliriz. Ancak her zaman bu örnekteki gibi sayfa sayısı bilgisine sahip olmayabiliriz. Bu durumda **Alt Sorgu** kullanmak daha doğru olur.
+``` sql
+SELECT *
+FROM books
+WHERE page_number > (SELECT page_number FROM book WHERE title = 'Rüzgarın Adı);
+```
+Bu sorgu ile gelen kitapları, tablodan 'Rüzgarın Adı' kitabını bularak onun sayfa bilgisiyle karşılaştırıp yapabiliriz.
 
 
 
