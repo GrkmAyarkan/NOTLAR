@@ -31,7 +31,7 @@
 * [INTERSECT - EXCEPT (Sorguların Kesişimi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#intersect---except)
 * [ALT SORGULAR](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alt-sorgular)
   - [ANY ve ALL (Değer Karşılaştırma)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#any-ve-all-operat%C3%B6rleri)
-  - [Alt Sorguları ile JOIN Kullanımı]()
+  - [Alt Sorguları ile JOIN Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alt-sorgular%C4%B1-ile-join-kullan%C4%B1m%C4%B1)
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
