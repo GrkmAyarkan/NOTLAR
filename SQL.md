@@ -31,6 +31,7 @@
 * [INTERSECT - EXCEPT (Sorguların Kesişimi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#intersect---except)
 * [ALT SORGULAR](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#alt-sorgular)
   - [ANY ve ALL (Değer Karşılaştırma)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/SQL.md#any-ve-all-operat%C3%B6rleri)
+  - [Alt Sorguları ile JOIN Kullanımı]()
 
 ## SQL (Structured Query Language) Nedir?
 SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı ile iletişime geçeriz. \
@@ -923,11 +924,27 @@ WHERE not > ALL (SELECT not FROM yedek_ogrenciler);
 ```
 Tüm yedek öğrencilerden daha yüksek nota sahip olanları getirir.
 
+## Alt Sorguları ile JOIN Kullanımı
+### Senaryolar
+* Kitap sayfası sayısı ortalama kitap sayfası sayısından fazla olan kitapların isimlerini, bu kitapların yazarlarına ait isim ve soyisim bilgileriyle birlikte sıralayınız. 
+``` sql
+SELECT author.first_name, author.last_name, book.title FROM author
+INNER JOIN book ON book.author_id = author.id
+WHERE page_number > ( SELECT AVG(page_number) FROM book );
+```
+Yukarıdaki sorgumuzda kitaplara ait yazar bilgilerini JOIN kullanarak elde ediyoruz. Ortalama sayfa sayısını da alt sorgudan getiriyoruz.
 
-
-
-
-
+* En uzun filmlerin isimlerini aktör isim ve soyisimleriyle birlikte sıralayalım.
+``` sql
+SELECT actor.first_name, actor.last_name, film.title FROM actor
+JOIN film_actor ON film_actor.actor_id = actor.actor_id
+JOIN film ON film.film_id = film_actor.film_id
+WHERE film.length = ( SELECT MAX(length) FROM film );
+```
+#### JOIN kısmı:
+Bu sorguda iki tabloyu birleştiriyoruz: \
+actor ve film_actor tablolarını actor_id üzerinden birleştiriyoruz, yani her aktörün hangi filmlerde yer aldığını buluyoruz. \
+film_actor ve film tablolarını film_id üzerinden birleştiriyoruz, yani aktörlerin rol aldığı filmlerin başlık ve diğer bilgilerine ulaşıyoruz.
 
 
 
