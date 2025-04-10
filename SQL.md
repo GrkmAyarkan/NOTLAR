@@ -880,7 +880,7 @@ SELECT * FROM ogrenciler_2024;
 | :---: | :--- | :---: |
 | 1 | Ayse | 85 |
 | 2 | Mehmet | 91 |
-| 3 | Zeynep | 74 |
+| 3 | Fatih | 74 |
 
 Şu şekilde düşünebiliriz, ilk sorguda 2023 tablosundan tüm satırlar alınır. Daha sonra 2024 tablosundaki satırlarda bulunan ve ilk sorguda gelen satırlarla aynı olan satırlar (bu durumda **| 5 | Zeynep | 74 |** satırı) çıkarılır ve sonuç yazdırılır.
 
