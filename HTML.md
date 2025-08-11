@@ -12,7 +12,7 @@
   - [A Etiketi (Linkleme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#a-etiketi-linkleme)
   - [UL - OL - Li Etiketi (Liste Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ul---ol---li-etiketi-liste-etiketi)
   - [HR Etiketi (Geçiş Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#hr-etiketi-ge%C3%A7i%C5%9F-etiketi)
-  - [STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)](https://www.google.com/)
+  - [STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#strong-ve-b-etiketi-metin-kal%C4%B1nla%C5%9Ft%C4%B1rma-ve-%C3%B6nem-belirtme)
   - [Script Etiketi](https://www.google.com/)
   - [BUTTON Etiketi](https://www.google.com/)
   - [IMG Etiketi (Resim Etiketi)](https://www.google.com/)
