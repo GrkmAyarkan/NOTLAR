@@ -16,7 +16,7 @@
   - [Script Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketi)
   - [BUTTON Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#button-etiketi)
   - [IMG Etiketi (Resim Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#img-etiketi-resim-etiketi)
-  - [IFRAME Etiketi](https://www.google.com/)
+  - [IFRAME Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#iframe-etiketi)
   - [Yorum Satırı](https://www.google.com/)
 
 
