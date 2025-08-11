@@ -1,10 +1,26 @@
 # HTML
 
 ### İçindekiler
-* Etiketler
+* [ETİKETLER (En Çok Kullanılan Etiketler)](https://www.google.com/)
+  - [HTML Etiketi](https://www.google.com/)
+  - [HEAD Etiketi](https://www.google.com/)
+  - [BODY Etiketi](https://www.google.com/)
+  - [!DOCTYPE html Etiketi](https://www.google.com/)
+  - [H Etiketi (Başlık)](https://www.google.com/)
+  - [P Etiketi (Paragraf)](https://www.google.com/)
+  - [BR Etiketi (Satır Atlama)](https://www.google.com/)
+  - [A Etiketi (Linkleme)](https://www.google.com/)
+  - [UL - OL - Li Etiketi (Liste Etiketi)](https://www.google.com/)
+  - [HR Etiketi (Geçiş Etiketi)](https://www.google.com/)
+  - [STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)](https://www.google.com/)
+  - [Script Etiketi](https://www.google.com/)
+  - [BUTTON Etiketi](https://www.google.com/)
+  - [IMG Etiketi (Resim Etiketi)](https://www.google.com/)
+  - [IFRAME Etiketi](https://www.google.com/)
+  - [Yorum Satırı](https://www.google.com/)
 
 
-## ETİKETLER
+## ETİKETLER (En Çok Kullanılan Etiketler)
 
 ### HTML Etiketi
 Bu etiket, kendi altında mutlaka `<head>` ve `<body>` etiketlerini barındırmalıdır. Eğer bir HTML dökümanı oluşturmak isterseniz ilk yapacağınız iş bir `<html>` etiketi oluşturmaktır. Ardından HTML etiketi altına `<head>` ve `<body>` etiketlerini yazmalısınız.
@@ -47,6 +63,8 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
   </BODY>
 </html>
 ```
+
+### !DOCTYPE html Etiketi
 `<!DOCTYPE html>` : Dökümanımızın HTML dilinde olduğunu tarayıcımıza bildiren talimattır. /
 `<html lang="en">` : Site içeriğinin dilini belirten etiket, "**en**" yerine "**tr**" yazabilirsiniz.
 ```
@@ -174,6 +192,51 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
     </script>
 </body>
 ```
+
+### BUTTON Etiketi
+`<button>` etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.
+```
+<body>
+    <button> Buton </button>
+</body>
+```
+
+### IMG Etiketi (Resim Etiketi)
+Resim eklemek için `<img>` etiketini kullanıyoruz. `<img src=”resim.jpg” alt=”açıklama yazısı” />`, `src=""` kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir. alt="" kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz.
+```
+<body>
+    <img src="https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/pixelArt.gif" alt="Görkem Ayarkan" />
+</body>
+```
+
+### IFRAME Etiketi
+Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız. örn: Youtube'dan bir videoyu sayfamızda göstermek istersek `<iframe>` kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek **iframe** kodunu kopyalayabiliriz.)
+```
+<body>
+    <iframe width="789" height="444" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+      allowfullscreen></iframe>
+</body>
+```
+
+### Yorum Satırı
+HTML dilinde yorum satırı `<!--` ile başlar `-->` ile biter.
+```
+<body>
+    <!-- Örnek Yorum Satırı -->
+    <!-- 
+        2. Örnek Yorum Satırı 
+    -->   
+</body>
+```
+
+
+
+
+
+
+
+
 
 
 
