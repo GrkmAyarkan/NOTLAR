@@ -2,7 +2,7 @@
 
 ### İçindekiler
 * [ETİKETLER (En Çok Kullanılan Etiketler)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#eti%CC%87ketler-en-%C3%A7ok-kullan%C4%B1lan-etiketler)
-  - [HTML Etiketi](https://www.google.com/)
+  - [HTML Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#html-etiketi)
   - [HEAD Etiketi](https://www.google.com/)
   - [BODY Etiketi](https://www.google.com/)
   - [!DOCTYPE html Etiketi](https://www.google.com/)
