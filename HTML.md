@@ -15,7 +15,7 @@
   - [STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#strong-ve-b-etiketi-metin-kal%C4%B1nla%C5%9Ft%C4%B1rma-ve-%C3%B6nem-belirtme)
   - [Script Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketi)
   - [BUTTON Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#button-etiketi)
-  - [IMG Etiketi (Resim Etiketi)](https://www.google.com/)
+  - [IMG Etiketi (Resim Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#img-etiketi-resim-etiketi)
   - [IFRAME Etiketi](https://www.google.com/)
   - [Yorum Satırı](https://www.google.com/)
 
