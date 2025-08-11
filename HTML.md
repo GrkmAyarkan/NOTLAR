@@ -5,7 +5,7 @@
   - [HTML Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#html-etiketi)
   - [HEAD Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#head-etiketi)
   - [BODY Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#body-etiketi)
-  - [!DOCTYPE html Etiketi](https://www.google.com/)
+  - [!DOCTYPE html Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#doctype-html-etiketi)
   - [H Etiketi (Başlık)](https://www.google.com/)
   - [P Etiketi (Paragraf)](https://www.google.com/)
   - [BR Etiketi (Satır Atlama)](https://www.google.com/)
