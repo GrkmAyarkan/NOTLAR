@@ -108,16 +108,72 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 </html>
 ```
 
+### A Etiketi (Linkleme)
+`<a>` etiketinin en önemli özelliği **href** özelliğidir. Bu etiket ile sayfaları linkleyebiliriz. Etiket içerisine yazılan içerik sayfa üzerinde gösterilecek içeriktir. **href** içine yazılan ise tıklandığında gideceği URL'dir.
+```
+<body>
+    <a href="https://github.com/GrkmAyarkan">Görkem Ayarkan Github</a>
+</body>
+```
 
+### UL - OL - Li Etiketi (Liste Etiketi)
+`<ul>` ve `<ol>` etiketleri liste oluşturma etiketleridir. Listeyi oluşturduktan sonra içeriğini oluşturmak için `<li>` etiketini kullanıyoruz. /
+`<ul>` = "**unordered list**" sırasız liste anlamına geliyor. `<ol>` = "**ordered list**" sıralı liste anlamına geliyor.
+```
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+```
 
+### HR Etiketi (Geçiş Etiketi)
+`<hr>` etiketi konusal bir geçişi temsil eder. Yazı yazarken yeni bir paragrafa başlamaya benzetebiliriz. Varsayılan olarak sayfaya yatay bir çizgi ekler ama bu özelliği değiştirilebilir. Bu etiket kapatılmaya ihtiyaç duymaz.
+```
+<body>
+    <p>
+      Filmin odaklandığı yakın gelecekte yeryüzündeki yaşam;
+    </p>
+    <hr>
+    <p>
+      Artan kuraklık ve iklim değişiklikleri nedeniyle tehlikeye girmiştir.
+      İnsan ırkı yok olma tehlikesiyle karşı karşıyadır.
+      Bu sırada yeni keşfedilen bir solucan deliği, tüm insanlığın umudu hâline gelir.
+    </p>
+    <hr>
+    <p>
+      Bir grup astronot-kaşif, buradan geçip boyut değiştirerek daha önce
+      hiçbir insanoğlunun erişemediği yerlere ulaşmak ve insanoğlunun
+      yeni yaşam alanlarını araştırmakla görevlendirilir.
+    </p>
+  </body>
+```
 
+### STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)
+`<strong>` etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz `<b>` etiketini kullanabilirsiniz.
+```
+<body>
+    <h2><strong> Kodluyoruz </strong></h2>
+    <p><b> HTML </b> Etiketleri </p>
+</body>
+```
 
-
-
-
-
-
-
+### Script Etiketi
+`<script>` etiketi **JavaScript** kodlarını **HTML** içerisine yazabilmemizi sağlar.
+```
+<body>
+    <script>
+        document.write("Kodluyoruz")
+    </script>
+</body>
+```
 
 
 
