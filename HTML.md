@@ -17,7 +17,7 @@
   - [BUTTON Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#button-etiketi)
   - [IMG Etiketi (Resim Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#img-etiketi-resim-etiketi)
   - [IFRAME Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#iframe-etiketi)
-  - [Yorum Satırı](https://www.google.com/)
+  - [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#yorum-sat%C4%B1r%C4%B1)
 
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
