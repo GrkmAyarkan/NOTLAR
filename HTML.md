@@ -1,7 +1,7 @@
 # HTML
 
 ### İçindekiler
-* [ETİKETLER (En Çok Kullanılan Etiketler)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#eti%CC%87ketler-en-%C3%A7ok-kullan%C4%B1lan-etiketler)
+* [EN ÇOK KULLANILAN ETİKETLER](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#eti%CC%87ketler-en-%C3%A7ok-kullan%C4%B1lan-etiketler)
   - [HTML Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#html-etiketi)
   - [HEAD Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#head-etiketi)
   - [BODY Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#body-etiketi)
@@ -18,7 +18,7 @@
   - [IMG Etiketi (Resim Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#img-etiketi-resim-etiketi)
   - [IFRAME Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#iframe-etiketi)
   - [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#yorum-sat%C4%B1r%C4%B1)
-
+* [BAŞLIK ETİKETLERİNİN KULLANIMI]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -230,9 +230,18 @@ HTML dilinde yorum satırı `<!--` ile başlar `-->` ile biter.
 </body>
 ```
 
+## BAŞLIK ETİKETLERİNİN KULLANIMI
+#####(`<head></head>` etiketi arasına yazılan etiketler)
 
-
-
+### TİTLE Etiketi
+"**BAŞLIK**" görevini üstlenir.
+```
+<title> GÖRKEM AYARKAN </title>
+```
+Bu şekilde başlık belirlediğimizde:
+* Sekme isminde "**GÖRKEM AYARKAN**" yazdığını görürüz.
+* Sayfayı favorilere eklerken görünür.
+* Arama motorları sayfanın bu kısmına bakarak siteyi listeler.
 
 
 
