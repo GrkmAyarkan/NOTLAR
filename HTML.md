@@ -20,6 +20,9 @@
   - [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#yorum-sat%C4%B1r%C4%B1)
 * [BAŞLIK ETİKETLERİNİN KULLANIMI](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ba%C5%9Flik-eti%CC%87ketleri%CC%87ni%CC%87n-kullanimi)
   - [TİTLE Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ti%CC%87tle-etiketi)
+  - [Style ve Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-ve-script-etiketleri)
+    *[Style Etiketi]()
+    *[Script Etiketleri]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -196,7 +199,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### BUTTON Etiketi
 `<button>` etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.
-```
+```html
 <body>
     <button> Buton </button>
 </body>
@@ -204,7 +207,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### IMG Etiketi (Resim Etiketi)
 Resim eklemek için `<img>` etiketini kullanıyoruz. `<img src=”resim.jpg” alt=”açıklama yazısı” />`, `src=""` kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir. alt="" kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz.
-```
+```html
 <body>
     <img src="https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/pixelArt.gif" alt="Görkem Ayarkan" />
 </body>
@@ -212,7 +215,7 @@ Resim eklemek için `<img>` etiketini kullanıyoruz. `<img src=”resim.jpg” a
 
 ### IFRAME Etiketi
 Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız. örn: Youtube'dan bir videoyu sayfamızda göstermek istersek `<iframe>` kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek **iframe** kodunu kopyalayabiliriz.)
-```
+```html
 <body>
     <iframe width="789" height="444" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
@@ -222,7 +225,7 @@ Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir si
 
 ### Yorum Satırı
 HTML dilinde yorum satırı `<!--` ile başlar `-->` ile biter.
-```
+```html
 <body>
     <!-- Örnek Yorum Satırı -->
     <!-- 
@@ -236,7 +239,7 @@ HTML dilinde yorum satırı `<!--` ile başlar `-->` ile biter.
 
 ### TİTLE Etiketi
 "**BAŞLIK**" görevini üstlenir.
-```
+```html
 <title> GÖRKEM AYARKAN </title>
 ```
 Bu şekilde başlık belirlediğimizde:
@@ -249,9 +252,13 @@ Bu şekilde başlık belirlediğimizde:
 `<style></style>` etiketleri arasında sayfamızı güzelleştiren, renklendiren belli özellikler tanımlayabiliyoruz. Bu kısımlarda, bir html dökümanında hangi alanın nerede ve nasıl görünmesi gerektiğini tasarlayabiliriz. Belli kuralları olan bu belirteçlere **CSS** diyoruz. \
 NOT: HTML dökümanı işlenirken ve görüntülenirken sayfa sırayla işlendiği için her zaman sırasıyla en altta kalan stil belirlemeleri baskın gelecektir.
 
-
-
-
+### Script Etiketleri (JavaScript)
+Bu etiketle web sayfalarının, browser yardımıyla çalıştırabildiği kodlar yazabiliriz. Sayfamızı canlandırabilir, hareketlendirebilir her alanda değişiklik yapabiliriz.
+#### Script Tag Özellikleri
+Eğer script etiketini kullanırken herhangi bir özellik eklemezsek browser sırası geldiğinde doğrudan işlenir. Ve bu kısım işlenmeden sayfa yüklenmeye devam etmez. Bu noktada da async özelliğimiz devreye giriyor. Eğer sayfanın yüklenmeye devam ederken eşzamanlı olarak bu etiketlerle belirlediğimiz scriptlerin de yüklenmesini ve hazırlanmasını istiyorsak, yani bu kısmın asenkron çalışmasını istiyorsak etiketimize bu özelliği ekliyoruz. Herhangi bir değer girmemize gerek yok şu şekilde kullanabiliriz:
+```html
+<script src="myJavascript.js" async></script>
+```
 
 
 .
