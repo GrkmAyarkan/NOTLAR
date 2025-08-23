@@ -18,7 +18,7 @@
   - [IMG Etiketi (Resim Etiketi)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#img-etiketi-resim-etiketi)
   - [IFRAME Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#iframe-etiketi)
   - [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#yorum-sat%C4%B1r%C4%B1)
-* [BAŞLIK ETİKETLERİNİN KULLANIMI]()
+* [BAŞLIK ETİKETLERİNİN KULLANIMI](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ba%C5%9Flik-eti%CC%87ketleri%CC%87ni%CC%87n-kullanimi)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -231,7 +231,7 @@ HTML dilinde yorum satırı `<!--` ile başlar `-->` ile biter.
 ```
 
 ## BAŞLIK ETİKETLERİNİN KULLANIMI
-#####(`<head></head>` etiketi arasına yazılan etiketler)
+##### (`<head></head>` etiketi arasına yazılan etiketler)
 
 ### TİTLE Etiketi
 "**BAŞLIK**" görevini üstlenir.
@@ -245,7 +245,7 @@ Bu şekilde başlık belirlediğimizde:
 
 ## Style ve Script Etiketleri
 ### Style Etiketi
-`<style></style>` etiketleri arasında sayfamızı güzelleştiren, renklendiren belli özellikler tanımlayabiliyoruz. Bu kısımlarda, bir html dökümanında hangi alanın nerede ve nasıl görünmesi gerektiğini tasarlayabiliriz. Belli kuralları olan bu belirteçlere **CSS** diyoruz. /
+`<style></style>` etiketleri arasında sayfamızı güzelleştiren, renklendiren belli özellikler tanımlayabiliyoruz. Bu kısımlarda, bir html dökümanında hangi alanın nerede ve nasıl görünmesi gerektiğini tasarlayabiliriz. Belli kuralları olan bu belirteçlere **CSS** diyoruz. \
 NOT: HTML dökümanı işlenirken ve görüntülenirken sayfa sırayla işlendiği için her zaman sırasıyla en altta kalan stil belirlemeleri baskın gelecektir.
 
 
