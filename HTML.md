@@ -19,6 +19,7 @@
   - [IFRAME Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#iframe-etiketi)
   - [Yorum Satırı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#yorum-sat%C4%B1r%C4%B1)
 * [BAŞLIK ETİKETLERİNİN KULLANIMI](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ba%C5%9Flik-eti%CC%87ketleri%CC%87ni%CC%87n-kullanimi)
+  - [TİTLE Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ti%CC%87tle-etiketi)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
