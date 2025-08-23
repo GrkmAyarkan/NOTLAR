@@ -243,8 +243,10 @@ Bu şekilde başlık belirlediğimizde:
 * Sayfayı favorilere eklerken görünür.
 * Arama motorları sayfanın bu kısmına bakarak siteyi listeler.
 
-
-
+## Style ve Script Etiketleri
+### Style Etiketi
+`<style></style>` etiketleri arasında sayfamızı güzelleştiren, renklendiren belli özellikler tanımlayabiliyoruz. Bu kısımlarda, bir html dökümanında hangi alanın nerede ve nasıl görünmesi gerektiğini tasarlayabiliriz. Belli kuralları olan bu belirteçlere **CSS** diyoruz. /
+NOT: HTML dökümanı işlenirken ve görüntülenirken sayfa sırayla işlendiği için her zaman sırasıyla en altta kalan stil belirlemeleri baskın gelecektir.
 
 
 
