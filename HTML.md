@@ -22,8 +22,8 @@
   - [TİTLE Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ti%CC%87tle-etiketi)
   - [Style ve Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-ve-script-etiketleri)
     * [Style Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-etiketi)
-    * [Script Etiketleri]()
-      -[Script Tag Özellikleri]()
+    * [Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketleri-javascript)
+      - [Script Tag Özellikleri]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
