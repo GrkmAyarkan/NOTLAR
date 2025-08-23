@@ -21,14 +21,15 @@
 * [BAŞLIK ETİKETLERİNİN KULLANIMI](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ba%C5%9Flik-eti%CC%87ketleri%CC%87ni%CC%87n-kullanimi)
   - [TİTLE Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#ti%CC%87tle-etiketi)
   - [Style ve Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-ve-script-etiketleri)
-    *[Style Etiketi]()
-    *[Script Etiketleri]()
+    * [Style Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-etiketi)
+    * [Script Etiketleri]()
+      -[Script Tag Özellikleri]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
 ### HTML Etiketi
 Bu etiket, kendi altında mutlaka `<head>` ve `<body>` etiketlerini barındırmalıdır. Eğer bir HTML dökümanı oluşturmak isterseniz ilk yapacağınız iş bir `<html>` etiketi oluşturmaktır. Ardından HTML etiketi altına `<head>` ve `<body>` etiketlerini yazmalısınız.
-```
+```html
 <html>   <head></head> 
   <body></body>
 </html>
@@ -43,7 +44,7 @@ Bu etiket, kendi altında mutlaka `<head>` ve `<body>` etiketlerini barındırma
 * `<noscript>`
 * `<link>`
 * `<base>`
-```
+```html
 <html>   <HEAD>
     <title> Sekmede Görülecek İsim </title>
     <meta name="Keywords" content="HTML,Kodluyoruz">
@@ -56,7 +57,7 @@ Bu etiket, kendi altında mutlaka `<head>` ve `<body>` etiketlerini barındırma
 
 ### BODY Etiketi
 Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altına yazıyoruz. Anlatacağım diğer etiketleri `<body>` etiketi içerisine yazacağız.
-```
+```html
 <html>   <HEAD>
     <title> Sekmede Görülecek İsim </title>
     <meta name="Keywords" content="HTML,Kodluyoruz">
@@ -71,7 +72,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 ### !DOCTYPE html Etiketi
 `<!DOCTYPE html>` : Dökümanımızın HTML dilinde olduğunu tarayıcımıza bildiren talimattır. /
 `<html lang="en">` : Site içeriğinin dilini belirten etiket, "**en**" yerine "**tr**" yazabilirsiniz.
-```
+```html
 <!DOCTYPE html> <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -86,7 +87,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### H Etiketi (Başlık)
 `<h>` etiketleri başlık etiketleridir. Büyükten küçüğe doğru ilerler;
-```
+```html
 <h1>
 <h2>
 <h3>
@@ -99,7 +100,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 ### P Etiketi (Paragraf)
 `<p>` etiketi paragraf etiketidir. Sayfa içerisinde oluşturacağımız metinleri `<p>` etiketi ile oluştururuz. \
 **Not:** HTML otomatik olarak Paragraf etiketinin öncesine ve sonrasına satır atlatır.
-```
+```html
 <!DOCTYPE html> <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -116,7 +117,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 ### BR Etiketi (Satır Atlama)
 `<br>` etiketi satır atlatma etiketidir ve kapatmaya ihtiyaç duymayan etiketlerden biridir. Atlatmak istediğiniz satır sayısı kadar `<br>` etiketi kullanabilirsiniz. / 
 **NOT:** <br> etiketinin farklı kullanımlarını görebilirsiniz. örn.( `<br>`,`<br/>`,`<br />`) Hepsi aynı işlevi yerine getirir.
-```
+```html
 <!DOCTYPE html> <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -132,7 +133,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### A Etiketi (Linkleme)
 `<a>` etiketinin en önemli özelliği **href** özelliğidir. Bu etiket ile sayfaları linkleyebiliriz. Etiket içerisine yazılan içerik sayfa üzerinde gösterilecek içeriktir. **href** içine yazılan ise tıklandığında gideceği URL'dir.
-```
+```html
 <body>
     <a href="https://github.com/GrkmAyarkan">Görkem Ayarkan Github</a>
 </body>
@@ -141,7 +142,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 ### UL - OL - Li Etiketi (Liste Etiketi)
 `<ul>` ve `<ol>` etiketleri liste oluşturma etiketleridir. Listeyi oluşturduktan sonra içeriğini oluşturmak için `<li>` etiketini kullanıyoruz. /
 `<ul>` = "**unordered list**" sırasız liste anlamına geliyor. `<ol>` = "**ordered list**" sıralı liste anlamına geliyor.
-```
+```html
 <body>
     <ul>
         <li>HTML</li>
@@ -158,7 +159,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### HR Etiketi (Geçiş Etiketi)
 `<hr>` etiketi konusal bir geçişi temsil eder. Yazı yazarken yeni bir paragrafa başlamaya benzetebiliriz. Varsayılan olarak sayfaya yatay bir çizgi ekler ama bu özelliği değiştirilebilir. Bu etiket kapatılmaya ihtiyaç duymaz.
-```
+```html
 <body>
     <p>
       Filmin odaklandığı yakın gelecekte yeryüzündeki yaşam;
@@ -180,7 +181,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### STRONG ve B Etiketi (Metin Kalınlaştırma Ve Önem Belirtme)
 `<strong>` etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz `<b>` etiketini kullanabilirsiniz.
-```
+```html
 <body>
     <h2><strong> Kodluyoruz </strong></h2>
     <p><b> HTML </b> Etiketleri </p>
@@ -189,7 +190,7 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
 
 ### Script Etiketi
 `<script>` etiketi **JavaScript** kodlarını **HTML** içerisine yazabilmemizi sağlar.
-```
+```html
 <body>
     <script>
         document.write("Kodluyoruz")
