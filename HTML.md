@@ -314,12 +314,30 @@ Yaygın değerler:
 * **strict-origin-when-cross-origin** → Aynı sitede tam adresi gönderir, farklı sitede sadece alan adını.
 * **unsafe-url** → Her zaman tam adresi gönderir (en az güvenli seçenek).
 
+### src
+HTML sayfamızı oluştururken sayfa içerisindeki kod ne kadar uzun olursa okunması, yazılması ve incelenmesi o kadar zor olur. Bu yüzden kodları farklı sayfalara bölüp kullanmak hem daha kullanışlı hem de daha verimli olur. Bu amaçla **script** etiketinin **src** özelliğini kullanırız. Bu özellikle hem kendi dosya sistemimizde hem de internet üzerinde herhangi bir adreste bulunan kodları kendi sayfamıza ekleyebiliriz.
 
+Örnek olarak kendi dosya sistemimizde, html dökümanımızla aynı dizinde bulunan bir script dosyasını çağırmak için:
+```html
+<script src="myJavascript.js"></script>
+```
 
+Veya bir web sayfasındaki başka bir scripti çağırmak için:
+```html
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+```
 
-
-
-
-
+Son olarak da bu etiketle kullanabileceğimiz type özelliğimiz, yüklenecek dosyanın içeriğinin, browser tarafından nasıl yorumlanması gerektiğini belirtir. Örnek olarak javascript dosyası yüklemek için yüklenecek kodların javascript kodunu belirtmek için şöyle yazabiliriz:
+```html
+<script type="application/javascript">
+document.getElementById("someTestDiv").innerHTML = "This code runs as js";
+</script>
+```
+Ya da Ecmascript için:
+```html
+<script type="application/ecmascript">
+document.getElementById("someTestDiv").innerHTML = "This code runs as js";
+</script>
+```
 
 .
