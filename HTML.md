@@ -299,12 +299,20 @@ Tarayıcı dosyayı indirir → hash değerini hesaplar → bu değer integrity 
 * **crossorigin** → Dosyayı nasıl isteyeceğini belirler.
 * **integrity** → Dosyanın güvenli ve değişmemiş olduğunu doğrular.
 
+#### referrerpolicy
+Ayrıca bir diğer etiketimiz de **refreferrerpolicy**. Bu etiket de scripti yükleyeceğimiz zaman, alacağımız kaynağa atacağımız verileri eklemek için kullınılır.
+**referrerpolicy**, tarayıcıya hangi “referrer” bilgisini (yani geldikleri sayfanın adresini) başka bir siteye gönderip göndermemesi gerektiğini söyler.
 
-
-
-
-
-
+“**Referrer**” = Kullanıcı bir bağlantıya tıkladığında, hedef siteye hangi sayfadan geldiğini gösteren bilgidir.
+Ama bazen gizlilik veya güvenlik nedeniyle bu bilgi gönderilmez ya da kısıtlanır.
+```html
+<a href="https://example.com" referrerpolicy="no-referrer">Example'a git</a>
+```
+Yaygın değerler:
+* **no-referrer** → Hiç referrer göndermez.
+* **origin** → Sadece alan adını gönderir (https://mysite.com gibi).
+* **strict-origin-when-cross-origin** → Aynı sitede tam adresi gönderir, farklı sitede sadece alan adını.
+* **unsafe-url** → Her zaman tam adresi gönderir (en az güvenli seçenek).
 
 
 
