@@ -23,7 +23,8 @@
   - [Style ve Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-ve-script-etiketleri)
     * [Style Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#style-etiketi)
     * [Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketleri-javascript)
-      - [Script Tag Özellikleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-tag-%C3%B6zellikleri)
+      - [Script Tag Özellikleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-tag-%C3%B6zellikleri) 
+      - [Güvenlik (crossorigin ve integrity)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#crossorigin)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
