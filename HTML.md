@@ -260,6 +260,57 @@ Eğer script etiketini kullanırken herhangi bir özellik eklemezsek browser sı
 ```html
 <script src="myJavascript.js" async></script>
 ```
+Eğer bu etiketin sayfa yüklendikten sonra yüklenip çalıştırılmasını istiyorsak o zaman async özelliğinin yanına defer özelliğini de eklememiz gerekiyor. Ancak bu iki özellik de yalnızca sayfa harici kaynaktan yani bu HTML içinde yazmadığımız javascripti yüklerken kullanabileceğimiz özellikler. Buna da dikkat etmemiz gerekiyor.
+
+Bu alanın doğru şekilde korunması ve kullanılması için kullanılacak iki özellik vardır. 
+
+#### Crossorigin
+Bunlardan biri **Crossorigin**.
+
+crossorigin, HTML’de genellikle <img>, <script>, <link> gibi etiketlerde kullanılan bir özelliktir.
+Amaç: farklı bir kaynaktan (domain, port veya protokol) gelen veriye tarayıcının nasıl davranacağını belirtmektir.
+
+Kısaca:
+Bir dosyayı (örneğin bir script veya resim) başka bir siteden yüklüyorsan, crossorigin tarayıcıya “bu isteği kimlik bilgileriyle mi, yoksa anonim mi yapayım?” diye söyleyen bir ayardır.
+```html
+<script src="https://example.com/script.js" crossorigin="anonymous"></script>
+```
+Üç olası değeri vardır:
+* anonymous → Kimlik bilgileri (çerez, token vs.) gönderilmez.
+* use-credentials → Kimlik bilgileri gönderilir.
+* (boş bırakılırsa) → Tarayıcı varsayılan olarak kimlik bilgisi göndermez.
+
+#### Integrity
+İkinci özellik ise **integrity**.
+
+Integrity genellikle crossorigin ile birlikte kullanılan bir HTML özelliğidir ve dosyanın bozulmadığından veya değiştirilmediğinden emin olmak için kullanılır. Tarayıcıya, “Bu dosyanın içeriği şu hash değerine eşit olmalı, değilse yükleme!” demektir. 
+
+Bir CDN’den (örneğin Bootstrap veya jQuery) dosya yüklüyorsan, biri o dosyayı gizlice değiştirirse tarayıcı fark eder ve dosyayı çalıştırmaz.
+```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+rrZn/t0I3zZVnN0v7l6GCEa8hZsj"
+        crossorigin="anonymous"></script>
+```
+Buradaki integrity değeri (hash) dosyanın SHA384 kontrol özetidir.
+Tarayıcı dosyayı indirir → hash değerini hesaplar → bu değer integrity ile uyuşmazsa dosyayı çalıştırmaz.
+
+Özetle:
+* **crossorigin** → Dosyayı nasıl isteyeceğini belirler.
+* **integrity** → Dosyanın güvenli ve değişmemiş olduğunu doğrular.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .
