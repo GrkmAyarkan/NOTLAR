@@ -25,7 +25,7 @@
     * [Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketleri-javascript)
       - [Script Tag Özellikleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-tag-%C3%B6zellikleri) 
       - [Güvenlik (crossorigin ve integrity)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#crossorigin)
-      - [src](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
+      - [src (Farklı Saylardaki kodları çekme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
       - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
@@ -343,5 +343,43 @@ document.getElementById("someTestDiv").innerHTML = "This code runs as js";
 ```
 
 ### Link Etiketi
+<link></link> etiketi de script etiketinin src özelliği ile kullanılması gibi link etiketini de farklı kaynaklardan farklı dosyaları HTML dökümanımıza dahil etmek için kullanabiliriz.
+
+Bu etikette de crossorigin özelliği mevcuttur.
+
+Bu etikette ilişki kurmak istediğimiz dış kaynağı href özelliği ile veriyoruz. Bu özelliğin açılımı Hypertext REFerence şeklindedir. Örnek olarak bir CSS sayfasını HTML dökümanımız ile ilişkilendirmek için şu kodu kullanabiliriz:
+```html
+<link rel="stylesheet" href="styles.css">
+```
+href özelliğini hem dış kaynaklardan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapmak için kullanabiliriz.
+```html
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+```
+Bu etiketin önemli özelliklerinden birisi de rel özelliğidir. Bu özellik dış kaynaktaki dosyayı kendi HTML dökümanımıza ne şekilde ilişkilendirmek istediğimizi belirttiğimiz kısımdır. En çok kullanılan değerleri "stylesheet" ve "icon" dur. 
+* **stylesheet**: Bu dosya stil dosyasıdır (CSS). Tarayıcıya “Bu link bir CSS dosyasıdır, sayfanın stilini buradan alacaksın” demek için kullanılır. 
+* **icon**: Bu durumda tarayıcı, sekmede veya yer imlerinde gösterilecek küçük simgeyi buradan alır.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .
