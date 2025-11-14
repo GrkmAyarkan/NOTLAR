@@ -26,7 +26,7 @@
       - [Script Tag Özellikleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-tag-%C3%B6zellikleri) 
       - [Güvenlik (crossorigin ve integrity)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#crossorigin)
       - [src](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
-      - [Link Etiketi]()
+      - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
