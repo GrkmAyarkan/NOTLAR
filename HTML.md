@@ -186,7 +186,7 @@ Liste elemanlarının başında simge olmaması için:
 ```
 Farklı simgeler için disc, square, circle değerlerini kullanılabilir:
 ```html
-<ul style="list-style-type:square <!--disc, circle-->"> 
+<ul style="list-style-type:square"<!--disc, circle-->> 
   <li>Telefon</li>
   <li>Bilgisayar</li>
   <li>Yazıcı</li>
