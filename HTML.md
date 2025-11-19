@@ -27,6 +27,7 @@
       - [Güvenlik (crossorigin ve integrity)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#crossorigin)
       - [src (Farklı Saylardaki kodları çekme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
       - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
+      - [Meta Etiketi (Verilerin Bilgileri Ve Sayfa Yenileme)]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -359,11 +360,29 @@ Bu etiketin önemli özelliklerinden birisi de rel özelliğidir. Bu özellik d�
 * **stylesheet**: Bu dosya stil dosyasıdır (CSS). Tarayıcıya “Bu link bir CSS dosyasıdır, sayfanın stilini buradan alacaksın” demek için kullanılır. 
 * **icon**: Bu durumda tarayıcı, sekmede veya yer imlerinde gösterilecek küçük simgeyi buradan alır.
 
+### Meta Etiketi
+Bir veriyle ilgili bilgiler meta bilgiler olarak tanımlanır. İşte HTML dökümanımızla ilgili verilerin olduğu etiketler de meta etiketleridir. Burada vereceğimiz bilgiler sitemizi arama motorlarına, sosyal medyaya ve diğer sitelere tanıtmak ve dökümanımızla ilgili bilgiler vermek için kullanılacak veriler olacak.
 
-
-
-
-
+* **charset**
+Bu özellik web sitesinde kullanılan alfabenin karakterlerini tarayıcı tarafından tanımayı kolaylaştıran etikettir. Latin alfabesi için verilen charset kodu UTF-8 dir.
+```html
+<meta charset="UTF-8">
+```
+* **http-equiv**
+Browserlar farklı sunuculara istek atarlarken belli bilgileri karşı tarafa gönderirler. İşte bu isteklerin arasında isteğin detaylarıyla ve yöntemiyle ilgili bilgilerin olduğu header'lar bulunur. Biz de dökümanımızda o dökümana ulaşan birisinin browser'inde header alanında bir bilgi tutmak istiyorsak bu meta etiketi özelliğini kullanabiliriz. Örnek olarak charset ile belirttiğimiz özellik HTML5 ile gelmiştir. Daha önceki versiyonlarda ise şu şekilde bir kullanım vardır:
+```html
+<meta http-equiv="Content-type" content="text/html" charset="UTF-8">
+```
+Ayrıca refresh başlığını(header) bu meta yardımıyla belirleyerek sayfamızın belli sürede bir yenilenmesini veya belli bir süre sonra başka bir sayfaya yönlendirilmesini sağlayabiliriz.
+```html
+<meta http-equiv="refresh" content="10;URL=kodluyoruz.html">
+```
+* **name**
+Bu da meta bilgi olarak vereceğimiz bilginin tanımlayıcısıdır diyebiliriz. Örnek olarak sayfamızda en çok geçen harfin ne olduğunu belirteceğimiz bir meta bilgisi yazmak isteyelim:
+```html
+<meta name="enCokGecenHarf" content="a">
+```
+Bu şekilde istediğimiz meta bilgiyi sayfamızın başlık etiketleri arasında kullanabiliriz.
 
 
 
