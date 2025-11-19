@@ -160,7 +160,38 @@ Web sayfamızda görmek istediğimiz bütün içerikleri `<body>` etiketi altın
     </ol>
 </body>
 ```
-
+Roma rakamı:
+```html
+<ol type="I">
+  <li>Javascript</li>
+  <li>C#</li>
+  <li>Php</li>
+</ol>
+````
+Alfabetik sıralama:
+```html
+<ol type="A">
+  <li>Javascript</li>
+  <li>C#</li>
+  <li>Php</li>
+</ol>
+```
+Liste elemanlarının başında simge olmaması için:
+```html
+<ul style="list-style-type:none">
+  <li>Çay</li>
+  <li>Türk Kahvesi</li>
+  <li>Süt</li>
+</ul>
+```
+Farklı simgeler için disc, square, circle değerlerini kullanılabilir:
+```html
+<ul style="list-style-type:square <!--disc, circle-->"> 
+  <li>Telefon</li>
+  <li>Bilgisayar</li>
+  <li>Yazıcı</li>
+</ul>
+```
 ### HR Etiketi (Geçiş Etiketi)
 `<hr>` etiketi konusal bir geçişi temsil eder. Yazı yazarken yeni bir paragrafa başlamaya benzetebiliriz. Varsayılan olarak sayfaya yatay bir çizgi ekler ama bu özelliği değiştirilebilir. Bu etiket kapatılmaya ihtiyaç duymaz.
 ```html
