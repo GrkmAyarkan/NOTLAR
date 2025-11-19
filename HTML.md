@@ -28,7 +28,7 @@
       - [src (Farklı Saylardaki kodları çekme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
       - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
       - [Meta Etiketi (Verilerin Bilgileri Ve Sayfa Yenileme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#meta-etiketi)
-* [Emmet (Kısayollar)] ()
+* [Emmet (Kısayollar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#emmet)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
