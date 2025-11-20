@@ -33,7 +33,7 @@
   - [src="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
   - [alt="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#alt-kullanımı)
   - [title="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#title-kullanımı)
-  - [width ve height]()
+  - [width ve height](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
