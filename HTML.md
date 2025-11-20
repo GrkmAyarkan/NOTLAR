@@ -36,6 +36,7 @@
   - [width ve height (yükseklik ve genişlik)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
   - [border (çerçeve)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#border-kullanımı)
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
+  - [Görsele Link Vermek]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -476,4 +477,35 @@ HTML’de <img> etiketi için kullanılan eski align değerleri:
 ```html
 <img src="resim.png" align="bottom">
 ```
+### Görsele Link Vermek
+Görsele link vermek için `img` tag'i `a` tag'inin içerisinde kullanılır. Yönlendirilmek istenen yerin **URL**'i `a` tag'inin `href` özelliğine yazılır. Görsel ise `a` tag'inin açıklama kısmına eklenir.
+```html
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .
