@@ -36,7 +36,7 @@
   - [width ve height (yükseklik ve genişlik)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
   - [border (çerçeve)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#border-kullanımı)
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
-  - [Görsele Link Vermek]()
+  - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
