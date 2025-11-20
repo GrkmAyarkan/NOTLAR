@@ -31,7 +31,8 @@
 * [Emmet (Kısayollar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#emmet)
 * [Görseller](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görseller)
   - [src="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
-  - [alt="" Kullanımı]()
+  - [alt="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#alt-kullanımı)
+  - [title="" Kullanımı]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -430,16 +431,20 @@ Kod bloğundaki `src=""` özelliğine görselin URL ya da dosya adresi belirtile
 ```
 Yukarıdaki örnekte resim HTML dosyasıyla aynı dizinde(klasörde) olduğu için direkt adını ve uzantısını yazmak yeterlidir./
 (Üst dizine çıkmak için `../` kullanırız. `<img src="../../images/ornek.jpg"/>`, Bu şekilde istediğiniz kadar üst dizine çıkabilirsiniz.)
-
 ### `alt=""` Kullanımı
 Alt textlerin temel amacı, görüntüleri göremeyen kullanıcılar için metinler sunmaktır. Kullanıcı görseli görüntüleyemez ise (Yavaş bağlantı, src özelliğinde hata vb.) alt özelliği görüntü için alternatif bilgilendirici bir metin içerir.
 ```html
 <img src="../images/kedi.jpg" alt="Yavru Kedi"/>
 ```
-
-
-
-
+### `title=""` Kullanımı
+Title özelliği kullanıcıyı bilgilendirme amacı taşır. Cursor(mouse imleci) ile görselin üzerine gelince bu özelliğe verilen text mesajı görünür. Ek açıklama gerektirecek resimlerde kullanabiliriz. Bilgilendirme amacı taşır.
+```html
+<img src="../images/kedi.jpg" title="image"/>	
+```
+### `width` ve `height` Kullanımı
+Görsele istenen ölçüleri vermek için **width** ve **height** özellikleri kullanılır. 
+* `width` -> **yatay genişlik**
+* `height` -> **dikey uzunluk**
 
 
 
