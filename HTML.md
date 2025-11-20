@@ -25,7 +25,7 @@
     * [Script Etiketleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-etiketleri-javascript)
       - [Script Tag Özellikleri](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#script-tag-%C3%B6zellikleri) 
       - [Güvenlik (crossorigin ve integrity)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#crossorigin)
-      - [src (Farklı Saylardaki kodları çekme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
+      - [src (Farklı Sayfalardaki kodları çekme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src)
       - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
       - [Meta Etiketi (Verilerin Bilgileri Ve Sayfa Yenileme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#meta-etiketi)
 * [Emmet (Kısayollar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#emmet)
