@@ -32,7 +32,8 @@
 * [Görseller](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görseller)
   - [src="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
   - [alt="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#alt-kullanımı)
-  - [title="" Kullanımı]()
+  - [title="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#title-kullanımı)
+  - [width ve height]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
