@@ -29,8 +29,8 @@
       - [Link Etiketi](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#link-etiketi)
       - [Meta Etiketi (Verilerin Bilgileri Ve Sayfa Yenileme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#meta-etiketi)
 * [Emmet (Kısayollar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#emmet)
-* [Görseller]()
-  - ['src=""']()
+* [Görseller](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görseller)
+  - [src=""]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
