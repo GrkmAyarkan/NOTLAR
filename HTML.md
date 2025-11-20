@@ -33,7 +33,8 @@
   - [src="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
   - [alt="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#alt-kullanımı)
   - [title="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#title-kullanımı)
-  - [width ve height](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
+  - [width ve height (yükseklik ve genişlik)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
+  - [border (çerçeve)]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -446,8 +447,11 @@ Title özelliği kullanıcıyı bilgilendirme amacı taşır. Cursor(mouse imlec
 Görsele istenen ölçüleri vermek için **width** ve **height** özellikleri kullanılır. 
 * `width` -> **yatay genişlik**
 * `height` -> **dikey uzunluk**
-
-
+### `border` Kullanımı
+Görseli belirtilen kalınlıkta çerçeve içine alır.
+```html
+<img src="resim.jpg" border="3" /> <!-- Görsele 3 pixel kalınlıkta border verir. -->
+```
 
 
 
