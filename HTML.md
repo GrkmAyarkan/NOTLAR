@@ -34,7 +34,7 @@
   - [alt="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#alt-kullanımı)
   - [title="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#title-kullanımı)
   - [width ve height (yükseklik ve genişlik)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#width-ve-height-kullanımı)
-  - [border (çerçeve)]()
+  - [border (çerçeve)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#border-kullanımı)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -452,8 +452,16 @@ Görseli belirtilen kalınlıkta çerçeve içine alır.
 ```html
 <img src="resim.jpg" border="3" /> <!-- Görsele 3 pixel kalınlıkta border verir. -->
 ```
-
-
-
+### `align` Kullanımı
+Web sayfasında resmin gözükeceği pozisyonu belirlemede align özelliği kullanılır.
+HTML’de <img> etiketi için kullanılan eski align değerleri:
+* `left` — Resim sola yaslanır, metin sağ tarafında akar. `<img src="resim.png" align="left">`
+* `right` — Resim sağa yaslanır, metin sol tarafında akar.
+```html
+<img src="resim.png" align="right">
+```
+* top — Resmin üstü, metnin üst hizasına göre ayarlanır
+* middle — Resmin orta noktası, metnin orta hizasına göre ayarlanır
+* bottom — Resmin altı, metnin alt satır hizasına göre ayarlanır (varsayılan)
 
 .
