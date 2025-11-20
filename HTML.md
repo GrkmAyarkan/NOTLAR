@@ -37,7 +37,7 @@
   - [border (çerçeve)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#border-kullanımı)
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
   - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
-  - [map ve area (Görseldeki belli bir kordinata link verme)]()
+  - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -521,9 +521,9 @@ Resim üzerindeki tıklanabilir bölgeleri belirtir.
 * `poly` → Çokgen (çok köşeli alan)
 #### `coords` değerleri:
 Her şekle göre piksel koordinatları:
-`rect` → x1, y1, x2, y2
-`circle` → merkezX, merkezY, yarıçap
-`poly` → x,y çiftleri
+* `rect` → x1, y1, x2, y2
+* `circle` → merkezX, merkezY, yarıçap
+* `poly` → x,y çiftleri
 
 
 
