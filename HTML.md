@@ -38,6 +38,7 @@
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
   - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
   - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
+  - [onload Event'i Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#onload-eventi-kullanımı)
   - [picture Elementi ile Kullanım]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
