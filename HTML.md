@@ -38,6 +38,7 @@
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
   - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
   - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
+  - [picture Elementi ile Kullanım]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -524,12 +525,44 @@ Her şekle göre piksel koordinatları:
 * `rect` → x1, y1, x2, y2
 * `circle` → merkezX, merkezY, yarıçap
 * `poly` → x,y çiftleri
+### `onload` Event'i Kullanımı
+Bu olay görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler. Herhangi bir nedenle görsel yüklenemezse ya da belirtilen adreste resim yoksa fonksiyon çalışmaz.
 
+Aşağıdaki örnekte görsel yüklenmesi tamamlandığında resimYuklendi() fonksiyonu çalışacak ve ekrana Resim Yüklendi. uyarısı JavaScript tarafından bastırılacak.
+```html
+<html>
+    <body>
+        <img src="resim.jpg" onload="resimYuklendi()" />
+    </body>
+    
+    <script>
+        function resimYuklendi(){
+            alert("Resim yüklendi.");
+        }
+    </script>
+</html>
+```
+### `picture` Elementi ile Kullanım
+HTML5 ile gelen picture elementi web sayfamızda responsive image'ler kullanmamız konusunda büyük kolaylıklar sağlıyor. Bir tane img ve birden fazla source içerebilir. picture tagi ekran boyutlarına göre birden çok source kulllanmamızı sağlar bu sayede ekran boyutu değiştikçe farklı image'leri kullanabilirsiniz.
+```html
+<picture>
+    <!-- Ekran genişliği 800px ve üzerindeyse büyük görsel -->
+    <source media="(min-width: 800px)" srcset="img/big.jpg">
 
+    <!-- Ekran genişliği 800px altındaysa küçük görsel -->
+    <source media="(max-width: 799px)" srcset="img/small.jpg">
 
-
-
-
+    <!-- Tarayıcı picture desteklemezse bu gösterilir -->
+    <img src="img/default.jpg" alt="Dağ manzarası">
+</picture>
+```
+#### Nasıl Çalışıyor?
+* `source` etiketleri şartlara göre (örn. ekran genişliği) hangi görselin yükleneceğini belirler.
+* `img`, en altta geri dönüş (fallback) görüntüsüdür.
+#### Örnek Senaryo
+* Telefon: `small.jpg` yüklenir
+* Bilgisayar geniş ekran: `big.jpg` yüklenir
+* Çok eski tarayıcı: `default.jpg` kullanılır
 
 
 
