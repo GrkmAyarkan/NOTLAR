@@ -30,7 +30,8 @@
       - [Meta Etiketi (Verilerin Bilgileri Ve Sayfa Yenileme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#meta-etiketi)
 * [Emmet (Kısayollar)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#emmet)
 * [Görseller](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görseller)
-  - [src=""](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
+  - [src="" Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#src-kullanımı)
+  - [alt="" Kullanımı]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -424,9 +425,17 @@ Emmet web geliştiricilerinin sıklıkla zamandan tasarruf etmek ve daha hızlı
 ## Görseller
 ### `src=""` Kullanımı
 Kod bloğundaki `src=""` özelliğine görselin URL ya da dosya adresi belirtilerek resim HTML sayfasına çağırılır. (Resmi webden çağırmak için resmin URL'ini `src=”…”` parametesine eklemek yeterlidir.)
+```html
+<img src="ornek.jpg"/>
+```
+Yukarıdaki örnekte resim HTML dosyasıyla aynı dizinde(klasörde) olduğu için direkt adını ve uzantısını yazmak yeterlidir./
+(Üst dizine çıkmak için `../` kullanırız. `<img src="../../images/ornek.jpg"/>`, Bu şekilde istediğiniz kadar üst dizine çıkabilirsiniz.)
 
-
-
+### `alt=""` Kullanımı
+Alt textlerin temel amacı, görüntüleri göremeyen kullanıcılar için metinler sunmaktır. Kullanıcı görseli görüntüleyemez ise (Yavaş bağlantı, src özelliğinde hata vb.) alt özelliği görüntü için alternatif bilgilendirici bir metin içerir.
+```html
+<img src="../images/kedi.jpg" alt="Yavru Kedi"/>
+```
 
 
 
