@@ -37,6 +37,7 @@
   - [border (çerçeve)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#border-kullanımı)
   - [align Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#align-kullanımı)
   - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
+  - [map ve area (Görseldeki belli bir kordinata link verme)]()
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
@@ -484,10 +485,45 @@ Görsele link vermek için `img` tag'i `a` tag'inin içerisinde kullanılır. Y�
   <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 </a>
 ```
+### `map` ve `area`
+Görselleriniz hyperlink atamanız durumunda görselin tüm alanı link alanı haline dönüşecektir. Görselin herhangi bir yerine tıklanılması durumunda görsel sizi tanımlanan bağlantıya gönderecektir. <img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla belirlediğimiz bir alanı sadece link haline getirebiliriz. Eklediğimiz <area> etiketi kadar belirlenen alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+```html
+<img src="plan.png" usemap="#odemelerMap" width="400" height="300">
 
+<map name="odemelerMap">
+    <!-- Dikdörtgen alan -->
+    <area shape="rect" coords="10,10,150,120"
+          href="https://example.com/fatura"
+          alt="Fatura Sayfası">
 
+    <!-- Daire alan -->
+    <area shape="circle" coords="250,150,50"
+          href="https://example.com/abonelik"
+          alt="Abonelik Sayfası">
 
+    <!-- Çokgen alan -->
+    <area shape="poly" coords="300,10,380,80,310,160"
+          href="https://example.com/iletisim"
+          alt="İletişim Sayfası">
+</map>
 
+```
+#### Kısa Açıklama:
+* `usemap="#odemelerMap"`
+Bu resmin haritasının `map` adıyla bağlantılı olduğunu belirtir.
+* `<map name="...">`
+Harita alanlarını tanımlar.
+* `<area>`
+Resim üzerindeki tıklanabilir bölgeleri belirtir.
+#### `shape` değerleri:
+* `rect` → Dikdörtgen
+* `circle` → Daire
+* `poly` → Çokgen (çok köşeli alan)
+#### `coords` değerleri:
+Her şekle göre piksel koordinatları:
+`rect` → x1, y1, x2, y2
+`circle` → merkezX, merkezY, yarıçap
+`poly` → x,y çiftleri
 
 
 
