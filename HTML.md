@@ -39,7 +39,7 @@
   - [Görsele Link Vermek](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#görsele-link-vermek)
   - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
   - [onload Event'i Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#onload-eventi-kullanımı)
-  - [picture Elementi ile Kullanım]()
+  - [picture Elementi ile Kullanım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#picture-elementi-ile-kullanım)
 
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
