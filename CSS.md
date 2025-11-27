@@ -27,7 +27,10 @@ Bunların yanı sıra CSS kodlarımızı .css uzantılı bir dosya içerisinde t
 <head> <link rel="stylesheet" type="text/css" href="baslik.css" /> </head>
 ```
 
-
+Bir CSS selector tanımlamanın birçok farklı yolu vardır, aşağıda selector türlerinin bazı örneklerini görebilirsiniz:
+* Class Selector: HTML öğelerini sınıf özelliklerine göre bulur.
+* ID Selector: Öğeleri belirli kimliğine göre bulur.
+* Element Selector: Öğeleri etiket adlarına göre bulur.
 
 
 
