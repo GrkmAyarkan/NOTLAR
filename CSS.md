@@ -20,11 +20,12 @@ Bir başlığı renklendirelim:
 <style> h1 { color: red; } </style>
 <h1>BAŞLIK</h1>
 ```
-
 ![Kırmızı Başlık](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Html%20Kırmızı%20Başlık.png)
 
-
-
+Bunların yanı sıra CSS kodlarımızı .css uzantılı bir dosya içerisinde tutar ve bu dosyayı HTML sayfası içerisine basit bir kodla çağırabiliriz. Örneğin CSS dosyamızın adı "**baslik.css**" olsun ve bu dosyayı Html sayfaya eklemek için HTML içine yazmamız gereken kod şu şekildedir.
+```html
+<head> <link rel=”stylesheet” type=”text/css” href=”baslik.css” /> </head>
+```
 
 
 
