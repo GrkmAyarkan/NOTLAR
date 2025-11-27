@@ -24,7 +24,7 @@ Bir başlığı renklendirelim:
 
 Bunların yanı sıra CSS kodlarımızı .css uzantılı bir dosya içerisinde tutar ve bu dosyayı HTML sayfası içerisine basit bir kodla çağırabiliriz. Örneğin CSS dosyamızın adı "**baslik.css**" olsun ve bu dosyayı Html sayfaya eklemek için HTML içine yazmamız gereken kod şu şekildedir.
 ```html
-<head> <link rel=”stylesheet” type=”text/css” href=”baslik.css” /> </head>
+<head> <link rel="stylesheet" type="text/css" href="baslik.css" /> </head>
 ```
 
 
