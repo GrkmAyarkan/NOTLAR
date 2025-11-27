@@ -40,7 +40,7 @@
   - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
   - [onload Event'i Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#onload-eventi-kullanımı)
   - [picture Elementi ile Kullanım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#picture-elementi-ile-kullanım)
-* [Linkler]()
+* [Linkler](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#linkler)
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
 ### HTML Etiketi
