@@ -10,15 +10,18 @@ CSS (Basamaklanmış Stil Katmanları), web sayfasını şekillendirmek için ku
 #### Kullanım örneği
 Bir başlığı renklendirelim:
 ```html
-<h1>I'm a Header</h1>
+<h1>BAŞLIK</h1>
 ```
 ![Html Başlık Siyah](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Html%20Başlık%20Örnek%2001.png)
+
 Öncelikle, CSS'e HTML öğesini nasıl bulacağını söylememiz gerekir. Bunu selector denen bir özellik ile yapabiliriz. CSS'de bir selector, HTML öğelerini etiket adı, sınıf adı, kimliği ve çok daha fazlasına göre bulmak için kullanılır.
 
+```html
+<style> h1 { color: red; } </style>
+<h1>BAŞLIK</h1>
+```
 
-
-
-
+![Kırmızı Başlık](https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/Html%20Kırmızı%20Başlık.png)
 
 
 
