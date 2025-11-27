@@ -40,7 +40,7 @@
   - [map ve area (Görseldeki belli bir kordinata link verme)](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#map-ve-area)
   - [onload Event'i Kullanımı](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#onload-eventi-kullanımı)
   - [picture Elementi ile Kullanım](https://github.com/GrkmAyarkan/NOTLAR/blob/main/HTML.md#picture-elementi-ile-kullanım)
-
+* [Linkler]()
 ## ETİKETLER (En Çok Kullanılan Etiketler)
 
 ### HTML Etiketi
@@ -565,6 +565,7 @@ HTML5 ile gelen picture elementi web sayfamızda responsive image'ler kullanmam�
 * Bilgisayar geniş ekran: `big.jpg` yüklenir
 * Çok eski tarayıcı: `default.jpg` kullanılır
 
+## Linkler
 
 
 
