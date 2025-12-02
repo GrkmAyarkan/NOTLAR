@@ -32,6 +32,11 @@ Bir CSS selector tanımlamanın birçok farklı yolu vardır, aşağıda selecto
 * ID Selector: Öğeleri belirli kimliğine göre bulur.
 * Element Selector: Öğeleri etiket adlarına göre bulur.
 
+#### Açıklama Satırı
+```css
+/* açıklama */
+```
+
 ## CSS Yardımcı Kaynak
 <a href="https://www.w3schools.com/css/default.asp">
   <img src="https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/logolar/w3schools-LOGO.png" width="70">
