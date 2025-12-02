@@ -124,7 +124,12 @@ Yazılış Şekli:
 ```
 ### **Çıktı**
 ![Google](https://i.pinimg.com/474x/db/5a/82/db5a82352bae4af8495ac4a0416ee885.jpg)
-
+Eğer bu resme link vermek istersek:
+```
+![Görselin Açıklaması](Görselin Adresi)(Gidilecek Adres)
+```
+### **Çıktı**
+![Google](https://i.pinimg.com/474x/db/5a/82/db5a82352bae4af8495ac4a0416ee885.jpg)(https://www.google.com)
 ## Alıntı
 Yazılış Şekli:
 ```
