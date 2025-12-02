@@ -34,7 +34,7 @@ Bir CSS selector tanımlamanın birçok farklı yolu vardır, aşağıda selecto
 
 ## CSS Yardımcı Kaynak
 <a href="https://www.w3schools.com/css/default.asp">
-  <img src="https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/logolar/w3schools-LOGO.png" width="50">
+  <img src="https://github.com/GrkmAyarkan/NOTLAR/blob/main/images/logolar/w3schools-LOGO.png" width="70">
 </a>
 
 
