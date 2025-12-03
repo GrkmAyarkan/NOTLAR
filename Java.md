@@ -52,7 +52,7 @@
 ## Main Metodu
 Java'da bir program çalışacağı zaman, kodlar ilk olarak main metodu içerisinden başlar. Main metodu sayesinde derleyiciye, programı buradan başlatılması konusunda referans oluşturulur.
 ``` java
-public class JavaPatika {
+public class ayarkan {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
