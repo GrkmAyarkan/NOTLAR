@@ -12,6 +12,7 @@ JavaScript (kısaca JS), web sitelerini interaktif (etkileşimli) ve dinamik hal
 * Değişken isimleri **harf**, **_** veya **$** ile başlayabilir. Fakat ES5 (ECMAScript 5) birlikte gelen özellikle UNICODE kodları kullanılırken kaçış karakteri olarak kullanılan \ işareti ilk karakter olarak kullanılabilir.
 * İlk harften sonra değişken isimlerinde rakamlar da kullanılabilir. $ ve _ dışında başka noktalama işaretleri kullanılamaz.
 * Değişken isminde boşluk kullanılamaz.
+* Değişken isimlerinde **büyük-küçük harf duyarlılığı (case-sensitive)** vardır.
 #### Değişkene Değer Atama ve Veri Türleri
 * Bir değişkene değer atamak için **=** operatörü kullanılır.
 * Tanımlayıcı öncesi **var**, **let** veya **const** deklarasyonlarından biri kullanılarak deklare edilir.
