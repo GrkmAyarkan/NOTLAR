@@ -102,13 +102,38 @@ let sayi = 1;
    alert(a); // 1
    console.log(sayi); // 2 değerini verir.
 ```
+### Değişken Türünü Kontrol Etme
+Veri tiplerini kontrol ederken sıkça **typeof** kullanılır.
+```js
+console.log(typeof 42)
+// beklenen çıktı: "number"
+console.log(typeof "kodluyoru")
+// beklenen çıktı: "string"
+```
+**isInteger()**, **isFiniter()** veya **isNaN()** kullanmak
 
-
-
-
-
-
-
+**isInteger()** sayıların tam sayı olup olmadıklarını kontrol eder.
+```js
+Number.isInteger(-123) //true
+Number.isInteger(0.5) //false
+```
+**isFinite()** bir değerin sonlu bir sayı olup olmadığını belirler.
+```js
+Number.isFinite(0) //true
+Number.isFinite('123') //false
+Number.isFinite('hello') //false
+```
+**isNaN()** bir değerin NaN (Not-A-Number) olup olmadığını belirler.
+```js
+Number.isNaN(123) //false
+Number.isNaN(0) //false
+Number.isNaN('123') //false
+Number.isNaN("Hello") //false
+```
+### Değişken Türünü Değiştirme (Type Coercion)
+* Explicit Coercion
+* Implicit Coercion
+asdawd
 
 
 
