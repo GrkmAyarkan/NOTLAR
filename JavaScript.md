@@ -131,12 +131,115 @@ Number.isNaN('123') //false
 Number.isNaN("Hello") //false
 ```
 ### Değişken Türünü Değiştirme (Type Coercion)
-* Explicit Coercion
-* Implicit Coercion
-asdawd
+* Explicit Coercion, Metotlarla yapılan dönüşümdlerdir.
+* Implicit Coercion, Operatörlerle veya JavaScriptin kendi yaptığı dönüşümlerdir.
+#### Explicit Dönüşümleri
+##### String'e Dönüşüm
+Number -> String
+```js
+let sayi = 42;
+let metin = String(sayi);  // "42"
+```
+Boolean -> String
+```js
+let durum = true;
+let yazi = String(durum);  // "true"
+```
+##### Number'a Dönüşüm
+String -> Nuber
+```js
+let metin = "123";
+let sayi = Number(metin);   // 123
+```
+Boolean -> Number
+```js
+Number(true);   // 1
+Number(false);  // 0
+```
+Geçersiz Bir String İfadeyi Number'a Dönüştürmeye Çalışmak
+```js
+Number("abc");  // NaN
+```
+##### Boolean'a Dönüşüm
+Number -> Boolean
+```js
+Boolean(1);   // true
+Boolean(0);   // false
+```
+String -> Boolean
+```js
+Boolean("Merhaba"); // true
+Boolean("");        // false
+```
+#### Implicit Dönüşümleri
+String + Number
+```js
+let sonuc = "10" + 5;   // "105" (string birleştirme)
+```
+Number + Number (string içinde olsa bile)
+```js
+let toplam = "10" - 2;  // 8
+```
+#### parseInt ve parseFloat
+Sayısal string -> Tam sayı
+```js
+parseInt("42");     // 42
+parseInt("42px");   // 42
+parseFloat("3.14"); // 3.14
+```
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Explicit Coercion
+Explicit, metotlarla yapılan dönüşümdlerdir.
+```js
+String(123) // “123”
+ParseInt(“123”) // 12
+```
+##### Implicit Coercion
+Implicit, operatörlerle veya JavaScriptin kendi yaptığı dönüşümlerdir.
+```js
+If(3<5) // true
+console.log(‘ ’+123) // “123”
+12/”6” // 2
+```
+#### String Dönüşümü
+```js
+String(123)   // “123” explicit
+123 + ''      // “123”    implicit
+```
+Her primitif değer stringe dönüştürülebilir.
+```js
+String(123)        // “123”
+String(-12.3)      // “-12.3”
+String(null)       // “null”
+String(undefined)  // “undefined”
+String(true)       // “true”
+String(false)      // “false”
+```
+Symbol’de durum biraz farklıdır, çünkü dönüşüm sadece explicit bir şekilde yapılabilir.
+```js
+String(Symbol('my symbol')) // 'Symbol(my symbol)'
+'' + Symbol('my symbol') // TypeError is thrown
+```
 
 
 
