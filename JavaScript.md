@@ -9,10 +9,13 @@ JavaScript (kısaca JS), web sitelerini interaktif (etkileşimli) ve dinamik hal
 
 ## Değişken Tanımlama
 #### Değişken Tanımlama Sırasında Dikkat Edilmesi Gerekenler
+* Değişken isimleri Türkçe karakter **içermemelidir**.
+* Değişken isimleri büyük ve küçük harf **duyarlıdır**. **(case-sensitive)**
+* Değişken isimlerinde ilk karakter bir sayı **olamaz**.
+* Değişken isimlerinde JavaScript etiketleri **kullanılamaz**.
+* Değişken isimlerinde sayı, harf, alt çizgi ve dolar işareti **kullanılabilir**; boşluk, noktalama işareti veya sembol **kullanılamaz**.
 * Değişken isimleri **harf**, **_** veya **$** ile başlayabilir. Fakat ES5 (ECMAScript 5) birlikte gelen özellikle UNICODE kodları kullanılırken kaçış karakteri olarak kullanılan \ işareti ilk karakter olarak kullanılabilir.
 * İlk harften sonra değişken isimlerinde rakamlar da kullanılabilir. $ ve _ dışında başka noktalama işaretleri kullanılamaz.
-* Değişken isminde boşluk kullanılamaz.
-* Değişken isimlerinde **büyük-küçük harf duyarlılığı (case-sensitive)** vardır.
 #### Değişkene Değer Atama ve Veri Türleri
 * Bir değişkene değer atamak için **=** operatörü kullanılır.
 * Tanımlayıcı öncesi **var**, **let** veya **const** deklarasyonlarından biri kullanılarak deklare edilir.
@@ -72,8 +75,33 @@ name = name + "Ayarkan"
 name += " Ayarkan"
 console.log(name) // çıktı: Nehir Ayarkan
 ```
+### Number Veri Tipi Üzerinde Yapılabilecek İşlemler
+JavaScript, **weakly-typed** yani güçsüz türlü bir dildir. Değişkenlerin ve parametrelerin türlerini bildirmek gerekmez, tür değişkenin kullanım şeklinden belirlenir.
+```js
+let x = 3; //integer
+let x = 3.2; //float
+```
+### Aritmetik Operatörler
+* Toplama: +
+* Çıkarma: -
+* Çarpma: *
+* Üs Alma: **
+* Bölme: /
+* Mod Alma: %
+* Arttırma: ++
+* Eksiltme: --
+#### Ek Bilgi
+Arttırma ve azaltma operatörlerinin kullanım şekiline göre etkisi değişir.
+```js
+let sayi = 1;
+   let a = ++sayi;
+   alert(a); // 2
 
-
+   let sayi = 1;
+   let a = sayi++; 
+   alert(a); // 1
+   console.log(sayi); // 2 değerini verir.
+```
 
 
 
