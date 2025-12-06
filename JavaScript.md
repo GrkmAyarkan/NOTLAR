@@ -13,4 +13,8 @@ JavaScript (kısaca JS), web sitelerini interaktif (etkileşimli) ve dinamik hal
 * İlk harften sonra değişken isimlerinde rakamlar da kullanılabilir. $ ve _ dışında başka noktalama işaretleri kullanılamaz.
 * Değişken isminde boşluk kullanılamaz.
 #### Değişkene Değer Atama ve Veri Türleri
-Bir değişkene değer atamak için **=** operatörü kullanılır.
+* Bir değişkene değer atamak için **=** operatörü kullanılır.
+* Tanımlayıcı öncesi **var**, **let** veya **const** deklarasyonlarından biri kullanılarak deklare edilir.
+  - **var**: Eski, kapsamı geniş ve riskli. Modern JS’te neredeyse hiç kullanılmaz.
+  - **let**: En güvenli ve en çok kullanılan değiştirilebilir değişken. Değeri zaman içinde değişmesi gereken değişkenlerde kullanılır.
+  - **const**: Sabit değerler veya değişmeyecek referanslar için.
