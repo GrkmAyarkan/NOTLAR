@@ -251,8 +251,9 @@ console.log(adSoyad.slice(4, 11)) //Bitiş indeksindeki eleman sonuca dahil edil
 let adSoyad = "Görkem Ayarkan"
 console.log(adSoyad.slice(3)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
 ```
+Çıktı: kem Ayarkan
 Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
-
+#### replace – Metin Bulma ve Değiştirme
 
 
 
