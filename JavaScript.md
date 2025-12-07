@@ -187,59 +187,35 @@ parseInt("42");     // 42
 parseInt("42px");   // 42
 parseFloat("3.14"); // 3.14
 ```
+### Template Literals Kullanımı
+Template Literals (önceki adıyla Template Strings), kod okunabilirliği ve yazım kolaylığı sağlayan ES6 ile gelmiş bir string yazma şeklidir.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##### Explicit Coercion
-Explicit, metotlarla yapılan dönüşümdlerdir.
+Normalde sıklıkla kullandığımız şekli ile string yazma şeklimiz:
 ```js
-String(123) // “123”
-ParseInt(“123”) // 12
+let name = "Görkem"
+let surname = "Ayarkan"
+console.log("Merhaba", name, surname, ", sitemize hoş geldin.")
 ```
-##### Implicit Coercion
-Implicit, operatörlerle veya JavaScriptin kendi yaptığı dönüşümlerdir.
-```js
-If(3<5) // true
-console.log(‘ ’+123) // “123”
-12/”6” // 2
-```
-#### String Dönüşümü
-```js
-String(123)   // “123” explicit
-123 + ''      // “123”    implicit
-```
-Her primitif değer stringe dönüştürülebilir.
-```js
-String(123)        // “123”
-String(-12.3)      // “-12.3”
-String(null)       // “null”
-String(undefined)  // “undefined”
-String(true)       // “true”
-String(false)      // “false”
-```
-Symbol’de durum biraz farklıdır, çünkü dönüşüm sadece explicit bir şekilde yapılabilir.
-```js
-String(Symbol('my symbol')) // 'Symbol(my symbol)'
-'' + Symbol('my symbol') // TypeError is thrown
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
