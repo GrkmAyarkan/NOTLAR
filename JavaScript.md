@@ -225,13 +225,14 @@ Metinin içinde aramak istediğimiz değerin index numarasını verir.
 let ad = "Görkem"
 console.log(ad.indexOf("ke"))
 ```
+Çıktı: 3
 #### lastIndexOf - Metin içinde Arama Yapma
 indexOf ile arasındaki tek fark aranan kelime birden fazla geçiyor ise en son eşleşmeden gelen index numarasını döndürür.
 ```js
 let soyad = "Ayarkan"
 console.log(soyad.lastIndexOf("a"))
 ```
-
+Çıktı: 5
 
 
 
