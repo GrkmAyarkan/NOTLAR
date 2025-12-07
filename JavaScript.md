@@ -233,8 +233,25 @@ let soyad = "Ayarkan"
 console.log(soyad.lastIndexOf("a"))
 ```
 Çıktı: 5
-
-
+#### search - Metin İçinde Arama Yapma
+indexOf ile aynı sonuçlara ulaşırız genel olarak "Regular Expressions" işlemleri için çok kullanılan bir metottur.
+```js
+let ad = "Görkem"
+console.log(ad.search("ke"))
+```
+Çıktı: 3
+#### slice - Metinden Parça Almak
+Metin içinden almak istediğimiz yerlerin index numaralarını vererek metin içinde bulunan parçayı alabiliriz.
+```js
+let adSoyad = "Görkem Ayarkan"
+console.log(adSoyad.slice(4, 11)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
+```
+Çıktı: em Ayar
+```js
+let adSoyad = "Görkem Ayarkan"
+console.log(adSoyad.slice(3)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
+```
+Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
 
 
 
