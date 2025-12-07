@@ -213,9 +213,24 @@ console.log(info)
 ```
 ### String Veri Türü İşlemleri
 #### Length - Uzunluk Değerini Alma
-
-
-
+String veri tipindeki ifadenin karakter sayısını verir.
+```js
+let ad = "Görkem"
+console.log(ad.length)
+```
+Çıktı: 6
+#### indexOf - Metin İçinde Arama Yapma
+Metinin içinde aramak istediğimiz değerin index numarasını verir.
+```js
+let ad = "Görkem"
+console.log(ad.indexOf("ke"))
+```
+#### lastIndexOf - Metin içinde Arama Yapma
+indexOf ile arasındaki tek fark aranan kelime birden fazla geçiyor ise en son eşleşmeden gelen index numarasını döndürür.
+```js
+let soyad = "Ayarkan"
+console.log(soyad.lastIndexOf("a"))
+```
 
 
 
