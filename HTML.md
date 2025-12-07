@@ -579,4 +579,5 @@ HTML5 ile gelen picture elementi web sayfamÄ±zda responsive image'ler kullanmamÄ
 
 
 
+
 .
