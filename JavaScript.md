@@ -211,6 +211,8 @@ Soyadınızın il 3 harfi: ${soyad.slice(0,3)}
 `
 console.log(info)
 ```
+### String Veri Türü İşlemleri
+#### Length - Uzunluk Değerini Alma
 
 
 
