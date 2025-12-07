@@ -192,11 +192,25 @@ Template Literals (önceki adıyla Template Strings), kod okunabilirliği ve yaz
 
 Normalde sıklıkla kullandığımız şekli ile string yazma şeklimiz:
 ```js
-let name = "Görkem"
-let surname = "Ayarkan"
-console.log("Merhaba", name, surname, ", sitemize hoş geldin.")
+let ad = "Görkem"
+let soyad = "Ayarkan"
+console.log("Merhaba "+ ad + " " + soyad + ", sitemize hoş geldin.")
 ```
-
+Bunun yerine kullanabileceğimiz diğer yöntem ise şu şekildedir:
+```js
+let ad = "Görkem"
+let soyad = "Ayarkan"
+let email = "grkm.ayarkan@gmail.com"
+let info = `
+Merhaba ${ad} ${soyad}, sitemize hoş geldin.
+Email: ${email} -> Mail Uzunluğu: ${email.length}
+Hesap: ${(200+450)*10}$
+Anlık Saat Bilgisi: ${new Date().getHours()}
+İsminizin ilk harfi: ${ad[0]}
+Soyadınızın il 3 harfi: ${soyad.slice(0,3)}
+`
+console.log(info)
+```
 
 
 
