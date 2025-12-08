@@ -279,12 +279,29 @@ Belirtilen index numarasında yer alan karakteri verir.
 ```js
 console.log(adSoyad.charAt(10))
 ```
-
-
-
-
-
-
+Çıktı: r
+### charCodeAt – İndex Numarasına Göre Karakterin Unicode Değerini Bulma
+Belirtilen index numarasında yer alan karakterin Unicode değerini verir.
+```js
+console.log(adSoyad.charCodeAt(10))
+```
+Çıktı: 114 -> number
+### Split – Metni Diziye Çevirme
+Split metodu ile istenilen metin diziye çevrilebilir. Kullanılan parametre ile metnin nasıl parçalanacağı belirtilir.
+```js
+let kod = "53a45/3c21c4/9sc64/326h4/36e73rt45"
+let kodlar = kod.split("/")
+console.log(kodlar)
+```
+Çıktı: 
+(5) ['53a45', '3c21c4', '9sc64', '326h4', '36e73rt45']
+0: "53a45"
+1: "3c21c4"
+2: "9sc64"
+3: "326h4"
+4: "36e73rt45"
+length: 5
+### 
 
 
 
