@@ -211,36 +211,36 @@ Soyadınızın il 3 harfi: ${soyad.slice(0,3)}
 `
 console.log(info)
 ```
-### String Veri Türü İşlemleri
-#### Length - Uzunluk Değerini Alma
+## String Veri Türü İşlemleri
+### Length - Uzunluk Değerini Alma
 String veri tipindeki ifadenin karakter sayısını verir.
 ```js
 let ad = "Görkem"
 console.log(ad.length)
 ```
 Çıktı: 6
-#### indexOf - Metin İçinde Arama Yapma
+### indexOf - Metin İçinde Arama Yapma
 Metinin içinde aramak istediğimiz değerin index numarasını verir.
 ```js
 let ad = "Görkem"
 console.log(ad.indexOf("ke"))
 ```
 Çıktı: 3
-#### lastIndexOf - Metin içinde Arama Yapma
+### lastIndexOf - Metin içinde Arama Yapma
 indexOf ile arasındaki tek fark aranan kelime birden fazla geçiyor ise en son eşleşmeden gelen index numarasını döndürür.
 ```js
 let soyad = "Ayarkan"
 console.log(soyad.lastIndexOf("a"))
 ```
 Çıktı: 5
-#### search - Metin İçinde Arama Yapma
+### search - Metin İçinde Arama Yapma
 indexOf ile aynı sonuçlara ulaşırız genel olarak "Regular Expressions" işlemleri için çok kullanılan bir metottur.
 ```js
 let ad = "Görkem"
 console.log(ad.search("ke"))
 ```
 Çıktı: 3
-#### slice - Metinden Parça Almak
+### slice - Metinden Parça Almak
 Metin içinden almak istediğimiz yerlerin index numaralarını vererek metin içinde bulunan parçayı alabiliriz.
 ```js
 let adSoyad = "Görkem Ayarkan"
@@ -254,27 +254,27 @@ console.log(adSoyad.slice(3)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
 Çıktı: kem Ayarkan
 
 Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
-#### replace – Metin Bulma ve Değiştirme
+### replace – Metin Bulma ve Değiştirme
 Aranan metni istediğimiz metin ile değiştirmemize olanak sağlar.
 ```js
 console.log(adSoyad.replace("Görkem", "Nehir"))  //Çıktı: Nehir Ayarkan
 console.log(adSoyad)                             //Çıktı: Görkem Ayarkan
 ```
 **replace** değişkende tanımlı olan veriyi temelli olarak değiştirmez o yüzden ilk çıktı "Nehir Ayarkan" olarka verilmesine rağmen daha sonra değişkeni tekrar yazdırmak istedğimizde eski değeri olan "Görkem Ayarkan" çıktısını alırız.
-#### toUpperCase ve toLowerCase
+### toUpperCase ve toLowerCase
 * **toUpperCase**: metindeki tüm harfleri büyük harfe çevirir.
 * **toLowerCase**: metindeki tüm harfleri küçük harfe çevirir.
 ```js
 console.log(adSoyad.toUpperCase()) //Çıktı: GÖRKEM AYARKAN
 console.log(adSoyad.toLowerCase()) //Çıktı: görkem ayarkan
 ``` 
-#### concat - Metin Birleştirme
+### concat - Metin Birleştirme
 Elimizde bulunan iki string türündeki veriyi birleştirmemize olanak sağlar. Ama bu değişiklik kalıcı bir değişiklik değildir.
 ```js
 console.log(ad.concat(" " + soyad)) // ad = Görkem, soyad = Ayarkan
 ```
 Çıktı: Görkem Ayarkan
-#### charAt- İndex Numarasına Göre Karakter Bulmak
+### charAt- İndex Numarasına Göre Karakter Bulmak
 Belirtilen index numarasında yer alan karakteri verir.
 ```js
 console.log(adSoyad.charAt(10))
