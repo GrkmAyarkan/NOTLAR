@@ -254,8 +254,12 @@ console.log(adSoyad.slice(3)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
 Çıktı: kem Ayarkan
 Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
 #### replace – Metin Bulma ve Değiştirme
-
-
+Aranan metni istediğimiz metin ile değiştirmemize olanak sağlar.
+```js
+console.log(adSoyad.replace("Görkem", "Nehir"))  //Çıktı: Nehir Ayarkan
+console.log(adSoyad)                             //Çıktı: Görkem Ayarkan
+```
+**replace** değişkende tanımlı olan veriyi temelli olarak değiştirmez o yüzden ilk çıktı "Nehir Ayarkan" olarka verilmesine rağmen daha sonra değişkeni tekrar yazdırmak istedğimizde eski değeri olan "Görkem Ayarkan" çıktısını alırız.
 
 
 
