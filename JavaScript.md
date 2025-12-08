@@ -252,6 +252,7 @@ let adSoyad = "Görkem Ayarkan"
 console.log(adSoyad.slice(3)) //Bitiş indeksindeki eleman sonuca dahil edilmez.
 ```
 Çıktı: kem Ayarkan
+
 Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
 #### replace – Metin Bulma ve Değiştirme
 Aranan metni istediğimiz metin ile değiştirmemize olanak sağlar.
@@ -260,10 +261,24 @@ console.log(adSoyad.replace("Görkem", "Nehir"))  //Çıktı: Nehir Ayarkan
 console.log(adSoyad)                             //Çıktı: Görkem Ayarkan
 ```
 **replace** değişkende tanımlı olan veriyi temelli olarak değiştirmez o yüzden ilk çıktı "Nehir Ayarkan" olarka verilmesine rağmen daha sonra değişkeni tekrar yazdırmak istedğimizde eski değeri olan "Görkem Ayarkan" çıktısını alırız.
-
-
-
-
+#### toUpperCase ve toLowerCase
+* **toUpperCase**: metindeki tüm harfleri büyük harfe çevirir.
+* **toLowerCase**: metindeki tüm harfleri küçük harfe çevirir.
+```js
+console.log(adSoyad.toUpperCase()) //Çıktı: GÖRKEM AYARKAN
+console.log(adSoyad.toLowerCase()) //Çıktı: görkem ayarkan
+``` 
+#### concat - Metin Birleştirme
+Elimizde bulunan iki string türündeki veriyi birleştirmemize olanak sağlar. Ama bu değişiklik kalıcı bir değişiklik değildir.
+```js
+console.log(ad.concat(" " + soyad)) // ad = Görkem, soyad = Ayarkan
+```
+Çıktı: Görkem Ayarkan
+#### charAt- İndex Numarasına Göre Karakter Bulmak
+Belirtilen index numarasında yer alan karakteri verir.
+```js
+console.log(adSoyad.charAt(10))
+```
 
 
 
