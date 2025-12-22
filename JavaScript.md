@@ -339,6 +339,7 @@ adSoyad = "GÖRKEM AYARKAN"
 adSoyad = `${adSoyad[0].toUpperCase()}${adSoyad.slice(1).toLowerCase()}`
 console.log(adSoyad)
 ```
+Çıktı: Görkem ayarkan
 Kelimelerin ilk harflerini büyük, gerisini küçük yapma
 ```js
 adSoyad = adSoyad
@@ -348,7 +349,7 @@ adSoyad = adSoyad
   .join(" ");
 console.log(adSoyad)
 ```
-
+Çıktı: Görkem Ayarkan
 
 
 
