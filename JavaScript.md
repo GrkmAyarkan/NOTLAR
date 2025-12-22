@@ -343,14 +343,14 @@ console.log(adSoyad)
 Kelimelerin ilk harflerini büyük, gerisini küçük yapma
 ```js
 adSoyad = adSoyad
-  .toLocaleLowerCase("tr-TR")
-  .split(" ")
-  .map(kelime => kelime[0].toLocaleUpperCase("tr-TR") + kelime.slice(1))
-  .join(" ");
+  .toLocaleLowerCase("tr-TR") //tüm metni küçültür
+  .split(" ") //kelimelere ayırır
+  .map(kelime => kelime[0].toLocaleUpperCase("tr-TR") + kelime.slice(1)) //her kelimenin ilk harfini büyütür
+  .join(" "); //tekrar string yapar
 console.log(adSoyad)
 ```
 Çıktı: Görkem Ayarkan \
-Not: [map]() diziler (arrays) için, dizinin her elamanı için fonksiyon döndürür daha sonra diziler konusunda açıklanacaktır. Daha sonra buraya eklenecek ve map e tıklayarak ulaşabilirsiniz.
+Not: [map]() diziler (arrays) için, dizinin her elamanı için fonksiyon döndürür daha sonra diziler konusunda açıklanacaktır. Daha sonra buraya eklenecek ve map e tıklayarak ulaşabilirsiniz. **Join** ise dizi elamanlarını birleştirip tekrar string döndürür ve eğer parantez içerisinde belirtilen karakteri kelimelerin arasına ekler. Örneğin **(" ")** ise her kelime arasına boşluk ekler. **(",")** her eleman arasına , ekler.
 
 
 
