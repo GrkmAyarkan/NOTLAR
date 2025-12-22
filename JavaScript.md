@@ -301,7 +301,28 @@ console.log(kodlar)
 3: "326h4" \
 4: "36e73rt45" \
 length: 5 
-### 
+### Length - Karakter Sayısı
+String bir ifadenin karakter sayısını (uzunluğunu) bulmak istiyorsak length özelliğini kullanırız.
+```js
+let email = "grkm.ayarkan@gmail.com"
+console.log("e-mail uzunluğu:", email.length)
+```
+Çıktı: e-mail uzunluğu: 22
+### Karakter Yeri - Index
+String bir ifadenin içerisinde, aradığımız karakterin yerini bulmak için **[ ]** ve **chartAt()** metodları kullanılabilir.
+```js
+let email = "grkm.ayarkan@gmail.com"
+console.log("7. Karakter:", email[6])
+console.log("13. Karakter:", email.charAt(12))
+```
+Çıktı: 
+```
+7. Karakter: y
+13. Karakter: @
+```
+
+
+
 
 
 
