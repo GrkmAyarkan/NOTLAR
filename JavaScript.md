@@ -368,8 +368,9 @@ Not: [indexOf](https://github.com/GrkmAyarkan/NOTLAR/blob/main/JavaScript.md#ind
 Bunun için **slice()** kullanılır ve bu bilginin nerede başladığını ise **search()** kullanabiliriz. \
 Örnek senaryo: Bir mail aderinden domain bilgisini alalım.
 ```js
-console.log(email.slice(email.search("@")))
+console.log(email.slice(email.search("@"))) // eğer '@' işaretini almak istemezsek "email.slice(email.search("@")+1)" şeklinde yazabiliriz.
 ```
+Çıktı: @gmail.com
 
 
 
