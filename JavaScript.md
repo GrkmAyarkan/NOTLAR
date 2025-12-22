@@ -364,7 +364,12 @@ console.log(email.search("z"))
 ```
 Çıktı: -1 \
 Not: [indexOf](https://github.com/GrkmAyarkan/NOTLAR/blob/main/JavaScript.md#indexof---metin-i̇çinde-arama-yapma)' ta benzer bir yöntemdir.
-
+### Belli Bir Bilgiyi Almak
+Bunun için **slice()** kullanılır ve bu bilginin nerede başladığını ise **search()** kullanabiliriz. \
+Örnek senaryo: Bir mail aderinden domain bilgisini alalım.
+```js
+console.log(email.slice(email.search("@")))
+```
 
 
 
