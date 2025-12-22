@@ -333,10 +333,21 @@ Hepsi Büyük: KDASFKDAFL MDOAOJLK
 Hepsi Küçük: kdasfkdafl mdoaojlk
 ```
 ### Sadece İstenen Harfi Yada Harfleri Büyük Kalan Harfleri Küçük Yapma
+İlk harfi büyük gerisini küçük yapma
 ```js
-
+adSoyad = "GÖRKEM AYARKAN"
+adSoyad = `${adSoyad[0].toUpperCase()}${adSoyad.slice(1).toLowerCase()}`
+console.log(adSoyad)
 ```
-
+Kelimelerin ilk harflerini büyük, gerisini küçük yapma
+```js
+adSoyad = adSoyad
+  .toLocaleLowerCase("tr-TR")
+  .split(" ")
+  .map(kelime => kelime[0].toLocaleUpperCase("tr-TR") + kelime.slice(1))
+  .join(" ");
+console.log(adSoyad)
+```
 
 
 
