@@ -363,7 +363,7 @@ let email = "grkm.ayarkan@gmail.com"
 console.log(email.search("z"))
 ```
 Çıktı: -1 \
-Not: [indexOf]()' ta benzer bir yöntemdir.
+Not: [indexOf](https://github.com/GrkmAyarkan/NOTLAR/blob/main/JavaScript.md#indexof---metin-i̇çinde-arama-yapma)' ta benzer bir yöntemdir.
 
 
 
