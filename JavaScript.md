@@ -386,4 +386,5 @@ console.log(email.slice(email.search("@"))) // eğer '@' işaretini almak isteme
 
 
 
+
 .
