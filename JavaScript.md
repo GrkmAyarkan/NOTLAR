@@ -320,6 +320,32 @@ console.log("13. Karakter:", email.charAt(12))
 7. Karakter: y
 13. Karakter: @
 ```
+### Büyük/Küçük Harfe Çevirme
+String bir ifadeyi tamamen büyük veya küçük harf yapmak istiyorsak. **Büyük harf** için **toUpperCase()**, **küçük harf** için ise **toLowerCase()** metotlarını kullanırız.
+```js
+let randomKarakterler = "KDasfKdafL mdoaOJlK"
+console.log(randomKarakterler.toUpperCase())
+console.log(randomKarakterler.toLowerCase())
+```
+Çıktı:
+```
+Hepsi Büyük: KDASFKDAFL MDOAOJLK
+Hepsi Küçük: kdasfkdafl mdoaojlk
+```
+### Sadece İstenen Harfi Yada Harfleri Büyük Kalan Harfleri Küçük Yapma
+```js
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
