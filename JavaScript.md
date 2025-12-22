@@ -349,7 +349,8 @@ adSoyad = adSoyad
   .join(" ");
 console.log(adSoyad)
 ```
-Çıktı: Görkem Ayarkan
+Çıktı: Görkem Ayarkan \
+Not: [map]() diziler (arrays) için, dizinin her elamanı için fonksiyon döndürür daha sonra diziler konusunda açıklanacaktır. Daha sonra buraya eklenecek ve map e tıklayarak ulaşabilirsiniz.
 
 
 
