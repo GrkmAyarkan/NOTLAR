@@ -351,9 +351,18 @@ console.log(adSoyad)
 ```
 Çıktı: Görkem Ayarkan \
 Not: [map]() diziler (arrays) için, dizinin her elamanı için fonksiyon döndürür daha sonra diziler konusunda açıklanacaktır. Daha sonra buraya eklenecek ve map e tıklayarak ulaşabilirsiniz. **Join** ise dizi elamanlarını birleştirip tekrar string döndürür ve eğer parantez içerisinde belirtilen karakteri kelimelerin arasına ekler. Örneğin **(" ")** ise her kelime arasına boşluk ekler. **(",")** her eleman arasına , ekler.
-
-
-
+### search() - İstenen Bilgiyi Aramak
+```js
+let email = "grkm.ayarkan@gmail.com"
+console.log(email.search("@"))
+```
+Çıktı: 12 \
+Not: Eğer aranan ifade yoksa sonuç -1 olur.
+```js
+let email = "grkm.ayarkan@gmail.com"
+console.log(email.search("z"))
+```
+Çıktı: -1
 
 
 
