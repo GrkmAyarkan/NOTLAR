@@ -362,7 +362,8 @@ Not: Eğer aranan ifade yoksa sonuç -1 olur.
 let email = "grkm.ayarkan@gmail.com"
 console.log(email.search("z"))
 ```
-Çıktı: -1
+Çıktı: -1 \
+Not: [indexOf]()' ta benzer bir yöntemdir.
 
 
 
