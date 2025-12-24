@@ -425,7 +425,11 @@ js
 const baslik = document.getElementById("baslik");
 baslik.textContent = "Selam";
 ```
-
+Sayfa anında değişir.
+#### DOM Bir Programlama Dili Değildir
+* DOM → tarayıcının sunduğu bir API
+* JavaScript → DOM’u kullanır
+* HTML → DOM’un kaynağıdır
 
 
 
