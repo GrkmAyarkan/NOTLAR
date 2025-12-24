@@ -371,8 +371,13 @@ Bunun için **slice()** kullanılır ve bu bilginin nerede başladığını ise 
 console.log(email.slice(email.search("@"))) // eğer '@' işaretini almak istemezsek "email.slice(email.search("@")+1)" şeklinde yazabiliriz.
 ```
 Çıktı: @gmail.com
-
-
+### replace() - Bilgiyi Değiştirme
+String değeri belli bir kısmında değişiklik yapmak istiyorsak **replace()** metodunu kullanırız.
+```js
+let email = "grkm.ayarkan@gmail.com"
+email = email.replace("gmail.com", "hotmail.com")
+console.log(email)
+```
 
 
 
