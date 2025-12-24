@@ -400,7 +400,7 @@ console.log(email.endsWith("org")) //true
 DOM, tarayıcının HTML belgesini JavaScript’in anlayıp değiştirebileceği nesnel bir yapı haline getirmesidir. \
 DOM = HTML’in ağaç (tree) yapısında, nesnelere dönüştürülmüş halidir. \
 Tarayıcı HTML’i okur ve şuna çevirir:
-```js
+```
 document
  └── html
      ├── head
@@ -415,8 +415,16 @@ JavaScript sayesinde:
 * Stilini güncellersin 
 * Event (click, submit vb.) eklersin 
 * Eleman ekler / silersin 
-
-
+#### Basit bir örnek verirsek: 
+html
+```html
+<h1 id="baslik">Merhaba</h1>
+```
+js
+```js
+const baslik = document.getElementById("baslik");
+baslik.textContent = "Selam";
+```
 
 
 
