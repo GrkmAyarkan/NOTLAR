@@ -396,6 +396,29 @@ Aynı şekilde verinin nasıl bittiğini kontrol etmek için ise **endsWith()** 
 console.log(email.endsWith("com")) //false
 console.log(email.endsWith("org")) //true
 ```
+# DOM (Document Object Model)
+DOM, tarayıcının HTML belgesini JavaScript’in anlayıp değiştirebileceği nesnel bir yapı haline getirmesidir. \
+DOM = HTML’in ağaç (tree) yapısında, nesnelere dönüştürülmüş halidir. \
+Tarayıcı HTML’i okur ve şuna çevirir:
+```js
+document
+ └── html
+     ├── head
+     └── body
+         ├── h1
+         └── p
+```
+## DOM Ne İşe Yarar?
+JavaScript sayesinde: 
+* HTML elemanlarına erişirsin 
+* İçeriğini değiştirirsin 
+* Stilini güncellersin 
+* Event (click, submit vb.) eklersin 
+* Eleman ekler / silersin 
+
+
+
+
 
 
 
