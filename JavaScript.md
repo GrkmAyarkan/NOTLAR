@@ -378,10 +378,24 @@ let email = "grkm.ayarkan@gmail.com"
 email = email.replace("gmail.com", "hotmail.com")
 console.log(email)
 ```
-
-
-
-
+Çıktı: grkm.ayarkan@hotmail.com
+### includes() - Aranan Bilgi Var Mı?
+Bazenen sadece aranan bilginin metin içerisinde olup olmadığını kontrol edilmesi lazım ve bunun için **includes()** metodu kullanılabilir.
+```js
+console.log(email.includes("@")) //true
+console.log(email.includes("$")) //false
+```
+### startsWith() ve endsWith() - Nasıl Başlıyor? Nasıl Bitiyor?
+Aldığımız verinin istediğimiz bilgi ile başlayıp başlamadığını kontrol etmek için **startsWith()** metodu kullanılır.
+```js
+console.log(email.startsWith("grk")) //true
+console.log(email.startsWith("aya")) //false
+```
+Aynı şekilde verinin nasıl bittiğini kontrol etmek için ise **endsWith()** metodu kullanılır.
+```js
+console.log(email.endsWith("com")) //false
+console.log(email.endsWith("org")) //true
+```
 
 
 
