@@ -431,9 +431,32 @@ Sayfa anında değişir.
 * JavaScript → DOM’u kullanır
 * HTML → DOM’un kaynağıdır
 
-
-
-
+## DOM İçerisinde Öğe Erişimi
+```html
+<body>
+    <h1>BAŞLIK</h1>
+    <div id="deneme">
+        <h2 id="konu">Lorem, ipsum</h2>
+        <div class="metin" name="yazi" >Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="email">grkm.ayarkan@gmail.com</div>
+        <div class="metin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium?</div>
+    </div>
+</body>
+```
+### Ağacı Takip Ederek Öğe Bulmak
+#### Tek bir elemanı seçmek için - querySelector()
+Mail adresine ulaşmayı deneyelim ve onun rengini kırmızıya çevirelim.
+```js
+let emailDiv = document.querySelector("div#deneme>div.email")
+emailDiv.style.color = "red"
+```
+Not: Id için -> # , Class için -> .
+#### Aynı etikette birden fazla element seçmek için querySelectorAll
+"metin" class'ındaki metinlere ulaşıp renklerini yeşile çevirmeyi deneyelim.
+```js
+let metinDiv = document.querySelectorAll(".metin")
+metinDiv.forEach(metin => {metin.style.color = "green"; metin.style.fontFamily = "Arial, sans-serif";})
+```
 
 
 
