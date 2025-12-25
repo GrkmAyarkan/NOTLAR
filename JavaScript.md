@@ -455,7 +455,10 @@ Not: Id için -> # , Class için -> .
 "metin" class'ındaki metinlere ulaşıp renklerini yeşile çevirmeyi deneyelim.
 ```js
 let metinDiv = document.querySelectorAll(".metin")
-metinDiv.forEach(metin => {metin.style.color = "green"; metin.style.fontFamily = "Arial, sans-serif";})
+metinDiv.forEach(metin => {
+  metin.style.color = "green"; 
+  metin.style.fontFamily = "Arial, sans-serif";
+})
 ```
 
 
