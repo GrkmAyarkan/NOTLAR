@@ -460,8 +460,12 @@ metinDiv.forEach(metin => {
   metin.style.fontFamily = "Arial, sans-serif";
 })
 ```
-
-
+### Id ve Belirli Bir Özellik İle Öğe Bulmak
+* getElementById
+* getElementsByClassName
+* getElementsByName
+* getElementsByTagName
+Bunları kullanarak istenilen elemana ulaşılabilir. Eğer istenen elaman yoksa geriye `null` döndürür.
 
 
 
