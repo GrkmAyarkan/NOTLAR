@@ -465,6 +465,7 @@ metinDiv.forEach(metin => {
 * getElementsByClassName
 * getElementsByName
 * getElementsByTagName
+
 Bunları kullanarak istenilen elemana ulaşılabilir. Eğer istenen elaman yoksa geriye `null` döndürür.
 
 
